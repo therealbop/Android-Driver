@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dpTwenty"
+                android:gravity="center"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tv_invoice_trip_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="@string/your_trip_on"
+                    android:textColor="@color/colorPrimary"
+                    android:textDirection="locale"
+                    android:textAlignment="viewStart"/>
+
+                <TextView
+                    android:id="@+id/tv_invoice_trip_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:textDirection="locale"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tv_invoice_bid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/bid"
+                    android:textColor="@color/colorPrimary"
+                    android:textDirection="locale"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"/>
+
+                <TextView
+                    android:id="@+id/tv_invoice_bid_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:textDirection="locale"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@color/lightGray" />
+
+            <TextView
+                android:id="@+id/tv_invoice_sys_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dpTwenty"
+                android:layout_marginBottom="@dimen/dpTen"
+                android:text="@string/system_cal_fare" />
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="1dp"
+                android:background="@color/lightGray"
+                android:layout_gravity="center"/>
+
+
+            <TextView
+                android:id="@+id/tv_invoice_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_40sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_invoice_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_invoice_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:src="@drawable/ic_cash"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_invoice_payment_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/cash"
+                android:textColor="@color/tandura"
+                android:layout_marginTop="@dimen/dpFive"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/rl_wallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="@dimen/dpTen"
+                    android:layout_marginEnd="@dimen/dpTen"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_wallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:src="@drawable/history_stuff_credit_icon"
+                        android:contentDescription="@string/app_name"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/tv_wallet_pay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/walet"
+                        android:textColor="@color/tandura"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="@dimen/dpTen"
+                    android:layout_marginEnd="@dimen/dpTen"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:src="@drawable/history_stuff_card_icon"
+                        android:contentDescription="@string/app_name"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/tv_card_pay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/card"
+                        android:textColor="@color/tandura"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_cash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="@dimen/dpTen"
+                    android:layout_marginEnd="@dimen/dpTen"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_cash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:src="@drawable/hostory_stuff_help_cash_icon"
+                        android:contentDescription="@string/app_name"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/tv_cash_pay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/cash"
+                        android:textColor="@color/tandura"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_corporate_wallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="@dimen/dpTen"
+                    android:layout_marginEnd="@dimen/dpTen"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_corporate_wallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:src="@drawable/history_stuff_credit_icon"
+                        android:contentDescription="@string/app_name"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/tv_corporate_wallet_pay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/corporateWalet"
+                        android:textColor="@color/tandura"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_invoice_reciept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/dimen_15dp"
+                android:text="@string/receipt"
+                android:textColor="@color/light_blue" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:background="@color/lightGray" />
+
+            <LinearLayout
+                android:id="@+id/ll_sendEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_invoice_rating_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/enter_email_id_invoice" />
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/appmail"
+                    android:layout_margin="@dimen/dpTwenty"
+                    android:background="@drawable/shape_rectangle_lgray"
+                    android:padding="@dimen/dpTen"
+                    android:inputType="textEmailAddress"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_rate_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/rateYourTrip" />
+
+                <TextView
+                    android:textColor="@color/tandura"
+                    android:id="@+id/tv_pass_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dpTen"
+                    android:layout_marginBottom="@dimen/dpFive"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dpPointZeroFive"
+                    android:background="@color/lightGray" />
+
+                <RatingBar
+                    android:theme="@style/RatingBar"
+                    android:id="@+id/ratingbar_invoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:rating="5"
+                    android:stepSize="1"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_signature"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:background="@color/lightGray"
+                    android:layout_marginBottom="@dimen/dpTen"/>
+
+                <RelativeLayout
+                    android:id="@+id/rlSign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/view1"
+                    android:layout_margin="@dimen/spSixteen">
+
+
+
+                    <ImageView
+                        android:id="@+id/ivPen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_invoice_pen_icon"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvSignTitle"
+                        android:layout_toRightOf="@id/ivPen"
+                        android:layout_toEndOf="@id/ivPen"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/signature"
+                        android:textAllCaps="true"
+                        android:textColor="@color/lig_green2"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/lightGray"
+                    />
+
+                <ImageView
+                    android:id="@+id/ivSignature"
+                    android:layout_below="@id/rlSign"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="2dp"
+                    />
+                <LinearLayout
+                    android:id="@+id/ll_sign_here1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_signin_pen_icon"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvSignHere1"
+                        android:text="@string/sign_here"
+                        android:textSize="@dimen/spTwenty"
+                        android:textColor="@color/lig_green2"
+                        />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_bottom_layer"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="vertical"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rlSignaturePad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rlRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <ImageView
+                android:id="@+id/ivBackBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_signin_back_icon"
+                android:padding="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_agentlogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+
+            <ImageView
+                android:id="@+id/ivRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_signin_refresh_icon"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_below="@id/rlRefresh"
+            android:id="@+id/tv_agency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/spSixteen"
+            android:layout_marginLeft="@dimen/dpFive"
+            android:layout_marginStart="@dimen/dpFive"
+            android:layout_centerInParent="true"/>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_approve"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/approve"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/spEighteen"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider4"
+            android:layout_above="@id/tv_approve"
+            />
+
+        <com.github.gcacace.signaturepad.views.SignaturePad
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/signature_pad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:penColor="@android:color/black"
+            android:layout_above="@id/tv_approve"
+            android:layout_below="@id/tv_agency"
+            app:penMaxWidth="2dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_sign_here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_signin_pen_icon"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSignHere"
+                android:text="@string/sign_here"
+                android:textSize="@dimen/spTwentyFour"
+                android:textColor="@color/lig_green2"
+                />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_invoice_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:background="@drawable/selector_color_primary"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/dpFifteen"
+        android:textSize="@dimen/spEighteen"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

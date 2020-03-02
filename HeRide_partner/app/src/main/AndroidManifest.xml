@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.heride.partner">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <!-- For call -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false"/>
+
+    <permission
+        android:name="com.heride.partner.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"/>
+
+    <application
+        android:name="com.karry.app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher"
+        android:usesCleartextTraffic="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="m">
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.heride.partner"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <!-- splash activity -->
+        <activity
+            android:name="com.karry.app.splash.SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.karry.app.mainActivity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeCustomHintColor">
+            <intent-filter>
+                <action android:name="richPush"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.karry.authentication.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity
+            android:name="com.karry.authentication.signup.SignUpWeb.RegisterWebActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.karry.authentication.signup.SignUpPersonal.SignupPersonalActvity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan"/>
+        <activity
+            android:name="com.karry.authentication.signup.SignUpVehicle.SignupVehicleActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan"/>
+        <activity
+            android:name="com.karry.authentication.vehiclelist.VehicleListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.karry.authentication.vehicleTypeList.VehicleTypeListActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.karry.authentication.forgotpassword.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity
+            android:name="com.karry.authentication.forgotpassword.OTPVerificationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity
+            android:name="com.karry.authentication.forgotpassword.ChangePasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity
+            android:name="com.karry.app.cancelBooking.CancelReasonActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"/>
+        <activity
+            android:name="com.karry.app.bookingRequest.BookingPopUpActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="eu.janmuller.android.simplecropimage.CropImage"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.karry.app.meterBooking.address.AddressSelectionActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.karry.side_screens.profile.EditProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity
+            android:name="com.karry.side_screens.wallet.add_card.AddCardActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.karry.bookingFlow.RideBookingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.karry.side_screens.wallet.changeCard.ChangeCardActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.karry.side_screens.wallet.wallet_transaction_activity.WalletTransActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.karry.side_screens.portal.PortalActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.karry.authentication.signup.SignUpDocument.SignUpDocumentActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.karry.side_screens.home_fragment.invoice.InvoiceActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.karry.app.meterBooking.DriverMeterActivity"
+            android:autoRemoveFromRecents="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.karry.side_screens.history.history_invoice.HistoryInvoiceActivity"
+            android:autoRemoveFromRecents="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.karry.side_screens.bankDetails.bankStripeAccountAdd.BankStripeAddActivity"
+            android:screenOrientation="portrait"
+            android:alwaysRetainTaskState = "true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity
+            android:name="com.karry.side_screens.support.supportSubCategory.SupportSubCategoryActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.karry.mqttChat.ChattingActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.karry.side_screens.bankDetails.bankAccountAdd.BankNewAccountActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.karry.twilio_call.ClientActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.livechatinc.inappchat.ChatWindowActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.karry.fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.karry.fcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.twilio.client.TwilioClientService"
+            android:exported="false"
+            android:stopWithTask="true"/>
+
+        <!-- <service android:name="com.karry.network.NetworkCheckerService"/> -->
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"/>
+
+        <!-- GOOGLE MAP -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <!-- user name : app@karru.com.au , password : Karruapp101a -->
+        <!-- username : flagit2018@gmail.com ,     password : fr26f6060@ -->
+        <!-- Crashlytics  :  uberforappscrip@gmail.com  password : 3Embed007 -->
+        <!-- amazon : dreamer@appscrip.com  3Embed007 -->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_api_key"/>
+
+        <activity
+            android:name="com.karry.authentication.signup.GenericListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.karry.app.adv.AdvertiseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CampaignTheme"/>
+
+        <activity android:name="com.karry.side_screens.help_center.zendeskHelpIndex.ZendeskHelpIndex"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.karry.side_screens.help_center.zendeskTicketDetails.HelpIndexTicketDetails"
+            android:screenOrientation="portrait"/>
+
+        <service
+            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+            android:enabled="true"/>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="0b18d54b1af7d997774b3b5479677ed78b8248fb"/>
+
+        <receiver
+            android:name="com.karry.utility.NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- Mqtt Service -->
+        <service android:name="org.eclipse.paho.android.service.MqttService"
+                 android:exported="false"
+                 android:enabled="true"
+                 android:stopWithTask="true"/>
+
+        <service android:name="com.karry.service.LocationUpdateService"/>
+
+        <activity android:name="com.karry.side_screens.prefered_zone.PreferedZoneListActivity"
+                  android:screenOrientation="portrait"/>
+
+        <activity android:name="com.karry.side_screens.prefered_zone.preferedZoneSelect.PreferedZoneSelectActivity"
+                  android:screenOrientation="portrait"/>
+
+        <service android:name="com.karry.telecall.callservice.AudioCallService" />
+        <service android:name="com.karry.telecall.callservice.VideoCallService" />
+        <service
+            android:name="com.karry.telecall.utility.OnMyService"
+            android:stopWithTask="false" />
+        <activity
+            android:name="com.karry.telecall.incommingcalls.IncomingCallScreen"
+            android:screenOrientation="portrait" >
+            <intent-filter >
+                <action android:name="com.karry.telecall.incommingcalls.IncomingCallScreen"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

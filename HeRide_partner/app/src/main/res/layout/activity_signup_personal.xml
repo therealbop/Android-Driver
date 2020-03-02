@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:isScrollContainer="true">
+
+    <include
+        android:id="@+id/include_actionbar"
+        layout="@layout/actionbar" />
+
+    <ScrollView
+        android:scrollbars="none"
+        android:id="@+id/sv_signup_mainScroller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_sign_up_nextBtn"
+        android:layout_below="@+id/include_actionbar">
+
+        <LinearLayout
+            android:id="@+id/ll_sign_up_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dpForty"
+            android:paddingRight="@dimen/dpForty">
+
+            <TextView
+                android:id="@+id/tv_sign_up_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dpTwenty"
+                android:paddingTop="@dimen/dpTwenty"
+                android:text="@string/persoanl"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/spNineteen"
+                android:gravity="center"/>
+
+
+            <LinearLayout
+                android:weightSum="6"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dpFive"
+                android:layout_marginTop="5dp"
+                android:baselineAligned="false"
+                android:gravity="start">
+
+                <RelativeLayout
+                    android:id="@+id/rl_sign_up_profile_pic"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:gravity="start">
+
+                    <ImageView
+                        android:id="@+id/iv_sign_up_profile_pic"
+                        android:layout_width="110dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="@dimen/dpTen"
+                        android:layout_marginRight="@dimen/dpTen"
+                        android:contentDescription="@string/app_name"
+                        android:paddingBottom="10dp"
+                        android:src="@drawable/signup_profile_default_image" />
+
+                    <ImageView
+                        android:id="@+id/iv_sign_up_changeImg"
+                        android:layout_width="@dimen/dimen_35dp"
+                        android:layout_height="@dimen/dimen_35dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingBottom="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/add_image" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_sign_up_fname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textDirection="locale"
+                        android:gravity="start"
+                        android:textAlignment="viewStart">
+
+                        <EditText
+                            android:id="@+id/et_sign_up_fname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/fname"
+                            android:inputType="textCapWords|textCapSentences"
+                            android:minLines="1"
+                            android:textSize="@dimen/spFourteen"
+                            android:maxLength="25"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_sign_up_lname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textDirection="locale"
+                        android:gravity="start"
+                        android:textAlignment="viewStart">
+
+                        <EditText
+                            android:id="@+id/et_sign_up_lname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/lname"
+                            android:inputType="textCapWords"
+                            android:minLines="1"
+                            android:textSize="@dimen/spFourteen"
+                            android:maxLength="25"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:id="@+id/rl_sign_up_countryPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textAlignment="viewStart">
+
+                <ImageView
+                    android:id="@+id/iv_sign_up_flag"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginStart="3dp"
+                    android:background="@drawable/flag_in"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/tv_sign_up_countryCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/iv_sign_up_flag"
+                    android:layout_toRightOf="@+id/iv_sign_up_flag"
+                    android:text="@string/defaultCountryCode"
+                    android:textColor="@color/color_sup_txt"
+                    android:textSize="@dimen/spFourteen"
+                    android:textDirection="locale"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"/>
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_signup_mob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/tv_sign_up_countryCode"
+                    android:layout_toRightOf="@+id/tv_sign_up_countryCode"
+                    android:textDirection="locale"
+                    android:gravity="start"
+                    android:textAlignment="viewStart">
+
+                    <EditText
+                        android:id="@+id/et_signup_mob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/phone_num"
+                        android:focusableInTouchMode="true"
+                        android:focusable="true"
+                        android:inputType="number"
+                        android:maxLength="16"
+                        android:minLines="1"
+                        android:textSize="@dimen/spFourteen" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_sign_up_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textAlignment="viewStart">
+
+                <EditText
+                    android:id="@+id/et_sign_up_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:inputType="textEmailAddress"
+                    android:minLines="1"
+                    android:textSize="@dimen/spFourteen" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_sign_up_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textAlignment="viewStart">
+
+                <EditText
+                    android:id="@+id/et_sign_up_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/gender"
+                    android:focusableInTouchMode="true"
+                    android:cursorVisible="false"
+                    android:focusable="true"
+                    android:inputType="date"
+                    android:minLines="1"
+                    android:textSize="@dimen/spFourteen"
+                    android:drawableEnd="@drawable/svg_ic_chevron_right"
+                    android:drawableRight="@drawable/svg_ic_chevron_right"
+                    android:textDirection="locale"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_sign_up_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textAlignment="viewStart">
+
+                <EditText
+                    android:id="@+id/et_sign_up_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/dateOfBirth"
+                    android:focusableInTouchMode="true"
+                    android:cursorVisible="false"
+                    android:focusable="true"
+                    android:inputType="date"
+                    android:minLines="1"
+                    android:textSize="@dimen/spFourteen"
+                    android:drawableEnd="@drawable/svg_ic_chevron_right"
+                    android:drawableRight="@drawable/svg_ic_chevron_right"
+                    android:textDirection="locale"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_dob_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dpFive"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:text="@string/dateOfBirth"
+                android:textSize="@dimen/spTwelve"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@color/transparent"
+                android:drawableEnd="@drawable/svg_ic_chevron_right"
+                android:drawableRight="@drawable/svg_ic_chevron_right"
+                android:hint="@string/dateOfBirthError"
+                android:minLines="1"
+                android:textSize="@dimen/spFourteen"
+                android:defaultFocusHighlightEnabled="true"
+                android:visibility="gone"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dpOne"
+                android:layout_marginBottom="@dimen/dpTen"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@color/divider"
+                android:visibility="gone"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_sign_up_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textAlignment="viewStart">
+
+                <EditText
+                    android:id="@+id/et_sign_up_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/state"
+                    android:focusableInTouchMode="true"
+                    android:cursorVisible="false"
+                    android:focusable="true"
+                    android:inputType="date"
+                    android:minLines="1"
+                    android:textSize="@dimen/spFourteen"
+                    android:drawableEnd="@drawable/svg_ic_chevron_right"
+                    android:drawableRight="@drawable/svg_ic_chevron_right"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_state_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dpFive"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:text="@string/state"
+                android:textSize="@dimen/spTwelve"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@color/transparent"
+                android:drawableEnd="@drawable/svg_ic_chevron_right"
+                android:drawableRight="@drawable/svg_ic_chevron_right"
+                android:hint="@string/enterState"
+                android:minLines="1"
+                android:textSize="@dimen/spFourteen"
+                android:visibility="gone"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dpOne"
+                android:layout_marginBottom="@dimen/dpFive"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@color/divider"
+                android:visibility="gone"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_signup_postal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textAlignment="viewStart">
+
+                <EditText
+                    android:letterSpacing="1"
+                    android:id="@+id/et_signup_postal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/postal_code"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:inputType="number"
+                    android:minLines="1"
+                    android:textSize="@dimen/spFourteen" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_sign_up_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textAlignment="viewStart">
+
+                <EditText
+                    android:id="@+id/et_sign_up_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password_signup"
+                    android:inputType="textPassword"
+                    android:minLines="1"
+                    android:textSize="@dimen/spFourteen"
+                    android:textDirection="locale"
+                    android:gravity="start"
+                    android:textAlignment="viewStart" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_sign_up_confirmPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textAlignment="viewStart">
+
+                <EditText
+                    android:id="@+id/et_sign_up_confirmPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password_confirm_signup"
+                    android:inputType="textPassword"
+                    android:minLines="1"
+                    android:textSize="@dimen/spFourteen"
+                    android:textDirection="locale"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_sign_up_referral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dpThirtyFive"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textAlignment="viewStart">
+
+                <EditText
+                    android:id="@+id/et_sign_up_referral"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/referral"
+                    android:singleLine="true"
+                    android:textSize="@dimen/spFourteen"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_sign_up_nextBtn"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/spEighteen" />
+
+    <ProgressBar
+        android:id="@+id/pb_sign_up_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

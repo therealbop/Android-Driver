@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/alert_dialog_white_backgroud"><!--android:background="@drawable/alert_dialog_white_backgroud"-->
+
+    <TextView
+        android:id="@+id/tv_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lightBlack"
+        android:text="@string/selectLanguage"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:paddingTop="@dimen/dimen_14dp"
+        android:paddingBottom="@dimen/dimen_19dp"
+        android:background="@color/white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dpPointZeroFive"
+        android:background="@color/divider"
+        android:visibility="gone"/>
+
+
+    <Spinner
+        android:id="@+id/spin_select_lan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_background"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20sp"
+        android:prompt="@string/english"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dpPointZeroFive"
+        android:background="@color/divider"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="@color/dialogActionBackground">
+
+        <TextView
+            android:layout_weight="0.99"
+            android:id="@+id/tvCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textColor="@color/lightBlackText"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+        <View
+            android:layout_weight="0.005"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:background="@color/divider"/>
+
+        <TextView
+            android:layout_weight="1.1"
+            android:id="@+id/tvOK"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/OK"
+            android:textColor="@color/lightBlackText"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

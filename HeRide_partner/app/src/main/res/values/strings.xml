@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HERide Partner</string>
+    <string name="app_name_withoutSpace">HERide_Partner</string>c
+    <string name="facebook_app_id">1111066805703978</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="logging_out">Logging out&#8230;</string>
+    <string name="network_problem">No Internet Connection.</string>
+    <string name="support_content">Support Content</string>
+
+
+    <string name="uhOh">Uh&#45;Oh&#33;</string>
+    <string name="reGrantPermissionMsg">You have denied the required permission(s). Please, grant to proceed further."</string>
+    <string name="appSetting">App Setting</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="logoutDialog">Do you want to logout?</string>
+    <string name="log">Log</string>
+    <string name="out">Out</string>
+    <string name="sessionExpired">Sorry your session expired please login again!!!</string>
+
+    <!--Splash Screen Activity-->
+    <string name="login">LOG IN</string>
+    <string name="signin">SIGN IN</string>
+    <string name="signup">SIGN UP</string>
+    <string name="app_name_splash">Truckr</string>
+    <string name="splash_msg">Your same-day delivery solution</string>
+    <string name="offline">Offline</string>
+    <string name="online">Online</string>
+
+    <!--login activity -->
+    <string name="welcome">Welcome to Truckr</string>
+    <string name="phone_no">PHONE NUMBER</string>
+    <string name="phone_no_email_hint">EMAIL/PHONE NUMBER</string>
+    <string name="vehicle_pin_number">VEHICLE PIN NUMBER</string>
+    <string name="password">PASSWORD</string>
+    <string name="forgot_pass">FORGOT PASSWORD?</string>
+    <string name="select_country">SELECT COUNTRY</string>
+    <string name="fill_fields">Fill the fields</string>
+    <string name="phone_miss">Enter the email or phone number</string>
+    <string name="phone_mis">Enter the phone number.</string>
+    <string name="password_miss">Enter the password</string>
+    <string name="vehNo_miss">Enter the vehicle pin number</string>
+    <string name="login_succes">Login Success</string>
+    <string name="services_invalid">Service not available</string>
+    <string name="login_signup_txt"><![CDATA[<font color=\'#767676\'>"Don\'t have an account?"</font><font color=\'#dc1928\'>" Signup"</font>]]></string>
+    <string name="selectLanguage">Language</string>
+    <string name="english">English</string>
+
+    <!--Forgot password Enter  mobile num activity-->
+    <string name="forgotPassword">Forgot Password</string>
+    <string name="forgotMsgMob">Enter your Phone Number to receive a \n Verification Code to reset password </string>
+    <string name="forgotMsgEmail">Enter your Email Address to receive a \n Link to reset password </string>
+    <!--Forgot password verify-->
+    <string name="verify_mob">Verify Mobile Number</string>
+    <string name="verify_msg1">A Verification Code has been sent to</string>
+    <string name="verify_msg2">Please enter the code below.</string>
+    <string name="resend">RESEND CODE ?</string>
+    <string name="verify">VERIFY</string>
+    <string name="enter_otp">Enter a verication code</string>
+    <!--Forgot Password re-enter pass-->
+    <string name="newpassmsg">Thank you for verifying your phone number,\n please create a new password below</string>
+    <string name="NewPass">NEW PASSWORD</string>
+    <string name="ReEnterPass">"RE-ENTER PASSWORD</string>
+    <string name="passNotMactch">Password is not matching</string>
+    <string name="Continue">CONTINUE</string>
+    <string name="entNewPass">Enter new password</string>
+    <string name="EntNewPass">Change Password</string>
+    <string name="reentrPass">Re-enter the password</string>
+
+    <string name="select_city">Select City</string>
+
+    <!--select vechicle list-->
+    <string name="logout_vl">Logout</string>
+    <string name="selectVeh_vl">Select Vehicle</string>
+    <string name="selectVeh_vehicle_type">Select Vehicle Type</string>
+    <string name="plateno_vl">Plate Number</string>
+    <string name="type_vl">Type</string>
+    <string name="type_select">Select type</string>
+    <string name="model_vl">Model</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="logoutmessage">Are you sure you want to log out?</string>
+    <string name="selectVechicle">Select vehicle</string>
+
+    <!--Sign up activity web-->
+    <string name="appname_title">HERide</string>
+    <string name="reg_now">register now</string>
+
+    <!--sign up activity personal-->
+    <string name="mandatory">This field is mandatory</string>
+    <string name="Countrypicker">COUNTRY_PICKER</string>
+    <string name="pass_mismatch">Password is not Matching.</string>
+    <string name="signup_">Sign Up</string>
+    <string name="next">NEXT</string>
+    <string name="persoanl">Personal Details</string>
+    <string name="fname">FIRST NAME*</string>
+    <string name="lname">LAST NAME</string>
+    <string name="phone_num">PHONE NUMBER*</string>
+    <string name="email">EMAIL*</string>
+    <string name="password_signup">PASSWORD*</string>
+    <string name="password_confirm_signup">CONFIRM PASSWORD*</string>
+    <string name="driving_lic">DRIVING LICENCE (both side)*</string>
+    <string name="upload">"(upload both sides)*</string>
+    <string name="err_fname">Please enter First Name</string>
+    <string name="err_phone_no">Invalid Phone Number</string>
+    <string name="err_email">Please enter Email Address</string>
+    <string name="err_pass">Please enter Password</string>
+    <string name="invalidEmail">Invalid Email Address</string>
+    <string name="invalid_email_or_phone">Invalid Email or Phone Number</string>
+    <string name="invalidPhone">Please enter a valid Phone Number</string>
+    <string name="operator">Operator</string>
+    <string name="free_lancer">Freelancer</string>
+    <string name="choose_prof_pic">Upload Profile Image</string>
+    <string name="choose_licence_img">Please upload Driving Licence</string>
+    <string name="phone_reg_err">Phone  is already registered.</string>
+    <string name="phone_email_reg_err">Phone and Email is already registered.</string>
+    <string name="email_reg_err">Email  is already registered.</string>
+    <string name="licence_miss">Upload the Licence image.</string>
+    <string name="dateOfBirth">DATE OF BIRTH*</string>
+    <string name="dateOfBirthError">Select Date Of Birth</string>
+    <string name="defaultCountryCode">+91</string>
+    <string name="selectDate">Select Date</string>
+    <string name="licenceExpiry">DRIVING LICENCE EXPIRY DATE*</string>
+<!--    <string name="policeClearenceDate">POLICE CLEARANCE DATE OF ISSUE</string>-->
+    <string name="policeClearenceDate">BACKGROUND CHECK DATE OF ISSUE*</string>
+    <string name="childrenCardExpr">CHILDREN CARD EXPIRY DATE</string>
+    <string name="vehRegExpr">REGISTRATION EXPIRY DATE*</string>
+    <string name="vehInsuExpr">INSURANCE EXPIRY DATE*</string>
+    <string name="inspectionDate">INSPECTION DATE</string>
+    <string name="goodsTransitInsu">GOODS AND TRANSIT INSURANCE EXPIRY DATE</string>
+
+
+    <!--sign up activity vechicle-->
+    <string name="vehicle_details">Vehicle Details</string>
+    <string name="plate_no">PLATE NUMBER*</string>
+    <string name="color">COLOR*</string>
+    <string name="type">TYPE*</string>
+    <string name="services">SERVICES*</string>
+    <string name="select_service">Select Services</string>
+    <string name="specialities">Speciality*</string>
+    <string name="make">MAKE*</string>
+    <string name="make_title">MAKE</string>
+    <string name="model">MODEL*</string>
+    <string name="model_title">MODEL</string>
+    <string name="year">YEAR*</string>
+    <string name="year_title">YEAR</string>
+    <string name="err_year">Invalid Year</string>
+    <string name="insurance">INSURANCE (upload both sides)*</string>
+    <string name="finish">FINISH</string>
+    <string name="err_plate">Enter plate number</string>
+    <string name="err_color">Select Color</string>
+    <string name="err_type">Select Type</string>
+    <string name="err_specialities">Select Speciality</string>
+    <string name="select_year">Select Year</string>
+    <string name="err_make">Select Make</string>
+    <string name="err_model">Select Model</string>
+    <string name="err_veh_img">Upload Vehicle Image</string>
+    <string name="err_insurance_img">Add insurance image</string>
+    <string name="signup_success_msg">Thanks for signing up. one of our representative will get in touch with you in the next 24 hours to setup your profile and get all the necessary documents</string>
+    <string name="Insurance_miss">Upload the Insurance image.</string>
+    <string name="certificate_miss">Upload the Certificate image.</string>
+    <string name="wheelChairSupport">Wheel Chair Support</string>
+    <string name="boosterSeatSupport">Booster Seat Support</string>
+    <string name="extraBagsSupport">Extra Bags Support</string>
+    <string name="quietRide">Quiet Ride</string>
+    <string name="bikeCarrier">Bike Carrier Support</string>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="colors">
+        <item>White</item>
+        <item>Black</item>
+        <item>DarkGray</item>
+        <item>LightGray</item>
+        <item>Gray</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Navy</item>
+        <item>Blue</item>
+        <item>SkyBlue</item>
+        <item>Turquoise</item>
+        <item>BlueGreen</item>
+        <item>Cyan</item>
+        <item>Yellow</item>
+        <item>Magenta</item>
+        <item>Orange</item>
+        <item>Purple</item>
+        <item>Brown</item>
+        <item>Silver</item>
+        <item>Cerulean</item>
+        <item>Lime</item>
+        <item>Gold</item>
+        <item>Olive</item>
+        <item>Maroon</item>
+        <item>Rose</item>
+        <item>Pink</item>
+        <item>Indigo</item>
+        <item>Violet</item>
+    </string-array>
+
+    <!--SignUp UpLoad Documents-->
+    <string name="upload_doc">Upload Documents</string>
+    <string name="driver_doc">Driver Documents</string>
+    <string name="vehicle_doc">Vehicle Documents</string>
+    <string name="vehicle_reg">VEHICLE REGISTRATION*</string>
+    <string name="vehicle_insurance">VEHICLE INSURANCE*</string>
+<!--    <string name="police_clearance">POLICE CLEARANCE</string>-->
+    <string name="police_clearance">Background Check*</string>
+    <string name="inspection_report">INSPECTION REPORT</string>
+    <string name="goodsInsurance">GOODS AND TRANSIT INSURANCE</string>
+    <string name="childrenCard">WORKING WITH CHILDREN CARD</string>
+    <string name="readAndAccept">I have read and accepted the</string>
+    <string name="privacyPolicy">Privacy Policy</string>
+    <string name="vehicle_pic">"vehicle_pic"</string>
+
+    <string-array name="uploadDoc">
+        <item>licence</item>
+        <item>registration</item>
+        <item>insurance</item>
+        <item>clearance</item>
+        <item>inspection</item>
+        <item>goods insurance</item>
+        <item>children card</item>
+    </string-array>
+
+    <string name="signup_success">Thank you for registering with us, one of our team members will contact you in the next 24 hours to complete your registration.</string>
+    <string name="privacy_policy_err">Check Privacy Policy</string>
+
+    <!--NavigationDrawer-->
+    <string name="home">Home</string>
+    <string name="history">History</string>
+    <string name="support">Support</string>
+    <string name="logout">Logout</string>
+    <string name="card">CARD</string>
+    <string name="walet">WALLET</string>
+    <string name="corporateWalet">CORPORATE WALLET</string>
+    <string name="wallet">Wallet</string>
+    <string name="cancelation_fee">Cancelation Fee</string>
+    <string name="open_par">( </string>
+    <string name="close_par"> )</string>
+    <string name="view_profile">View Profile</string>
+
+    <!--Hostory String-->
+    <string name="from">FROM</string>
+    <string name="to">TO</string>
+    <string name="no_of_trips">No of Trips</string>
+    <string name="amount_earns">Amount Earned</string>
+
+    <!--On the way to pickup-->
+
+    <string name="googlemaps">Google Maps</string>
+    <string name="googlemaps_color"><![CDATA[<font color=\'#4885ED\'>G</font><font color=\'#DB3236\'>o</font><font color=\'#F4C20D\'>o</font><font color=\'#4885ED\'>g</font><font color=\'#3CBA54\'>l</font><font color=\'#DB3236\'>e</font><font color=\'#767676\'>" Maps"</font>]]></string>
+    <string name="maps">" Maps"</string>
+    <string name="waze">Waze</string>
+    <string name="distance">Distance</string>
+    <string name="time">Time</string>
+    <string name="km">Km</string>
+    <string name="min">/Min</string>
+    <string name="miniute">Min</string>
+    <string name="arrivedAtPick">Arrived at pickup</string>
+    <string name="start">START</string>
+    <string name="waitingTime">Waiting Time</string>
+    <string name="waitingTimer">Waiting Timer</string>
+    <string name="timer">Timer</string>
+    <string name="hrs">Hrs</string>
+    <string name="onTrip">On Trip</string>
+    <string name="unload">UNLOAD</string>
+    <string name="delivery_completed">Delivery Completed</string>
+
+    <!--Cancel Activity-->
+    <string name="cancelReason">Cancel Reason</string>
+    <string name="comments">COMMENTS</string>
+    <string name="tv_comment_hint">Write comment here...</string>
+
+
+    <!--DeliveryCompleted Activity-->
+    <string name="deli_completed">Delivery Completed</string>
+    <string name="id_">"ID: "</string>
+    <string name="help">Help?</string>
+    <string name="current_fare">Current fare</string>
+    <string name="bil_details">Bill Details</string>
+    <string name="distance_fare">Distance Fare</string>
+    <string name="time_fare">Time Fare</string>
+    <string name="milege_fare">Mileage Fare</string>
+    <string name="minimum_fare">Minimum Fare</string>
+    <string name="waiting_fee">Waiting Fare</string>
+    <string name="pgCommision">PG Commission</string>
+    <string name="cust_lastDue">Customer Last Due</string>
+    <string name="discount">Discount</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="add_special">"+ Add Special Charges"</string>
+    <string name="grand_total">Grand Total</string>
+    <string name="deliverd_to">Delivered to</string>
+    <string name="reiever_name">Receiver Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="signature">Signature</string>
+    <string name="photos_of_doc">Photos of document</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="rate_the_cus">Rate the customer</string>
+    <string name="read_storage_and_camera_state_permission_message">Please give permission for read write storage and camera to go ahead in app.</string>
+
+    <!--Booking PopUp Activity-->
+    <string name="pickup">PICK UP</string>
+    <string name="drop">DROP</string>
+    <string name="lefttoaccept">Left to Accept</string>
+    <string name="Deliveryfee">Delivery Fee</string>
+    <string name="service">Service</string>
+    <string name="service_">SERVICE</string>
+
+    <!--HistoryActivity Invoice-->
+    <string name="senderdetails">Sender Details</string>
+    <string name="yourated">You Rated</string>
+    <string name="total">Grand Total</string>
+    <string name="special_charge">Special Charges</string>
+    <string name="tollCharge">Toll Charge</string>
+    <string name="payment">Payment</string>
+    <string name="cardending">Card Ending</string>
+    <string name="recieversdetails">"Receiver's Details"</string>
+    <string name="documents">Documents</string>
+    <string name="recievedby">Received By</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="trip_with">Trip with</string>
+    <string name="tip">Tip</string>
+
+    <!--Job Details-->
+    <string name="jobdetails">Load Details</string>
+    <string name="bookingid">Booking ID</string>
+    <string name="corporateBooking">Corporate Booking</string>
+    <string name="pickupanddrop">Pickup and Drop</string>
+    <string name="senderrecdet">"Sender / Receiver Details"</string>
+    <string name="sender">SENDER</string>
+    <string name="reciever">RECEIVER</string>
+    <string name="shipmentdetails">Shipment Details</string>
+    <string name="goodstype">GOODS TYPE</string>
+    <string name="quantity">QUANTITY</string>
+    <string name="photos">PHOTOS</string>
+    <string name="additionalnot">ADDITIONAL NOTES</string>
+    <string name="dropUpdateMsg">Customer has updated the dropoff location</string>
+
+    <!--Imageupload-->
+    <string name="smthWentWrong">Something went wrong</string>
+    <string name="oops">Oops&#33;</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="remove">Remove</string>
+
+    <!--activity_select_an_operator-->
+    <string name="title_activity_select_an_operator">Select An Operator</string>
+    <string name="referral">REFERRAL CODE(OPTIONAL)</string>
+    <string name="refErr">Invalid referral code</string>
+    <string name="select_zone">Select preferred zone</string>
+    <string name="zones">Preferred Zones</string>
+    <string name="read_phone_state_permission_message">Please give permission to read phone state to identify your device.</string>
+    <string name="location_permission_message">Please give permission to fetch location of your device.</string>
+    <string name="booking_fare">Booking Fare</string>
+
+
+    <string name="currency">"$"</string>
+    <string name="message">Message</string>
+    <string name="after">After</string>
+
+    <string name="sun">SUN</string>
+    <string name="mon">MON</string>
+    <string name="tue">TUE</string>
+    <string name="wed">WED</string>
+    <string name="thu">THU</string>
+    <string name="fri">FRI</string>
+    <string name="sat">SAT</string>
+
+    <string name="BaseFare">Base Fare</string>
+    <string name="charges">FARE BREAKDOWN</string>
+    <string name="cannot_edit_msg">CANNOT EDIT INVOICE ONCE CONFIRMED</string>
+    <string name="handling">Handling</string>
+    <string name="adjustment">Min Fare Adjustment</string>
+    <string name="waiting_fare">Waiting</string>
+    <string name="base_fare">Base</string>
+    <string name="bid">"BID : "</string>
+    <string name="validating">Validating...</string>
+    <string name="make_online">Please be Online</string>
+    <string name="time_left_drop">Time left for Drop</string>
+    <string name="now">Now</string>
+    <string name="no_network">Internet not available, Cross check your internet connectivity and try again!</string>
+    <string name="reg_certficate">Upload the registration certificate image.</string>
+    <string name="carriage_permit">Upload carriage permit image.</string>
+    <string name="emptyReason">Please Mention the Reason.</string>
+    <string name="your_earnings">Earnings and Commission</string>
+    <string name="earned_amount">Earned Amount</string>
+    <string name="AppCommission">App Commission</string>
+    <string name="reached_at_drop_location">REACHED AT DROP LOCATION</string>
+    <string name="pls_select_zone">Please select zone.</string>
+    <string name="carriage_photo">Permit</string>
+    <string name="registration">Registration*</string>
+    <string name="done">DONE</string>
+    <string name="done_">Done</string>
+    <string name="certificate">Certificate*</string>
+    <string name="referral_text">Share your referral code with other driver to get some exiting offers from </string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="Email">Email</string>
+    <string name="invite">Invite</string>
+    <string name="portal">Portal</string>
+
+    <!--   Bank  Details  -->
+    <string name="bank_details">Bank</string>
+    <string name="add">Add</string>
+    <string name="add_account">Add Account</string>
+    <string name="image">Image</string>
+    <string name="newAccount">New Account</string>
+    <string name="bankDetailsline">Bank\nDetails</string>
+    <string name="title_activity_new_account">NewAccountActivity</string>
+    <string name="addCaps">Add</string>
+    <string name="accno">Account Number*</string>
+    <string name="rountinNo">Routing Number*</string>
+    <string name="name_">Name*</string>
+    <string name="DOB">Date of Birth(yyyy/mm/dd)*</string>
+    <string name="personalId">SSN*</string>
+    <string name="state">STATE*</string>
+    <string name="gender">GENDER*</string>
+    <string name="postalCode">Postal Code*</string>
+    <string name="city">CITY*</string>
+    <string name="address">Address*</string>
+    <string name="addIdProof">Add Id Proof</string>
+    <string name="plsUploadIdProf">Please Upload Id proof</string>
+    <string name="enterAccountNo">Enter Account No</string>
+    <string name="enterRoutinNo">Routing number should be 9 digits</string>
+    <string name="enterAccountHoldername">Enter Account Holder Name</string>
+    <string name="enterDob">Enter Dob</string>
+    <string name="enterPersonalid">Enter SSN</string>
+    <string name="enterGender">Select Gender</string>
+    <string name="enterState">Select State</string>
+    <string name="enterYear">Select Year</string>
+    <string name="enterColor">Select Color</string>
+    <string name="enterPostalCode">Enter Zip Code</string>
+    <string name="enterCity">Enter City</string>
+    <string name="enterAddress">Enter Address</string>
+    <string name="accnolabel">Account No :</string>
+    <string name="accountHolder">Account Holder :</string>
+    <string name="accountDetails">Account Details</string>
+    <string name="makeDefault">Make Default</string>
+    <string name="rountinNoLabel">Routing No :</string>
+    <string name="bankName">Bank Name :</string>
+    <string name="currency_bank_details">Currency :</string>
+    <string name="county">Country :</string>
+    <string name="deleteAccount">Delete Account</string>
+    <string name="customerCancelTheBooking">Cutomer cancel the booking</string>
+    <string name="fullName">Full Name *</string>
+    <string name="zipCode">Zip Code*</string>
+    <string name="link">Hey there! Use my code to signup and get exclusive deals on Karru.</string>
+    <string name="change_name">Change your name</string>
+    <string name="change_name_title">Change Name</string>
+    <string name="booking_hoistory">BOOKING HISTORY</string>
+    <string name="plan">Commission Plan</string>
+    <string name="edit_pass">Change Password</string>
+    <string name="serverError">Unable to fetch data</string>
+    <string name="nosubCategory">No sub category</string>
+    <string name="photoID">PHOTO ID*</string>
+    <string name="FIRSTNAME">First Name*</string>
+    <string name="LASTNAME">Last Name*</string>
+    <string name="SSN">SSN*</string>
+    <string name="stripeAccount">STRIPE ACCOUNT</string>
+    <string name="bankAccounts">BANK ACCOUNTS</string>
+    <string name="addStripeAccount">Add Stripe Account</string>
+    <string name="noStripeAccountDetails">No Stripe Account Details!</string>
+    <string name="enterLastName">Enter Last Name</string>
+    <string name="enterValidDob">Enter Valid DOB</string>
+    <string name="enterValidPersonalid">Enter Valid Personal Id</string>
+    <string name="enterValidMonth">Enter Valid Month</string>
+    <string name="enterValidDay">Enter Valid Day</string>
+    <string name="enterValidYear">Enter Valid Year</string>
+
+    <string name="removephoto">Remove Photo</string>
+    <string name="addPhotoHeader">Add Photo</string>
+    <string name="takePhoto">Take Photo</string>
+    <string name="cho0seFromGallery">Choose From Gallery</string>
+    <string name="enteCountry">Enter Country</string>
+    <string name="stripeStatus">Stripe Status :</string>
+    <string name="stripeAccountNo">Stripe Account No :</string>
+    <string name="countyM">Country*</string>
+    <string name="nameM">Name*</string>
+    <string name="addBank">Add Bank</string>
+    <string name="addStripeAcount">Add Stripe Account</string>
+    <string name="profile">Profile</string>
+    <string name="enterTheName">Enter The Name</string>
+
+
+    <string name="accountCountry">Country*</string>
+    <string name="select_counter">Select Country</string>
+    <string name="accountCurrency">Currency*</string>
+    <string name="select_curr">Select Currency</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="accountAdditionError">Unable to add account</string>
+    <string name="nameMiss">Enter the Name</string>
+    <string name="pls_select_vehicle">Please select vehicle</string>
+    <string name="pls_select_model">Please select model</string>
+    <string name="pls_select_make">Please select make</string>
+    <string name="pls_select_speciality">Please select speciality</string>
+    <string name="loading_time">Loading Time</string>
+    <string name="unloading_time">Unloading Time</string>
+    <string name="select_photo_from">Select photo from:</string>
+    <string name="NO_IMAGES">No job Documents.</string>
+    <string name="no_notes">No additional note provided by customer.</string>
+    <string name="additional_charges">ADDITIONAL CHARGES</string>
+    <string name="plsAddStripeFirst">Please Add Stripe First</string>
+    <string name="conform_password_miss">Enter confirm password</string>
+    <string name="enter_amt_collected">ENTER AMOUNT COLLECTED</string>
+    <string name="DISTANCE">DISTANCE</string>
+    <string name="no_of_handelers">NO OF HANDLERS</string>
+    <string name="PAYMENT">PAYMENT</string>
+    <string name="handlers">HANDLERS</string>
+    <string name="collect_cash">COLLECT CASH</string>
+    <string name="not_now">Not Now</string>
+    <string name="update_msg">Your application version is outdated, please update it from the store .</string>
+    <string name="update_available">Update Available:</string>
+    <string name="Update">Update</string>
+    <string name="recharge">Recharge</string>
+    <string name="update_non_mandatory">An update is available on the Play Store. Would you like to update now?</string>
+    <string name="paid_by_rcvr">Paid By Reciever</string>
+    <string name="collect_cash_from_rcvr">Collect cash from Receiver.</string>
+    <string name="SOFT_LIMIT">SOFT LIMIT</string>
+    <string name="HARD_LIMIT">HARD LIMIT</string>
+    <string name="version">Version</string>
+    <string name="live_chat">Live chat</string>
+    <string name="OK">OK</string>
+    <string name="payUsingCard">Pay Using Card</string>
+    <string name="confirmAndPay">Confirm &#38; Pay</string>
+    <string name="current_credit">CURRENT CREDIT</string>
+    <string name="softLimit">Soft Limit &#58; </string>
+    <string name="hardLimit">Hard Limit &#58; </string>
+    <string name="payAmount">Pay Amount</string>
+    <string name="_0_00">0.00</string>
+    <string name="signing_up">Signing Up...</string>
+    <string name="share_your_code">Share your code</string>
+    <string name="step_1_connect_your_stripe_account">STEP 1 : CONNECT TO YOUR STRIPE ACCOUNT.</string>
+    <string name="connect_stripe_account">Connect stripe account</string>
+    <string name="stripe_account_no_xxxx">Stripe Account No : xxxxx</string>
+    <string name="step_2_link_bank_account">STEP 2 : LINK BANK ACCOUNT</string>
+    <string name="link_bank_account">Link bank account</string>
+
+
+    <!--wallet-->
+    <!--Alert Box Text-->
+    <string name="network_alert_title">Network Settings</string>
+    <string name="network_alert_message">Network is slow or Network service is not enabled. Do you want to go to settings menu?</string>
+    <string name="location_alert_title">Location Settings</string>
+    <string name="location_alert_message">Location service is not enabled. Do you want to go to settings menu?</string>
+    <string name="title_activity_confirm_number">ConfirmNumber</string>
+    <string name="credit_desc">Credit is the money due to the app for past bookings</string>
+    <string name="choose_card">Choose/Add Card</string>
+    <string name="cancel_request">Cancel Request?</string>
+    <string name="cancle_bookin">Are you sure you want to cancel this request ?</string>
+    <string name="yes_alert">Yes</string>
+    <string name="no_alert">No</string>
+    <string name="delete_alert">Are you sure you want to delete this Card?</string>
+    <string name="bad_gateway">Bad gateway</string>
+    <string name="selectPayment">Select payment method</string>
+
+    <!--    network bar-->
+    <string name="nonetwork">No Internet Connection</string>
+    <string name="alert">Alert</string>
+    <string name="alert_cap">ALERT</string>
+    <string name="messagealert">Message</string>
+    <string name="warning">Warning</string>
+
+    <string name="something_went_wrong">Oops..! Something went wrong.. try again</string>
+    <string name="force_logout_msg">You are logout from the device, please login again.</string>
+    <string name="addAmountToAdd">Please add amount to add to wallet.</string>
+    <string name="cardDetailsNotFound">Please add card to recharge wallet</string>
+    <string name="pleaseWait">Please wait</string>
+    <string name="softLimitMsg">Reaching maximum limit of Credit Line</string>
+    <string name="hardLimitMsg">Maximum limit of Credit Line exceeded</string>
+    <string name="no_transactions_done">No transactions done</string>
+    <string name="addcard">Add card</string>
+    <string name="paymentMethod">Payment Method</string>
+    <string name="scancard">Scan card</string>
+    <string name="poweredby">Powered by</string>
+    <string name="skip">Skip</string>
+    <string name="note">Note!</string>
+    <string name="You_did_not_enter_valid_card">You did not enter a valid card</string>
+    <string name="try_again">Try Again&#8230;.</string>
+    <string name="card_ending_with">Card Ending With</string>
+    <string name="stars">***************************************************************************************************************</string>
+    <string name="expiry">EXP</string>
+    <string name="carddflttxt">Make this card default</string>
+    <string name="delete_card">Delete Card</string>
+    <string name="wait">Please Wait&#8230;.</string>
+    <string name="card_info">CARD INFO</string>
+    <string name="Card_Info">Card Details</string>
+    <string name="card_removed">Card Removed Successfully</string>
+    <string name="confirmPayment">Confirm Payment</string>
+    <string name="paymentMsg1">Click on CONFIRM to authorize </string>
+    <string name="paymentMsg2"> to re-charge your wallet with </string>
+    <!-- WALLET TRANSACTIONS ACTIVITY-->
+    <string name="recentTransactions">Recent Transactions</string>
+    <string name="transactionID">Trans. ID &#58; </string>
+    <string name="bookingID">Booking ID :</string>
+    <string name="bid_with_pay">BID</string>
+    <string name="all">ALl</string>
+    <string name="debit">DEBIT</string>
+    <string name="credit">CREDIT</string>
+    <string name="handlingFee">Handling</string>
+    <string name="cardNoHidden">"XXXX XXXX XXXX "</string>
+    <string name="requested_For">Requested for</string>
+    <string name="creditLine">Credit Line</string>
+    <string name="Cancellation_fare">Cancellation Fare</string>
+    <string name="wallet_enabled">Wallet enabled.</string>
+    <string name="wallet_disabled">Wallet disabled.</string>
+    <string name="postal_code">POSTAL CODE</string>
+
+
+    <string name="editPhoneNumber">Edit Phone Number</string>
+    <string name="editEmail">Edit Email</string>
+    <string name="edit_pass_msg">Please enter new password</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    <!--MyProfile fragment-->
+    <string name="edit">Edit</string>
+    <string name="name">Name</string>
+    <string name="prof_fname">FIRST NAME</string>
+    <string name="prof_lname">LAST NAME</string>
+    <string name="prof_number">NUMBER</string>
+    <string name="prof_pass">Password</string>
+    <string name="prof_veh_type">VEHICLE TYPE</string>
+    <string name="prof_vech_number">VEHICLE NUMBER</string>
+    <string name="prof_commission_plan">COMMISSION PLAN</string>
+    <string name="change_pass">Change Password</string>
+    <string name="save">Save</string>
+    <string name="get_verification">Get Verification Code</string>
+    <string name="continue_txt">Continue</string>
+    <string name="updating">Updating</string>
+    <string name="color_title">COLOR</string>
+    <string name="extra_facility">EXTRA FACILITIES</string>
+
+    <!--Edit Name -->
+    <string name="enter_first_name">Please enter your first name to change.</string>
+    <string name="enter_last_name">Please enter your last name to change.</string>
+    <string name="new_name">New Name</string>
+    <string name="err_name">Enter the name.</string>
+
+    <!--Edit Phone Number-->
+    <string name="edit_phone">Edit Phone Number</string>
+    <string name="edit_phone_msg">Please enter the new Phone number, and you will get verification code to reset.</string>
+    <string name="edit_email_msg">Please enter the new Email address, and you will get verification link to change email.</string>
+
+    <!--Edit Password dialog-->
+    <string name="enter_old_pass">Please enter your password to verify.</string>
+    <string name="old_pas">Enter Password</string>
+    <string name="invalid_pass">Incorrect password</string>
+    <string name="try_diff_pass">Enter different password</string>
+
+    <!--Change Password-->
+    <string name="old_pass">Old Password</string>
+    <string name="new_pass">New Password</string>
+    <string name="re_ent_pass">Re-Enter Password</string>
+    <string name="submit">SUBMIT</string>
+    <string name="ent_pres_pass">Enter the current password.</string>
+    <string name="pass_change_success">Password changed successfully</string>
+    <string name="enter_new_pass">Please enter new Password</string>
+
+    <!--HomeFragment String-->
+    <string name="go_offline">Go Offline</string>
+    <string name="go_online">Go Online</string>
+    <string name="current">CURRENT</string>
+    <string name="upcoming">UPCOMING</string>
+    <string name="id">ID :</string>
+    <string name="time_left">Time left for pickup</string>
+    <string name="shipment">Shipment</string>
+    <string name="ride">Ride</string>
+    <string name="cash_balance">Cash Balance</string>
+    <string name="softlimit">Soft Limit</string>
+    <string name="hardlimit">Hard Limit</string>
+
+    <!--Driver Meter-->
+    <string name="start_manual_trip">Start a Ride</string>
+    <string name="driverMeter">Driver Meter</string>
+    <string name="setDropLocation">Set Drop Location</string>
+    <string name="pickup_location">Pickup Address</string>
+    <string name="drop_location">Drop Address</string>
+    <string name="select_drop">Please select drop off location</string>
+    <string name="completeTrip">Complete Trip</string>
+    <string name="bookForSomeOne">Booked for someone</string>
+
+    <!--Ride Booking-->
+    <string name="rideBooking">Ride Booking</string>
+    <string name="job_booking">Job Booking</string>
+    <string name="call">Call</string>
+    <string name="arrivedToPick">Arrived</string>
+    <string name="startTrip">Start Trip</string>
+    <!--<string name="startJob">Start Job</string>-->
+    <string name="ontheway">On The Way</string>
+    <string name="youAreNot">You are Still not In the</string>
+    <string name="rangePick">Range to Your Pickup Location</string>
+
+
+
+    <!--PopUp-->
+    <string name="bookingType">Booking Type</string>
+    <string name="vehicleType">Vehicle Type</string>
+    <string name="serviceType">Service Type</string>
+    <string name="noOfSeat">No. Of Seats</string>
+    <string name="reject">REJECT</string>
+    <string name="preferences">"Preferences : "</string>
+
+
+    <!--Invoice Activity-->
+    <string name="your_trip_on">"YOUR TRIP ON : "</string>
+    <string name="system_cal_fare">SYSTEM CALCULATE FARE</string>
+    <string name="cash">CASH</string>
+    <string name="receipt">RECEIPT</string>
+    <string name="enter_email_id_invoice">ENTER THE EMAIL ADDRESS TO GET AN INVOICE</string>
+    <string name="rateYourTrip">RATE YOUR TRIP WITH</string>
+    <string name="bill_details">Bill Details</string>
+    <string name="receipt_details">Receipt Details</string>
+    <string name="receipt_small">Receipt</string>
+
+    <string name="exit_double_back">Please click BACK again to exit</string>
+    <string name="search">Searching...</string>
+    <string name="select_location_map">Search location from map</string>
+    <string name="favourites">Favourites</string>
+    <string name="recent">Recent</string>
+    <string name="results">Results</string>
+    <string name="link1">Hey there! Use my code</string>
+    <string name="link2">to signup and get exclusive deals on HERide.</string>
+    <string name="link3">https://play.google.com/store/apps/details?id=com.heride.partner&amp;hl=en</string>
+    <string name="mandatory_update">Your application version is outdated. Please update the application from the store.</string>
+    <string name="lessthanHard">Your wallet balance is less than Hard Limit.</string>
+    <string name="lessthanSoft">Your wallet balance is less than Soft Limit.</string>
+    <string name="helpSend">Send</string>
+    <string name="enterMsgHere">Type Message</string>
+    <string name="title_activity_vehicle_type_list">VehicleTypeListActivity</string>
+
+
+    <string name="alert_location_permision">Allow access to location</string>
+    <string name="alert_call_permision">Allow access to make Call</string>
+    <string name="permission_alert">"HERide Partner doesn\'t have access to your location.
+        Please open settings, go to permissions and allow them."</string>
+    <string name="permission_alert_storage">"HERide Partner doesn\'t have access to your storage.
+        Please open settings, go to permissions and allow them."</string>
+    <string name="_00_00">00.00</string>
+    <string name="micro_phone_permission">Microphone permissions needed. Please allow in App Settings for additional functionality.</string>
+    <string name="call_passenger">Are you sure want to call Passenger?</string>
+    <string name="failed_to_init_call">Failed to initialize the Twilio Client SDK</string>
+    <string name="device_error">Device error</string>
+    <string name="no_device">No existing device</string>
+
+    <string name="queue_position">Your Queue Position :</string>
+    <string name="know_more">Know More</string>
+
+    <string name="Pref_zone">Preference Zone</string>
+    <string name="select">Select</string>
+    <string name="un_select">UnSelect</string>
+    <string name="one">ONE</string>
+    <string name="multipe">MULTIPLE</string>
+    <string name="emptyZone">Zone not selected </string>
+    <string name="reset">Reset</string>
+
+    <string name="preferencezonemsg">Select the expecting number of booking in these Zones</string>
+    <string name="deletepreferencezonemsg">Do you want to clear the Zones?</string>
+
+    <string name="driverPreference">Driver Preference</string>
+    <string name="vehiclePreference">Vehicle Preference</string>
+
+    <string name="Services_msg">Services Required</string>
+    <string name="SelectService">Select Services</string>
+    <string name="Services_err_msg">Service Not Available</string>
+    <string name="Accept">Accept</string>
+    <string name="Reject">Reject</string>
+
+    <!--Towtray Booking-->
+    <string name="startJob">Start Job</string>
+    <string name="completeJob">Complete Job</string>
+    <string name="selectServices">Select the services.</string>
+    <string name="towingStartmsg">Do you want start towing service?</string>
+
+    <string name="make_">Make</string>
+    <string name="model_">Model</string>
+    <string name="year_">Year</string>
+    <string name="color_">Color</string>
+
+
+    <string name="sign_here">Sign Here</string>
+    <string name="approve">APPROVE</string>
+    <string name="thankyou_booking">Thank you for the booking with </string>
+
+
+    <!--Help Index-->
+    <string name="helpcenter">Help Center</string>
+    <string name="priorityUrgent">Urgent</string>
+    <string name="priorityHigh">High</string>
+    <string name="priorityNormal">Normal</string>
+    <string name="priorityLow">Low</string>
+    <string name="status">Status</string>
+    <string name="newTicket">New Ticket</string>
+    <string name="ticket">Ticket</string>
+    <string name="networkErrorMsg">You are not connected to internet</string>
+    <string name="my_location">My Location</string>
+    <string name="select_location">Select Location</string>
+    <string name="search_location">Search location</string>
+    <string name="writeboutyourself">We would like to know a little about you.</string>
+    <string name="minute">min</string>
+    <string name="helpSubject">Subject</string>
+    <string name="helpMessage">Message</string>
+    <string name="copy_code">Copy</string>
+    <string name="apply_promo">Apply Promo</string>
+    <string name="sessionExp">session Expire</string>
+    <string name="separator">Valid Upto -</string>
+    <string name="readLess">Know Less</string>
+    <string name="readMore">Know More</string>
+    <string name="t_amp_c"><![CDATA[T&C]]></string>
+    <string name="comingFrom">PROMOCODEACTIVITY</string>
+    <string name="chat_with_us">Chat with us.</string>
+    <string name="chat_with_agent">Chat with agent.</string>
+
+    <string-array name="ticketPriority">
+        <item>urgent</item>
+        <item>high</item>
+        <item>normal</item>
+        <item>low</item>
+    </string-array>
+
+
+    <!-- For calls -->
+    <string name="call_initiate">Hangup current call to initiate another call!!</string>
+    <string name="StartCall">Start Call</string>
+    <string name="CallOption">Start Audio/Video call</string>
+
+    <string name="connecting">CONNECTING</string>
+
+    <string name="ringing">RINGING</string>
+
+    <string name="pref_videocodec_key">videocodec_preference</string>
+    <string name="pref_videocodec_title">Default video codec.</string>
+    <string name="pref_videocodec_dlg">Select default video codec.</string>
+    <string name="pref_videocodec_default">VP8</string>
+
+
+    <string name="pref_audiocodec_key">audiocodec_preference</string>
+    <string name="pref_audiocodec_title">Default audio codec.</string>
+    <string name="pref_audiocodec_dlg">Select default audio codec.</string>
+    <string name="pref_audiocodec_default">OPUS</string>
+
+    <string name="pref_hwcodec_key">hwcodec_preference</string>
+    <string name="pref_hwcodec_title">Video codec hardware acceleration.</string>
+    <string name="pref_hwcodec_dlg">Use hardware accelerated video codec (if available).</string>
+    <string name="pref_hwcodec_default">true</string>
+
+
+    <string name="pref_capturetotexture_key">capturetotexture_preference</string>
+    <string name="pref_capturetotexture_title">Video capture to surface texture.</string>
+    <string name="pref_capturetotexture_dlg">Capture video to textures (if available).</string>
+    <string name="pref_capturetotexture_default">false</string>
+
+
+    <string name="pref_noaudioprocessing_key">audioprocessing_preference</string>
+    <string name="pref_noaudioprocessing_title">Disable audio processing.</string>
+    <string name="pref_noaudioprocessing_dlg">Disable audio processing pipeline.</string>
+    <string name="pref_noaudioprocessing_default">false</string>
+
+
+    <string name="pref_aecdump_key">aecdump_preference</string>
+    <string name="pref_aecdump_title">Create aecdump.</string>
+    <string name="pref_aecdump_dlg">Enable diagnostic audio recordings.</string>
+    <string name="pref_aecdump_default">false</string>
+
+
+    <string name="pref_opensles_key">opensles_preference</string>
+    <string name="pref_opensles_title">Use OpenSL ES for audio playback.</string>
+    <string name="pref_opensles_dlg">Use OpenSL ES for audio playback.</string>
+    <string name="pref_opensles_default">false</string>
+
+
+    <string name="pref_resolution_key">resolution_preference</string>
+    <string name="pref_resolution_title">Video resolution.</string>
+    <string name="pref_resolution_dlg">Enter AppRTC local video resolution.</string>
+
+
+    <string name="pref_fps_key">fps_preference</string>
+    <string name="pref_fps_title">Camera fps.</string>
+    <string name="pref_fps_dlg">Enter local camera fps.</string>
+    <string name="pref_fps_default">Default</string>
+
+
+    <string name="pref_capturequalityslider_key">capturequalityslider_preference</string>
+    <string name="pref_capturequalityslider_title">Capture quality slider.</string>
+    <string name="pref_capturequalityslider_dlg">Enable slider for changing capture quality.</string>
+    <string name="pref_capturequalityslider_default">false</string>
+
+
+    <string name="pref_startvideobitrate_key">startvideobitrate_preference</string>
+    <string name="pref_startvideobitrate_title">Start video bitrate setting.</string>
+    <string name="pref_startvideobitrate_dlg">Start video bitrate setting.</string>
+    <string name="pref_startvideobitrate_default">Default</string>
+
+
+    <string name="pref_startvideobitratevalue_key">startvideobitratevalue_preference</string>
+    <string name="pref_startvideobitratevalue_title">Video encoder start bitrate.</string>
+    <string name="pref_startvideobitratevalue_dlg">Enter video encoder start bitrate in kbps.</string>
+    <string name="pref_startvideobitratevalue_default">1000</string>
+
+
+    <string name="pref_startaudiobitrate_key">startaudiobitrate_preference</string>
+    <string name="pref_startaudiobitrate_title">Audio bitrate setting.</string>
+    <string name="pref_startaudiobitrate_dlg">Audio bitrate setting.</string>
+    <string name="pref_startaudiobitrate_default">Default</string>
+
+    <string name="pref_startaudiobitratevalue_key">startaudiobitratevalue_preference</string>
+    <string name="pref_startaudiobitratevalue_title">Audio codec bitrate.</string>
+    <string name="pref_startaudiobitratevalue_dlg">Enter audio codec bitrate in kbps.</string>
+    <string name="pref_startaudiobitratevalue_default">32</string>
+
+    <string name="pref_displayhud_key">displayhud_preference</string>
+    <string name="pref_displayhud_title">Display call statistics.</string>
+    <string name="pref_displayhud_dlg">Display call statistics.</string>
+    <string name="pref_displayhud_default" translatable="false">false</string>
+    <string name="pref_tracing_key">tracing_preference</string>
+    <string name="pref_tracing_title">Debug performance tracing.</string>
+    <string name="pref_tracing_dlg">Debug performance tracing.</string>
+    <string name="pref_tracing_default" translatable="false">false</string>
+    <string name="pref_room_server_url_key">room_server_url_preference</string>
+    <string name="pref_room_server_url_title">Room server URL.</string>
+    <string name="pref_room_server_url_dlg">Enter a room server URL.</string>
+    <string name="pref_miscsettings_key">misc_settings_key</string>
+    <string name="pref_miscsettings_title">Miscellaneous settings.</string>
+    <string name="pref_audiosettings_key">audio_settings_key</string>
+    <string name="pref_audiosettings_title">WebRTC audio settings.</string>
+    <string name="pref_videosettings_key">video_settings_key</string>
+    <string name="pref_videosettings_title">WebRTC video settings.</string>
+    <string name="pref_videocall_key">videocall_preference</string>
+    <string name="pref_videocall_title">Video call.</string>
+    <string name="pref_videocall_dlg">Enable video in a call.</string>
+    <string name="pref_videocall_default">true</string>
+    <string name="Timeout">No reply</string>
+    <string name="AudioCall">Audio Call</string>
+    <string name="VideoCall">Video Call</string>
+    <string name="busy">is busy on another call</string>
+    <string name="NoAnswer">No answer by </string>
+    <!--For getting the user details-->
+    <string name="UserIdHint">User Uid(Ex-userId)</string>
+    <string name="UserNameHint">User Name(Ex-Joseph)</string>
+    <string name="UserIdentifierHint">User Image Url</string>
+    <string name="UserImageUrlHint">User Identifier(Ex-Phone,email,Username)</string>
+
+    <!--For getting the opponent details-->
+    <string name="ReceiverIdHint">Opponent Uid(Ex-userId)</string>
+    <string name="ReceiverNameHint">Opponent Name(Ex-Joseph)</string>
+    <string name="ReceiverIdentifierHint">Opponent Image Url</string>
+    <string name="ReceiverImageUrlHint">Opponent Identifier(Ex-Phone,email,Username)</string>
+    <string name="pref_resolution_default">Default</string>
+    <string name="Mqtt_Audio_Call">HERide Audio Call</string>
+    <string name="Mqtt_Video_Call">HERide Video Call</string>
+    <string name="pref_room_server_url_default" translatable="false">https://datum-apprtc.appspot.com</string>
+    <string name="waiting_for_connection">Wait for connection</string>
+    <string name="call_permission_message">Please give permission for call to go ahead in app.</string>
+    <string name="select_service_provided">Select the Services provided?</string>
+    <string name="system_cal_fee">SYSTEM CALCULATED FEE</string>
+    <string name="rate_service_provided">RATE SERVICES PROVIDED BY</string>
+    <string name="min_fee">Minimum Fee</string>
+    <string name="appmail">abc@HERide.com</string>
+
+
+</resources>

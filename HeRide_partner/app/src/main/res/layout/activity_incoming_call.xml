@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rectangle_grey_border">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/userImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        app:srcCompat="@drawable/ic_launcher" />
+    <androidx.appcompat.widget.AppCompatImageView
+
+        android:id="@+id/upArrow"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="110dp"
+        android:rotation="-90"
+        android:tint="@color/white"
+        android:src="@drawable/back_white_btn" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+
+        android:id="@+id/iv1"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/iv2"
+        android:layout_centerHorizontal="true"
+
+        android:rotation="-90"
+        android:tint="@color/white"
+        android:src="@drawable/back_white_btn" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+
+        android:layout_above="@+id/upArrow"
+        android:layout_centerHorizontal="true"
+
+        android:rotation="-90"
+        android:tint="@color/white"
+        android:src="@drawable/back_white_btn" />
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightBlack"
+        android:padding="8dp">
+
+        <RelativeLayout
+            android:id="@+id/header_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/user_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/svg_profile" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/user_icon"
+                android:layout_marginLeft="-25dp"
+                android:layout_marginStart="-25dp"
+                android:layout_marginTop="-25dp"
+                android:layout_toEndOf="@id/user_icon"
+                android:layout_toRightOf="@id/user_icon"
+                app:srcCompat="@drawable/ic_launcher" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/call_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageView3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tvAudioVideoCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView3"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/imageView3"
+                android:layout_toRightOf="@+id/imageView3"
+                android:text="@string/Mqtt_Audio_Call"
+                android:textColor="@color/white"
+                android:textIsSelectable="false"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tvCallerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/call_view"
+            android:layout_centerHorizontal="true"
+            android:text="TammyAllen"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/tvCallStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCallerName"
+            android:layout_centerHorizontal="true"
+            android:text="INCOMING"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:padding="15dp">
+
+
+        <Button
+            android:id="@+id/btRejectCall"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            android:background="@drawable/call_reject_icon_effect"
+            android:foreground="@drawable/ripple_selector" />
+
+
+        <com.karry.telecall.SlideLayout.SlideLayout
+            android:id="@+id/slider"
+            android:layout_width="80dp"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+
+            <FrameLayout
+                android:id="@+id/fl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom">
+
+
+                <View
+                    android:id="@+id/btAcceptCall"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/call_accept_icon_effect"
+                    android:foreground="@drawable/ripple_selector" />
+
+            </FrameLayout>
+
+        </com.karry.telecall.SlideLayout.SlideLayout>
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+
+            android:background="@drawable/svg_chat"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

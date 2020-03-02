@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#684590</color>
+    <color name="colorPrimaryDark">#55307C</color>
+    <color name="colorAccent">#684590</color>
+    <color name="colorAccent_trans">#80684590</color>
+
+    <color name="colorPrimaryLight">#31CD83</color>
+
+    <color name="dimwhite">#f5f6f7</color>
+    <color name="smokewhite">#F5F5F5</color>
+
+    <color name="dialogHeaderBackground">#F6FAFB</color>
+    <color name="dialogActionBackground">#f2f2f2</color>
+
+    <color name="lightBlack">#282828</color>
+    <color name="lightBlackText">#585858</color>
+    <color name="tabtextColor">#A5A5A5</color>
+
+    <color name="whiteEightyTransparent">#33ffffff</color>
+
+    <color name="mediumspringgreen">#00FA9A</color>
+    <color name="gray_heading">#A0A0A0</color>
+    <color name="transparent">#00000000</color>
+    <color name="light_white">#f4f2f2</color>
+    <color name="black">#000000</color>
+    <color name="black1">#333333</color>
+    <color name="white">#ffffff</color>
+    <color name="green_selectr">#408725</color>
+    <color name="red">#C0392B</color>
+
+    <color name="offline">#C0392B</color>
+    <color name="online">#20901d</color>
+    <color name="background">#fafafa</color>
+    <color name="divider">#b2b2b2</color>
+    <color name="divider1">#dedede</color>
+    <color name="divider2">#c9cbcd</color>
+    <color name="divider3">#8d8c8c</color>
+    <color name="divider4">#E2E3E4</color>
+    <color name="tablayout">#c4c4c4</color>
+    <color name="light_black">#555555</color>
+    <color name="sky_blue">#3498db</color>
+    <color name="gray">#848484</color>
+    <color name="dayrunner">#1ad75e</color>
+    <color name="color1">#a9a9a9</color>
+    <color name="color2">#444444</color>
+    <color name="lig_green1">#E9364B</color>
+    <color name="lig_green">#E9364B</color>
+    <color name="lig_green2">#8d8f8e</color>
+    <color name="color_sup_txt">#3b3b3b</color>
+    <color name="blue_toast">#3BA4E7</color>
+    <color name="grayback">#f2f2f2</color>
+    <color name="wazeback">#6BB2C8</color>
+    <color name="maps">#767676</color>
+    <color name="coments">#6d6d72</color>
+    <color name="cmthint">#dad9d9</color>
+    <color name="blue">#4885ed</color>
+    <color name="profile_head">#888888</color>
+    <color name="profile_data">#3d3d3d</color>
+    <color name="profile_underline">#282828</color>
+
+    <!--booking popup color-->
+    <color name="backgroundpopup">#383B47</color>
+    <color name="timer_green">#E9364B</color>
+    <color name="progresscolor">#E9364B</color>
+    <color name="silver">#cccccc</color>
+    <color name="gallery">#eeeeee</color>
+    <color name="silver_chalice">#aaaaaa</color>
+    <color name="alabaster">#f7f7f7</color>
+    <color name="gunsmoke">#8D8F8E</color>
+    <color name="key_lime_lie">#C0BE1D</color>
+    <color name="tandura">#484848</color>
+    <color name="alto">#dbdbdb</color>
+    <color name="grayLightTextColor">#939090</color>
+    <color name="shadow_color">#EBEBEB</color>
+    <color name="yellow_light">#FFD08A13</color>
+    <color name="red_light">#EC4449</color>
+    <color name="grayTextColor">#ff444444</color>
+    <color name="backgroundcolor">#F5F5F5</color>
+
+<!--wallet-->
+    <color name="app_color_off">#ff9e2837</color>
+    <color name="white_smoke">#F5F5F5</color>
+    <color name="shiping_text_color">#6f6f6f</color>
+    <color name="order_bkgrnd">#fafafa</color>
+    <color name="text_color">#999999</color>
+    <color name="signUpText_color">#ffffff</color>
+    <color name="lightGray">#d3d3d3</color>
+    <color name="signUpinputText">#EBEBEB</color>
+    <color name="colord6d6d6">#d6d6d6</color>
+    <color name="green">#008000</color>
+
+    <color name="app_color">#23c590</color>
+    <color name="yellow">#e2e206</color>
+    <color name="light_blue">#FF1E96EA</color>
+    <color name="light_silver">#FFCDCDCD</color>
+    <color name="search_address">#FFA4A4AC</color>
+    <color name="select_payment">#333333</color>
+    <color name="search_address_divider">#EDEDED</color>
+    <color name="color3eba73">#3eba73</color>
+    <color name="search_color">#C4C4C4</color>
+    <color name="search_text_color">#3498DB</color>
+    
+
+    <color name="mine_shaft">#FF333333</color>
+    <color name="emperor">#FF555555</color>
+    <color name="tundora">#FF999999</color>
+    <color name="dust_gray">#FF1081C2</color>
+    <color name="denim">#FF444444</color>
+    <color name="divider_invoice3">#FFDDDDDD</color>
+    <color name="driver_details">#FFF7FAFB</color>
+    <color name="transparent_black">#80000000</color>
+
+    <color name="menu_selected">#333333</color>
+    <color name="menu_default">#999999</color>
+    <color name="waterloo">#7B8091</color>
+    <color name="wate1rloo">#7b8091</color>
+
+    <color name="zoneBorder">#DF4E8C</color>
+    <color name="zonefill_75">#BFDF4E8C</color>
+    <color name="zonefill_70">#B3DF4E8C</color>
+    <color name="zonefill_65">#A6DF4E8C</color>
+    <color name="zonefill_60">#99DF4E8C</color>
+    <color name="zonefill_55">#8CDF4E8C</color>
+    <color name="zonefill_50">#80DF4E8C</color>
+    <color name="zonefill_45">#73DF4E8C</color>
+    <color name="zonefill_40">#66DF4E8C</color>
+    <color name="zonefill_35">#59DF4E8C</color>
+
+    <!--HelpCenter-->
+    <color name="red_login_dark">#F52D3A</color>
+    <color name="saffron">#FAA433</color>
+    <color name="livemblue3498">#FF3498DB</color>
+    <color name="blueJobStatusColor">#FF67AFF7</color>
+    <color name="green_continue">#1fc055</color>
+    <color name="colorBotticelli">#DFE4EF</color>
+    <color name="greylightBackground">#f9f8f8</color>
+
+</resources>

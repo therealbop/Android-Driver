@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundpopup"
+    tools:mActivity="com.karry.app.bookingRequest.BookingPopUpActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="@dimen/dpFive"
+        android:layout_marginRight="@dimen/dpFive"
+        android:layout_marginTop="@dimen/dpTwenty"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_toplayer_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/tv_bookingType_head"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/bookingType"
+                android:textColor="@color/lig_green2"
+                android:textSize="@dimen/spFourteen" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/lig_green2" />
+
+            <TextView
+                android:id="@+id/tv_vehicleType_head"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/vehicleType"
+                android:textColor="@color/lig_green2"
+                android:textSize="@dimen/spFourteen"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/lig_green2" />
+
+            <TextView
+                android:id="@+id/tv_serviceType_head"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/serviceType"
+                android:textColor="@color/lig_green2"
+                android:textSize="@dimen/spFourteen" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/lig_green2" />
+
+            <TextView
+                android:id="@+id/tv_noOfSeat_head"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/noOfSeat"
+                android:textColor="@color/lig_green2"
+                android:textSize="@dimen/spFourteen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/tv_BookingType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/spFourteen" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/lig_green2" />
+
+            <TextView
+                android:id="@+id/tv_vehicleType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/spFourteen"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/lig_green2" />
+
+            <TextView
+                android:id="@+id/tv_serviceType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/spFourteen" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/lig_green2" />
+
+            <TextView
+                android:id="@+id/tv_noOfSeat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/spFourteen" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvCorporateBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_first"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/spEighteen"
+        android:text="@string/corporateBooking"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvBID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCorporateBook"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/spEighteen"
+        android:text="@string/bookingid"
+        android:textAllCaps="true"/>
+
+    <LinearLayout
+        android:id="@+id/ll_booking_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnReject"
+        android:layout_below="@+id/tvBID"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <RelativeLayout
+            android:id="@+id/rl_pickup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/dpThirty"
+            android:layout_marginRight="@dimen/dpThirty"
+            android:layout_weight="1">
+            <!--android:layout_weight="0.45"-->
+
+            <ImageView
+                android:id="@+id/iv_pickup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dpOne"
+                android:src="@drawable/popup_pickup"
+                android:contentDescription="@string/app_name"/>
+
+            <LinearLayout
+                android:id="@+id/ll_pickup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/iv_pickup"
+                android:layout_alignStart="@+id/iv_pickup"
+                android:layout_marginLeft="@dimen/dpTwenty"
+                android:layout_marginStart="@dimen/dpTwenty"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dpthree">
+
+                    <TextView
+                        android:id="@+id/tv_popup_pickup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="@dimen/dptwo"
+                        android:text="@string/pickup"
+                        android:textColor="@color/lig_green2"
+                        android:textSize="@dimen/spTwelve" />
+
+                    <!--<TextView
+                        android:id="@+id/tv_pickuptime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:drawableLeft="@drawable/popup_clock"
+                        android:drawableStart="@drawable/popup_clock"
+                        android:drawablePadding="@dimen/dpTen"
+                        android:text="Friday, 13 April, 11:30 Am"
+                        android:textColor="@color/tablayout"
+                        android:textSize="@dimen/spTwelve"/>-->
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_popup_pickuploc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dptwo"
+                    android:lineSpacingExtra="@dimen/dptwo"
+                    android:maxLines="2"
+                    android:text="Culinary works,1241 East Main St,\nStamford,CT 06902, USA"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/spFourteen"
+                    android:ellipsize="end"
+                    android:textDirection="locale"/>
+                <!--android:fadingEdge="horizontal"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"-->
+
+                <TextView
+                    android:id="@+id/tv_pickuptime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/popup_clock"
+                    android:drawableStart="@drawable/popup_clock"
+                    android:drawablePadding="@dimen/dpTen"
+                    android:text="Friday, 13 April, 11:30 Am"
+                    android:textColor="@color/tablayout"
+                    android:textSize="@dimen/spTwelve"
+                    android:layout_marginTop="@dimen/dpFive"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_droplocation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/dpThirty"
+            android:layout_marginRight="@dimen/dpThirty"
+            android:layout_marginTop="@dimen/dpTen"
+            android:layout_weight="0.45"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_drop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dpOne"
+                android:src="@drawable/popup_drop" />
+
+            <LinearLayout
+                android:id="@+id/ll_drop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/iv_drop"
+                android:layout_alignStart="@+id/iv_drop"
+                android:layout_marginLeft="@dimen/dpTwenty"
+                android:layout_marginStart="@dimen/dpTwenty"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dpthree">
+
+                    <TextView
+                        android:id="@+id/tv_popup_drop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="@dimen/dptwo"
+                        android:text="@string/drop"
+                        android:textColor="@color/lig_green2"
+                        android:textSize="@dimen/spTen" />
+
+                    <TextView
+                        android:id="@+id/tv_droptime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:drawableLeft="@drawable/popup_clock"
+                        android:drawableStart="@drawable/popup_clock"
+                        android:drawablePadding="@dimen/dpTen"
+                        android:text="Friday, 13 April, 2:30 Pm"
+                        android:textColor="@color/tablayout"
+                        android:textSize="@dimen/spTwelve"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_popup_droploc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dptwo"
+                    android:lineSpacingExtra="@dimen/dptwo"
+                    android:maxLines="2"
+                    android:text="Culinary works,1241 East Main St,\nStamford,CT 06902, USA"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/spFourteen"
+                    android:ellipsize="end"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+       <!-- <RelativeLayout
+
+            android:id="@+id/rl_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dpTen"
+            android:layout_weight="1.4">
+
+            <ProgressBar
+                android:id="@+id/circular_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_centerInParent="true"
+                android:background="@color/transparent"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/progress_bar" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shadow_circular_green" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22"
+                    android:textColor="@color/white"
+                    android:textSize="50sp" />
+
+                <TextView
+                    android:id="@+id/tv_lefttoaccept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lefttoaccept"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/spTen" />
+
+            </LinearLayout>
+
+        </RelativeLayout>-->
+
+
+        <TextView
+            android:id="@+id/tv_deliveryfee"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="@string/Deliveryfee"
+            android:textColor="@color/white"
+            android:textSize="@dimen/spNineteen"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dpFive"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_popup_cur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/currency"
+                android:textColor="@color/white"
+                android:textSize="@dimen/spNineteen"/>
+
+            <TextView
+                android:id="@+id/tv_delivery_charge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv_popup_cur"
+                android:layout_toRightOf="@+id/tv_popup_cur"
+                android:textColor="@color/white"
+                android:textSize="38sp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@+id/btnReject"
+        android:layout_marginBottom="@dimen/dpEighty">
+        <!--android:layout_marginBottom="@dimen/dpEighty"-->
+
+        <ProgressBar
+            android:id="@+id/circular_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/progress_bar" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shadow_circular_green"
+            android:contentDescription="@string/app_name"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22"
+                android:textColor="@color/white"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/tv_lefttoaccept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lefttoaccept"
+                android:textColor="@color/white"
+                android:textSize="@dimen/spTen" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_preference"
+        android:layout_above="@id/btnReject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginBottom="@dimen/dpTwenty">
+
+        <TextView
+            android:id="@+id/tv_preference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/preferences"
+            android:textColor="@color/lig_green2"
+            android:textSize="@dimen/spSixteen"/>
+
+        <TextView
+            android:id="@+id/tv_preferences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lig_green2"
+            android:textSize="@dimen/spSixteen"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnReject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/red"
+        android:text="@string/reject"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

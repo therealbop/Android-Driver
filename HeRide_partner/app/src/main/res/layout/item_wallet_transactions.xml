@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="@dimen/dpFive"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/dpFive">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dpTen">
+
+        <TextView
+            android:id="@+id/tv_wallet_transactionId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/spTwelve"
+            android:textColor="@color/grayLightTextColor"
+            android:gravity="start|center_vertical"
+            android:layout_gravity="start|center_vertical"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dpTen"
+            android:background="@color/colord6d6d6" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dpTen"
+            android:layout_marginBottom="@dimen/dpTen">
+
+            <ImageView
+                android:id="@+id/iv_wallet_transaction_arrow"
+                android:layout_width="@dimen/dpFifteen"
+                android:layout_height="@dimen/dpFifteen"
+                android:background="@color/red_light"
+                android:src="@drawable/signin_back_icon_off"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/tv_wallet_transaction_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grayTextColor"
+                android:textSize="@dimen/spSixteen"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/tv_wallet_transaction_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/spFourteen"
+                android:textColor="@color/grayLightTextColor"
+                android:gravity="start"
+                android:layout_toRightOf="@id/iv_wallet_transaction_arrow"
+                android:layout_toEndOf="@id/iv_wallet_transaction_arrow"
+                android:paddingLeft="@dimen/dpFifteen"
+                android:paddingStart="@dimen/dpFifteen"
+                android:paddingRight="@dimen/dpFifteen"
+                android:paddingEnd="@dimen/dpFifteen"
+                android:textDirection="locale"
+                android:textAlignment="viewStart"
+                android:text="xxxxx"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/dpTen"
+            android:background="@color/colord6d6d6" />
+
+        <LinearLayout
+            android:id="@+id/ll_wallet_transaction_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tv_wallet_transaction_date"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/spTwelve"
+                android:textColor="@color/grayLightTextColor"
+                android:gravity="start|center_vertical"
+                android:layout_gravity="start|center_vertical"
+                android:textDirection="locale"
+                android:textAlignment="viewStart"/>
+
+            <TextView
+                android:id="@+id/tv_wallet_transaction_bid"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/spTwelve"
+                android:textColor="@color/grayLightTextColor"
+                android:layout_gravity="end|center_vertical"
+                android:gravity="end|center_vertical"
+                android:textDirection="locale"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

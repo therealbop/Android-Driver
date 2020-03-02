@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangle_for_last_trip"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:padding="@dimen/dimen_10dp">
+    
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/message"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingTop="20sp"
+        android:textColor="@color/colorPrimary"/>
+    
+   <TextView
+       android:id="@+id/tv_message"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:textSize="14sp"
+       android:paddingTop="10dp"
+       android:paddingBottom="25sp"
+       android:textColor="@color/colorPrimary"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:background="@color/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tv_agree"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+
+        <View
+            android:layout_weight="0.005"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/divider"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_no"
+            android:layout_weight="0.99"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/colorPrimary"/>
+
+
+    </LinearLayout>
+    
+
+   
+</LinearLayout>

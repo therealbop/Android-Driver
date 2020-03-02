@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/include_actionbar"
+        layout="@layout/booking_flow_toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/rl_locationupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_actionbar"
+        android:gravity="center"
+        android:layout_margin="@dimen/dpTen"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="@drawable/googlemap_backgound">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dpFive"
+            android:layout_marginBottom="@dimen/dpFive">
+
+            <TextView
+                android:id="@+id/tv_cashBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cash_balance"
+                android:textSize="@dimen/spFourteen"
+                android:layout_marginBottom="@dimen/dpFive"/>
+
+            <TextView
+                android:id="@+id/tv_cashBalance_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/spFourteen"
+                android:textColor="@color/black1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dpFive"
+            android:layout_marginBottom="@dimen/dpFive">
+
+            <TextView
+                android:id="@+id/tv_softLimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/softlimit"
+                android:textSize="@dimen/spFourteen"
+                android:layout_marginBottom="@dimen/dpFive"/>
+
+            <TextView
+                android:id="@+id/tv_softLimit_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/spFourteen"
+                android:textColor="@color/black1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dpFive"
+            android:layout_marginBottom="@dimen/dpFive">
+
+            <TextView
+                android:id="@+id/tv_hardlimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hardlimit"
+                android:textSize="@dimen/spFourteen"
+                android:layout_marginBottom="@dimen/dpFive"/>
+
+            <TextView
+                android:id="@+id/tv_hardlimit_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/spFourteen"
+                android:textColor="@color/black1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_location_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="10dp"
+        android:background="@drawable/location"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:contentDescription="@string/app_name"
+        android:layout_below="@id/rl_locationupdate"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-10dp"/>
+
+    <LinearLayout
+        android:id="@+id/rl_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_deliveryAppts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textDirection="locale"
+            android:visibility="gone">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/ll_rideBooking_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_services"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="-10dp"
+            android:background="@drawable/white_box_withshadow"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingLeft="@dimen/dpTwenty"
+            android:paddingRight="@dimen/dpTwenty"
+            android:paddingTop="@dimen/dpTwenty"
+            android:paddingBottom="@dimen/dpTwenty">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_bid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/spFourteen"/>
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/spFourteen"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    tools:ignore="RelativeOverlap"
+                    android:textColor="@color/color2"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_home_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dpFive">
+
+                <TextView
+                    android:id="@+id/tv_rider_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/spTen"
+                    android:textColor="@color/color2"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:drawableLeft="@drawable/svg_profile"
+                    android:drawableStart="@drawable/svg_profile"
+                    android:drawablePadding="@dimen/dpTen"/>
+
+                <TextView
+                    android:id="@+id/tv_pickUp_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_rider_name"
+                    android:layout_marginLeft="@dimen/dpThirty"
+                    android:text="@string/pickup_location"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:layout_marginStart="@dimen/dpThirty"/>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dpPointZeroFive"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:id="@+id/ll_address_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dpFive"
+                android:layout_marginBottom="@dimen/dpFive"
+                android:layout_marginLeft="@dimen/dpFive"
+                android:layout_marginStart="@dimen/dpFive">
+
+                <ImageView
+                    android:id="@+id/iv_pickup_loc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/home_pickup_icon"
+                    android:layout_marginRight="@dimen/dpFifteen"
+                    android:layout_marginEnd="@dimen/dpFifteen"
+                    android:contentDescription="@string/app_name"/>
+
+                <TextView
+                    android:id="@+id/tv_pickup_loc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/spSixteen"
+                    android:maxLines="3"
+                    android:ellipsize="end"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvMeterBooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dpTwelve"
+            android:paddingBottom="@dimen/dpTwelve"
+            android:layout_marginRight="@dimen/dpTen"
+            android:background="@drawable/selector_color_primary"
+            android:text="@string/start_manual_trip"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16sp"
+            android:visibility="gone"
+            android:layout_above="@+id/ll_queue_position"
+            android:layout_marginLeft="@dimen/dpTen"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/dpTen"/>
+
+        <LinearLayout
+            android:id="@+id/ll_queue_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/background"
+            android:gravity="center"
+            android:padding="@dimen/dpTen"
+            android:visibility="gone"
+            android:layout_above="@+id/ll_services"
+            android:layout_marginBottom="-5dp">
+
+            <TextView
+                android:id="@+id/tv_queue_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/spFourteen"
+                android:text="@string/queue_position"
+                android:textColor="@color/gray"/>
+
+
+            <TextView
+                android:id="@+id/tv_queue_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/spFourteen"
+                android:text=" 0/1"
+                android:textColor="@color/tandura"/>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_services"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="false"
+            android:background="@drawable/white_back_shadow"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/rl_ride"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_ride"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_white_layout"
+                    android:layout_centerInParent="true"
+                    android:text="@string/ride"
+                    android:textAllCaps="false"
+                    android:textColor="@color/home_txt_color"
+                    android:textSize="@dimen/text_size_18sp" />
+
+                <View
+                    android:id="@+id/view_ride"
+                    android:layout_width="@dimen/dpEighty"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/tv_ride"
+                    android:layout_centerInParent="true"
+                    android:background="@color/colorPrimary"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_forgot_paswd_countryCodeDivider"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dpTen"
+                android:layout_marginBottom="@dimen/dpTen"
+                android:background="@color/divider" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_shipment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_shipment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_white_layout"
+                    android:layout_centerInParent="true"
+                    android:text="@string/shipment"
+                    android:textAllCaps="false"
+                    android:textColor="@color/home_txt_color"
+                    android:textSize="@dimen/text_size_18sp" />
+
+                <View
+                    android:id="@+id/view_shipment"
+                    android:layout_width="@dimen/dpEighty"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/tv_shipment"
+                    android:layout_centerInParent="true"
+                    android:background="@color/colorPrimary"/>
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/ll_network"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:focusable="false"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_network"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/no_network"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="@dimen/spEighteen"
+            android:padding="@dimen/dpTwenty"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

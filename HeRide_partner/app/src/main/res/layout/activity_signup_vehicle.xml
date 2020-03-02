@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/include_actionbar"
+        layout="@layout/actionbar"/>
+
+    <ScrollView
+        android:id="@+id/sv_signup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_next"
+        android:layout_below="@+id/include_actionbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dpForty"
+            android:paddingRight="@dimen/dpForty">
+
+            <TextView
+                android:id="@+id/tv_vechicle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dpTwenty"
+                android:paddingTop="@dimen/dpTwenty"
+                android:text="@string/vehicle_details"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/spNineteen"
+                android:gravity="center"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dpFive"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textAlignment="viewStart">
+
+                <RelativeLayout
+                    android:id="@+id/rl_profile"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:textDirection="locale"
+                    android:gravity="start"
+                    android:textAlignment="viewStart">
+
+                    <ImageView
+                        android:id="@+id/iv_signup_vp"
+                        android:layout_width="110dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="@dimen/dpTen"
+                        android:layout_marginRight="@dimen/dpTen"
+                        android:contentDescription="@string/app_name"
+                        android:paddingBottom="10dp"
+                        android:src="@drawable/signup_vechicle_default_image" />
+
+                    <ImageView
+                        android:id="@+id/iv_img_change"
+                        android:layout_width="@dimen/dimen_35dp"
+                        android:layout_height="@dimen/dimen_35dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingBottom="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/add_image" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/rl_profile"
+                    android:layout_toRightOf="@+id/rl_profile"
+                    android:orientation="vertical"
+                    android:textDirection="locale"
+                    android:gravity="start"
+                    android:textAlignment="viewStart">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:textDirection="locale"
+                        android:gravity="start"
+                        android:textAlignment="viewStart">
+
+                        <EditText
+                            android:id="@+id/et_color"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/color"
+                            android:inputType="textCapWords"
+                            android:textSize="@dimen/spFourteen" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_plateNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textDirection="locale"
+                        android:gravity="start"
+                        android:textAlignment="viewStart">
+
+                        <EditText
+                            android:id="@+id/et_plate_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/plate_no"
+                            android:inputType="textCapWords"
+                            android:textSize="@dimen/spFourteen" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_sign_up_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:textDirection="locale"
+                        android:gravity="start"
+                        android:textAlignment="viewStart">
+
+                        <EditText
+                            android:id="@+id/et_sign_up_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/city"
+                            android:text="@string/select_city"
+                            android:textSize="@dimen/spFourteen"
+                            android:drawableEnd="@drawable/svg_ic_chevron_right"
+                            android:drawableRight="@drawable/svg_ic_chevron_right"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_sign_up_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textAlignment="viewStart">
+
+                <EditText
+                    android:id="@+id/et_sign_up_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/type"
+                    android:textSize="@dimen/spFourteen"
+                    android:drawableEnd="@drawable/svg_ic_chevron_right"
+                    android:drawableRight="@drawable/svg_ic_chevron_right"
+                    android:textDirection="locale"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_sign_up_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textAlignment="viewStart">
+
+                <EditText
+                    android:id="@+id/et_sign_up_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/services"
+                    android:textSize="@dimen/spFourteen"
+                    android:drawableEnd="@drawable/svg_ic_chevron_right"
+                    android:drawableRight="@drawable/svg_ic_chevron_right"
+                    android:textDirection="locale"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/tv_service_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dpFive"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:text="@string/services"
+                android:textColor="@color/lig_green2"
+                android:textSize="@dimen/spTwelve"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@color/transparent"
+                android:drawableEnd="@drawable/svg_ic_chevron_right"
+                android:drawableRight="@drawable/svg_ic_chevron_right"
+                android:hint="@string/select_service"
+                android:minLines="1"
+                android:textSize="@dimen/spFourteen"
+                android:visibility="gone"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dpOne"
+                android:layout_marginBottom="@dimen/dpFive"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@color/divider3"
+                android:visibility="gone"/>
+            <!---->
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_sign_up_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textAlignment="viewStart">
+
+                <EditText
+                    android:id="@+id/et_sign_up_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/year"
+                    android:textSize="@dimen/spFourteen"
+                    android:drawableEnd="@drawable/svg_ic_chevron_right"
+                    android:drawableRight="@drawable/svg_ic_chevron_right"
+                    android:textDirection="locale"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_sign_up_make"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textAlignment="viewStart">
+
+                <EditText
+                    android:id="@+id/et_sign_up_make"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/make"
+                    android:textSize="@dimen/spFourteen"
+                    android:drawableEnd="@drawable/svg_ic_chevron_right"
+                    android:drawableRight="@drawable/svg_ic_chevron_right"
+                    android:textDirection="locale"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_sign_up_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textAlignment="viewStart">
+
+                <EditText
+                    android:id="@+id/et_sign_up_model"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/model"
+                    android:textSize="@dimen/spFourteen"
+                    android:drawableEnd="@drawable/svg_ic_chevron_right"
+                    android:drawableRight="@drawable/svg_ic_chevron_right"
+                    android:textDirection="locale"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_sign_up_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textAlignment="viewStart">
+
+                <EditText
+                    android:id="@+id/et_sign_up_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/color"
+                    android:textSize="@dimen/spFourteen"
+                    android:drawableEnd="@drawable/svg_ic_chevron_right"
+                    android:drawableRight="@drawable/svg_ic_chevron_right"
+                    android:textDirection="locale"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_driver_preference_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:text="@string/driverPreference"
+                android:textColor="@color/lig_green2"
+                android:textSize="@dimen/spSixteen"
+                android:gravity="start"
+                android:textAllCaps="true"
+                android:layout_marginBottom="@dimen/dpFive"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_driver_preference_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textAlignment="viewStart"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_vehicle_preference_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:text="@string/vehiclePreference"
+                android:textColor="@color/lig_green2"
+                android:textSize="@dimen/spSixteen"
+                android:gravity="start"
+                android:textAllCaps="true"
+                android:layout_marginBottom="@dimen/dpFive"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_vehicle_preference_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textAlignment="viewStart"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/spEighteen" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

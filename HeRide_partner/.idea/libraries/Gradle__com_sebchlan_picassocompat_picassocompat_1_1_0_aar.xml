@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.sebchlan.picassocompat:picassocompat:1.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/68711d7fd7d69368260277750676a4ae/jetified-picassocompat-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/68711d7fd7d69368260277750676a4ae/jetified-picassocompat-1.1.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sebchlan.picassocompat/picassocompat/1.1.0/e3153ab8d1cdb951e227afa4474f6d75af02eeeb/picassocompat-1.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sebchlan.picassocompat/picassocompat/1.1.0/1f24fdb1be0d4242ce9a2405c1c9857d5164668f/picassocompat-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_circle_corner">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/alert_cap"
+        android:textSize="@dimen/spSixteen"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dpTwenty"/>
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_header"
+        android:textSize="@dimen/spFourteen"
+        android:textColor="@color/black"
+        android:text="@string/messagealert"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dpTen"
+        android:padding="@dimen/dpEight"
+        android:foregroundGravity="center"
+        android:layout_centerInParent="true"/>
+
+
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:textColor="@color/blue"
+        android:layout_below="@id/tv_text"
+        android:textSize="@dimen/spSixteen"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="@dimen/dpTwelve"
+        android:layout_margin="@dimen/dpTen"
+        android:background="@drawable/grey_square_border_selector"/>
+
+</RelativeLayout>

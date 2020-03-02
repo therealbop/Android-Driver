@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_layout_left"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/txtDate"
+    android:orientation="vertical"
+    android:visibility="visible"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rlCustMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_5dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="@dimen/dimen_5dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:visibility="visible"
+        >
+        <ImageView
+            android:id="@+id/ivChatSendStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:layout_toLeftOf="@+id/rlCustMsgChild"
+            android:layout_toStartOf="@+id/rlCustMsgChild"
+            android:visibility="gone"
+            />
+        <RelativeLayout
+            android:id="@+id/rlCustMsgChild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:id="@+id/tvCustMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/balloon_outgoing_normal"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp"
+                android:paddingTop="6dp"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                />
+            <ImageView
+                android:id="@+id/ivCustSendPic"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@drawable/balloon_outgoing_normal"
+                android:contentDescription="@string/app_name"
+                android:paddingLeft="5dp"
+                android:paddingRight="12dp"
+                android:visibility="gone" /><!--red_chat-->
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlProMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_marginLeft="@dimen/dimen_5dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginStart="@dimen/dimen_5dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/tvProMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/balloon_incoming_normal"
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:paddingTop="6dp"
+            android:text="@string/app_name"
+            android:textColor="@color/waterloo"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/ivProReceivedPic"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/balloon_incoming_normal"
+            android:contentDescription="@string/app_name"
+            android:paddingLeft="12dp"
+            android:paddingRight="5dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>
+

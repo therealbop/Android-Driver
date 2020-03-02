@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">idbvfbvfbvb</string>
+    <string name="appname">الفالح</string>
+    <string name="app_name_withoutSpace">شركاء رودي</string>
+    <string name="navigation_drawer_open">افتح خدمة تحديد الموقع</string>
+    <string name="navigation_drawer_close">أغلق خدمة تحديد الموقع</string>
+    <string name="action_settings">الإعدادات</string>
+    <string name="loading">جاري التحميل</string>
+    <string name="logging_out">تسجيل الخروج</string>
+    <string name="network_problem">"لا يوجد اتصال بشبكة الانترنت "</string>
+    <string name="support_content">محتوى الدعم</string>
+    <string name="uhOh">.</string>
+    <string name="reGrantPermissionMsg">لقد رفضت الإذن (الأذونات) المطلوبة. من فضلك ، اعطاء المضي قدما \".</string>
+    <string name="appSetting">"الأعدادات "</string>
+    <string name="ok">أوافق</string>
+    <string name="cancel">الغاء</string>
+    <string name="logoutDialog">هل تريد تسجيل الخروج؟</string>
+    <string name="log">دخول</string>
+    <string name="out">"خروج "</string>
+    <string name="sessionExpired">آسف انتهت المدة المسموحة يرجى الدخول مرة أخرى !!!</string>
+    <!--Splash Screen Activity-->
+    <string name="login">تسجيل الدخزل</string>
+    <string name="signin">تسجيل دخول</string>
+    <string name="signup">التسجيل</string>
+    <string name="app_name_splash">سائق</string>
+    <string name="offline">غير متصل</string>
+    <string name="online">"متصل "</string>
+    <!--login activity -->
+    <string name="welcome">مرحبا بك</string>
+    <string name="phone_no">رقم الهاتف</string>
+    <string name="phone_no_email_hint">البريد الالكتروني / رقم الهاتف</string>
+    <string name="vehicle_pin_number">الرقم التعريفي للسيارة</string>
+    <string name="password">"كلمة المرور "</string>
+    <string name="forgot_pass">هل نسيت كلمة المرور؟</string>
+    <string name="select_country">اختار الدولة</string>
+    <string name="fill_fields">" ملء التفاصيل"</string>
+    <string name="phone_miss">ادخل البريد الالكتروني ورقم الهاتف</string>
+    <string name="phone_mis">أدخل رقم الهاتف</string>
+    <string name="password_miss">ادخل كلمة المرور</string>
+    <string name="vehNo_miss">ادخل الرقم التعريفي للسيارة</string>
+    <string name="login_succes">تم الخول بنجاح</string>
+    <string name="services_invalid">الخدمة غير متاحة</string>
+    <string name="login_signup_txt"><![CDATA[<font color=\'#767676\'>هل يوجد لديك حساب ؟</font><font color=\'#dc1928\'> سجل معنا</font>]]></string>
+    <string name="selectLanguage">اللغة</string>
+    <string name="english">الإنجليزية</string>
+    <!--Forgot password Enter  mobile num activity-->
+    <string name="forgotPassword">هل نسيت كلمة المرور؟</string>
+    <string name="forgotMsgMob">أدخل رقم هاتفك وسوف تحصل على رمز التحقق لإعادة تعيين كلمة المرور</string>
+    <string name="forgotMsgEmail">أدخل عنوان البريد الإلكتروني الخاص بك لتلقي رابط لإعادة تعيين كلمة المرور</string>
+    <!--Forgot password verify-->
+    <string name="verify_mob">التحقق من رقم الهاتف</string>
+    <string name="verify_msg1">تم إرسال رمز التحقق إلى</string>
+    <string name="verify_msg2">"الرجاء ادخال الكود في الحقل "</string>
+    <string name="resend">اعاده ارسال الكود</string>
+    <string name="verify">التحقق</string>
+    <string name="enter_otp">ادخل كود التحقق</string>
+    <!--Forgot Password re-enter pass-->
+    <string name="newpassmsg">شكرا لك تم  التحقق من رقم هاتفك ،\nالرجاء إنشاء كلمة مرور جديدة أدناه</string>
+    <string name="NewPass">كلمة المرور الجديدة</string>
+    <string name="ReEnterPass">"اعاده ادخال  كلمة المرور "</string>
+    <string name="passNotMactch">كلمة المرور غير مطابقه</string>
+    <string name="Continue">مستمره</string>
+    <string name="entNewPass">ادخل كلمة المرور</string>
+    <string name="EntNewPass">"تغيير كلمة المرور "</string>
+    <string name="reentrPass">"اعاده ادخال  كلمة المرور "</string>
+    <string name="select_city">اختيار المدينة</string>
+    <!--select vechicle list-->
+    <string name="logout_vl">تسجيل الخروج</string>
+    <string name="selectVeh_vl">اختيار سيارة</string>
+    <string name="plateno_vl">رقم اللوحة</string>
+    <string name="type_vl">النوع *</string>
+    <string name="type_select">اختيار نوع</string>
+    <string name="model_vl">نوع</string>
+    <string name="confirm">تأكيد</string>
+    <string name="logoutmessage">هل انت تريد الخروج ؟</string>
+    <string name="selectVechicle">اختيار السيارة</string>
+    <!--Sign up activity web-->
+    <string name="appname_title">الفالح</string>
+    <string name="reg_now">سجل الان</string>
+    <!--sign up activity personal-->
+    <string name="mandatory">هذه الحقل الزامي</string>
+    <string name="Countrypicker">تأكيد نقطة البداية</string>
+    <string name="pass_mismatch">كلمة المرور غير مطابقه</string>
+    <string name="signup_">تسجيل عضوية</string>
+    <string name="next">التالي</string>
+    <string name="persoanl">التفاصيل الشخصية</string>
+    <string name="fname">الاسم الاول</string>
+    <string name="lname">"الاسم الأخير "</string>
+    <string name="phone_num">رقم الهاتف</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="password_signup">كلمة المرور *</string>
+    <string name="password_confirm_signup">تأكيد كلمة المرور *</string>
+    <string name="driving_lic">رخصة القياده ( من الاتجاهين) *</string>
+    <string name="upload">رفع الصورتين</string>
+    <string name="err_fname">"من فضلك ادخل الاسم الأول "</string>
+    <string name="err_phone_no">رقم الهاتف  غير صحيح</string>
+    <string name="err_email">من فضلك ادخل البريد الالكتروني</string>
+    <string name="err_pass">من فضلك ادخل  كلمة المرور</string>
+    <string name="invalidEmail">بريد إلكتروني خاطئ</string>
+    <string name="invalid_email_or_phone">البريد الالكتروني او رقم التلفون غير صحيح</string>
+    <string name="invalidPhone">أدخل رقم هاتف صحيح</string>
+    <string name="operator">المشغل</string>
+    <string name="free_lancer">Freelancer</string>
+    <string name="choose_prof_pic">رفع الصورة الشخصية</string>
+    <string name="choose_licence_img">من فضلك رفع رخصة القيادة</string>
+    <string name="phone_reg_err">"رقم الهاتف بالفعل مسجل "</string>
+    <string name="phone_email_reg_err">التلفون والبريد الالكتروني بالفعل مسجل</string>
+    <string name="email_reg_err">هذا الايميل بالفعل مسجل</string>
+    <string name="licence_miss">تحميل صورة الرخصة</string>
+    <string name="dateOfBirth">تاريخ الميلاد *</string>
+    <string name="dateOfBirthError">اختار تاريخ ميلادك</string>
+    <string name="defaultCountryCode">+91</string>
+    <string name="selectDate">اختر التاريخ</string>
+    <string name="policeClearenceDate">POLICE CLEARANCE DATE OF ISSUE</string>
+    <string name="childrenCardExpr">CHILDREN CARD EXPIRY DATE</string>
+    <string name="vehRegExpr">تاريخ انتهاء التسجيل *</string>
+    <string name="vehInsuExpr">تاريخ انتهاء التفتيش</string>
+    <string name="inspectionDate">تاريخ التفتيش</string>
+    <string name="goodsTransitInsu">تاريخ انتهاء صلاحية العبور اوالسفر</string>
+    <!--sign up activity vechicle-->
+    <string name="vehicle_details">تفاصيل السيارة</string>
+    <string name="plate_no">رقم اللوحة *</string>
+    <string name="color">اللون *</string>
+    <string name="type">النوع *</string>
+    <string name="services">الخدمات *</string>
+    <string name="select_service">اختر الخدمة</string>
+    <string name="specialities">الخصائص</string>
+    <string name="make">الصنع *</string>
+    <string name="make_title">الصنع</string>
+    <string name="model">النوع *</string>
+    <string name="model_title">النوع</string>
+    <string name="year">السنة *</string>
+    <string name="year_title">السنه</string>
+    <string name="err_year">سنة منهية</string>
+    <string name="insurance">صورة من التامين من الجهتين</string>
+    <string name="finish">انتهاء</string>
+    <string name="err_plate">ادخل رقم اللوحة</string>
+    <string name="err_color">اختر اللون</string>
+    <string name="err_type">اختيار نوع</string>
+    <string name="select_year">اختر السنة</string>
+    <string name="err_make">اختر الصنع</string>
+    <string name="err_model">اختر النوع</string>
+    <string name="err_veh_img">رفع صورة السيارة</string>
+    <string name="err_insurance_img">رفع صورة التأمين</string>
+    <string name="signup_success_msg">شكرا لقد تم تسجليك . سوف يتم الموافقه عليك خلال 24 ساعه</string>
+    <string name="Insurance_miss">رفع صورة التأمين</string>
+    <string name="certificate_miss">رفع صورة من شهاده السيارة</string>
+    <string name="boosterSeatSupport">المقاعد</string>
+    <string name="extraBagsSupport">دعم تحميل أشياء اضافية</string>
+    <string name="quietRide">قيادة هادئة</string>
+    <string name="bikeCarrier">حاملة الدراجة</string>
+    <string-array name="gender">
+        <item>ذكر</item>
+        <item>انتثى</item>
+        <item>الجنس *</item>
+        <item>الجنس *</item>
+    </string-array>
+    <string-array name="colors">
+        <item>ابيض</item>
+        <item>اسود</item>
+        <item>رمادي داكن</item>
+        <item>رمادي فاتح</item>
+        <item>رمادي</item>
+        <item>احمر</item>
+        <item>اخضر</item>
+        <item>Navy</item>
+        <item>ازرق</item>
+        <item>سماوي</item>
+        <item>Turquoise</item>
+        <item>"ازرق اخضر "</item>
+        <item>ازرق سماوي</item>
+        <item>اصفر</item>
+        <item>أرجواني</item>
+        <item>برتقالي</item>
+        <item>ارجواني</item>
+        <item>بني</item>
+        <item>سليفر</item>
+        <item>Cerulean</item>
+        <item>Lime</item>
+        <item>ذهبي</item>
+        <item>زيتي</item>
+        <item>لون الأحمر داكن</item>
+        <item>وردي</item>
+        <item>زهري</item>
+        <item>Indigo</item>
+        <item>بنفسجي</item>
+    </string-array>
+    <!--SignUp UpLoad Documents-->
+    <string name="upload_doc">رفع المستندات</string>
+    <string name="driver_doc">مستندات السائق</string>
+    <string name="vehicle_doc">مستندات السيارة</string>
+    <string name="vehicle_reg">تسجيل السيارة *</string>
+    <string name="vehicle_insurance">تامين السيارة *</string>
+    <string name="police_clearance">إجراءات الشرطة</string>
+    <string name="inspection_report">تقرير التفتيش</string>
+    <string name="goodsInsurance">العبور والسفر</string>
+    <string name="childrenCard">WORKING WITH CHILDREN CARD</string>
+    <string name="readAndAccept">"انا قراءت ووافقت "</string>
+    <string name="privacyPolicy">سياسة الخصوصية</string>
+    <string name="vehicle_pic">"صورة المركبة"</string>
+    <string-array name="uploadDoc">
+        <item>الرخصة</item>
+        <item>"التسجيل "</item>
+        <item>التامين</item>
+        <item>clearance</item>
+        <item>inspection</item>
+        <item>children card</item>
+    </string-array>
+    <string name="signup_success">تم تسجلك سوف يتم الموافقة عليك خلال 24 ساعه .</string>
+    <string name="privacy_policy_err">شروط وسياسة الخصوصية</string>
+    <!--NavigationDrawer-->
+    <string name="home">"الرئيسة "</string>
+    <string name="history">الارشيف</string>
+    <string name="support">دعم</string>
+    <string name="logout">خروج</string>
+    <string name="card">" البطاقة"</string>
+    <string name="walet">الرصيد</string>
+    <string name="corporateWalet">رصيد الشركة</string>
+    <string name="wallet">الرصيد</string>
+    <string name="cancelation_fee">رسوم  الرفض</string>
+    <string name="open_par">(</string>
+    <string name="close_par">)</string>
+    <string name="view_profile">عرض الملف الشخصي</string>
+    <!--Hostory String-->
+    <string name="from">من</string>
+    <string name="to">الي</string>
+    <string name="no_of_trips">رقم الرحلة</string>
+    <string name="amount_earns">المبلغ المكتسب</string>
+    <!--On the way to pickup-->
+    <string name="googlemaps">خرائط قوقل</string>
+    <string name="googlemaps_color"><![CDATA[<font color=\'#4885ED\'>G</font><font color=\'#DB3236\'>o</font><font color=\'#F4C20D\'>o</font><font color=\'#4885ED\'>g</font><font color=\'#3CBA54\'>l</font><font color=\'#DB3236\'>e</font><font color=\'#767676\'>\" Maps\"</font>]]></string>
+    <string name="maps">"الخريطة"</string>
+    <string name="waze">Waze</string>
+    <string name="distance">المسافة</string>
+    <string name="time">الوقت</string>
+    <string name="min">/Min</string>
+    <string name="miniute">Min</string>
+    <string name="start">بداية</string>
+    <string name="waitingTime">زمن الانتظار</string>
+    <string name="waitingTimer">عداد الانتظار</string>
+    <string name="timer">عداد</string>
+    <string name="hrs">Hrs</string>
+    <string name="onTrip">في الرحلة</string>
+    <string name="unload">UNLOAD</string>
+    <string name="delivery_completed">اكتملت التوصيل</string>
+    <!--Cancel Activity-->
+    <string name="cancelReason">سبب الرفض</string>
+    <string name="comments">تعليق</string>
+    <string name="tv_comment_hint">اكتب التعليق هنا</string>
+    <!--DeliveryCompleted Activity-->
+    <string name="deli_completed">اكتمل التوصيل</string>
+    <string name="id_">"الرقم :"</string>
+    <string name="help">مساعده؟</string>
+    <string name="bil_details">تفاصيل الفاتورة</string>
+    <string name="distance_fare">اجرة المسافة</string>
+    <string name="time_fare">اجرة الزمن</string>
+    <string name="minimum_fare">الحد الأدنى للأجرة</string>
+    <string name="waiting_fee">اجرة الانتظار</string>
+    <string name="cust_lastDue">استحقاق العميل</string>
+    <string name="discount">تخفيض</string>
+    <string name="add_special">"إضافة رسوم خاصة"</string>
+    <string name="grand_total">المبلغ الاجمالي</string>
+    <string name="deliverd_to">توصيل الي</string>
+    <string name="reiever_name">اسم المستقبل</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="signature">التوقيع</string>
+    <string name="photos_of_doc">صورة من المستندات</string>
+    <string name="take_photo">"اخذ صورة "</string>
+    <string name="rate_the_cus">"تقييم العميل "</string>
+    <string name="read_storage_and_camera_state_permission_message">"من فضلك إعطاء صلاحية للصول الي التخزين والكاميرا حتي تتمكن من رفع الصور للتطبيق   "</string>
+    <!--Booking PopUp Activity-->
+    <string name="pickup">نقطة الالتقاط</string>
+    <string name="drop">نهاية</string>
+    <string name="lefttoaccept">"اسحب لليسار للقبول "</string>
+    <string name="Deliveryfee">سعر التوصيل</string>
+    <!--HistoryActivity Invoice-->
+    <string name="senderdetails">تفاصيل المرسل</string>
+    <string name="yourated">التقييم</string>
+    <string name="total">المبلغ الاجمالي</string>
+    <string name="special_charge">" رسوم خاصة"</string>
+    <string name="tollCharge">"رسوم العبور "</string>
+    <string name="payment">دفع</string>
+    <string name="cardending">البطاقة منتهية</string>
+    <string name="recieversdetails">"تفاصيل المستقبل"</string>
+    <string name="documents">المستندات</string>
+    <string name="recievedby">"بواسطة المستقبل "</string>
+    <string name="total_amount">اجمالي الميلغ</string>
+    <string name="trip_with">"في الرحلة "</string>
+    <string name="tip">الرحلة</string>
+    <!--Job Details-->
+    <string name="jobdetails">تحميل التفاصيل</string>
+    <string name="bookingid">رقم الحجز</string>
+    <string name="corporateBooking">Corporate Booking</string>
+    <string name="pickupanddrop">بداية ونهاية</string>
+    <string name="senderrecdet">"تفاصيل المرسل / والمستقبل "</string>
+    <string name="sender">المرسل</string>
+    <string name="reciever">المستقبل</string>
+    <string name="shipmentdetails">Shipment Details</string>
+    <string name="goodstype">GOODS TYPE</string>
+    <string name="quantity">"الكمية "</string>
+    <string name="photos">صور</string>
+    <string name="additionalnot">ملاحظات اضافية</string>
+    <string name="dropUpdateMsg">العميل قام بتحديث موقع الوصول</string>
+    <!--Imageupload-->
+    <string name="smthWentWrong">خطاء في التحميل</string>
+    <string name="oops">Oops&#33;</string>
+    <string name="gallery">الاستديو</string>
+    <string name="camera">الكاميرا</string>
+    <string name="remove">حذف</string>
+    <!--activity_select_an_operator-->
+    <string name="title_activity_select_an_operator">"اختر المشغل "</string>
+    <string name="referral">كود التوصية</string>
+    <string name="refErr">رمزكود التوصية  غير صالح</string>
+    <string name="select_zone">"اختر المنطقة المفضلة
+"</string>
+    <string name="zones">المنطقه المفضلة</string>
+    <string name="read_phone_state_permission_message">"من فضلك إعطاء الصلاحية للوصول الي الهاتف للتمكن من الاتصال للعميل "</string>
+    <string name="location_permission_message">"من فضلك إعطاء الصلاحيات للوصول الي الموقع "</string>
+    <string name="booking_fare">اجزة الحجز</string>
+    <string name="currency">"$"</string>
+    <string name="message">"الرسالة "</string>
+    <string name="after">بعد</string>
+    <string name="sun">SUN</string>
+    <string name="mon">MON</string>
+    <string name="tue">TUE</string>
+    <string name="wed">WED</string>
+    <string name="thu">THU</string>
+    <string name="fri">FRI</string>
+    <string name="sat">SAT</string>
+    <string name="BaseFare">الأجرة االثابته</string>
+    <string name="charges">FARE BREAKDOWN</string>
+    <string name="cannot_edit_msg">"لا يمكن تعديل الفاتورة تاكيد
+"</string>
+    <string name="handling">العمليات</string>
+    <string name="adjustment">"تعديل سعر الحد الأدنى
+"</string>
+    <string name="waiting_fare">"انتظار "</string>
+    <string name="base_fare">الاساسي</string>
+    <string name="bid">"BID : "</string>
+    <string name="validating">التحقق</string>
+    <string name="make_online">من فضلك ان تكون متاح</string>
+    <string name="time_left_drop">الوقت المتبقي للوصول الي نهاية الرحلة</string>
+    <string name="now">الان</string>
+    <string name="no_network">الإنترنت غير متوفر ،يرجى التحقق من اتصالك بالإنترنت وحاول مرة أخرى!</string>
+    <string name="reg_certficate">رفع صورة من شهاده السيارة</string>
+    <string name="carriage_permit">رفع صورة التصريح</string>
+    <string name="emptyReason">من فضلك اكتب السبب</string>
+    <string name="your_earnings">الأرباح والعمولات</string>
+    <string name="earned_amount">"الدخل "</string>
+    <string name="AppCommission">App Commission</string>
+    <string name="reached_at_drop_location">تم الوصول الي نقطة النهاية</string>
+    <string name="pls_select_zone">من فضلك اختر المنطقه</string>
+    <string name="carriage_photo">تصريح</string>
+    <string name="registration">التسجيل *</string>
+    <string name="certificate">الشهادة *</string>
+    <string name="referral_text">مشاركة كود التوصية للكباتن اخرين وسوف تحصل علي رصيد اضافي</string>
+    <string name="facebook">فيس بوك</string>
+    <string name="twitter">تويتر</string>
+    <string name="Email">البريد الالكتروني</string>
+    <string name="invite">دعوة</string>\
+    
+    <string name="portal">Portal</string>
+    <!--   Bank  Details  -->
+    <string name="bank_details">البنك</string>
+    <string name="add">اضافة</string>
+    <string name="add_account">"اضف حساب "</string>
+    <string name="image">صور</string>
+    <string name="newAccount">حساب جديد</string>
+    <string name="bankDetailsline">تفاصيل البنك</string>
+    <string name="title_activity_new_account">حساب جديد منشط</string>
+    <string name="addCaps">اضافة</string>
+    <string name="accno">رقم الحساب*</string>
+    <string name="rountinNo">"رقم اللوحة*
+"</string>
+    <string name="name_">الاسم*</string>
+    <string name="DOB">تاريخ الميلاد *</string>
+    <string name="personalId">SSN*</string>
+    <string name="state">الحالة *</string>
+    <string name="postalCode">Postal Code*</string>
+    <string name="city">المدينة*</string>
+    <string name="address">العنوان *</string>
+    <string name="addIdProof">إضافة  الرقم الوطني</string>
+    <string name="plsUploadIdProf">رفع صورة من الرقم الوطني</string>
+    <string name="enterAccountNo">ادخل رقم الحساب</string>
+    <string name="enterRoutinNo">الرقم يجب ان يكون من 9 خانات</string>
+    <string name="enterAccountHoldername">"ادخل اسم الحساب "</string>
+    <string name="enterDob">Enter Dob</string>
+    <string name="enterPersonalid">Enter SSN</string>
+    <string name="enterGender">اختيار الجنس</string>
+    <string name="enterState">اختر الحالة</string>
+    <string name="enterYear">اختر السنة</string>
+    <string name="enterColor">اختر اللون</string>
+    <string name="enterPostalCode">"ادخل كود Zip "</string>
+    <string name="enterCity">ادخل المدينة</string>
+    <string name="enterAddress">ادخل العنوان</string>
+    <string name="accnolabel">"رقم الحساب "</string>
+    <string name="accountHolder">"الحساب "</string>
+    <string name="accountDetails">"تفاصيل الحساب "</string>
+    <string name="makeDefault">Make Default</string>
+    <string name="rountinNoLabel">رقم اللوحة*</string>
+    <string name="bankName">اسم البنك</string>
+    <string name="county">الدولة:</string>
+    <string name="deleteAccount">"حذف الحساب "</string>
+    <string name="customerCancelTheBooking">العميل قام بإلغاء الحجز</string>
+    <string name="fullName">الاسم كاملا*</string>
+    <string name="zipCode">" كود Zip "</string>
+    <string name="link">مرحبا! استخدام الرمز الخاص بي للاشتراك والحصول على صفقات حصرية على الفالح</string>
+    <string name="change_name">تغيير اسمك</string>
+    <string name="change_name_title">تغيير الاسم</string>
+    <string name="booking_hoistory">أرشيف الحجوزات</string>
+    <string name="plan">Commission Plan</string>
+    <string name="edit_pass">"تغيير كلمة المرور "</string>
+    <string name="serverError">غير قادر علي جلب البيانات</string>
+    <string name="nosubCategory">No sub category</string>
+    <string name="photoID">رقم الصورة *</string>
+    <string name="FIRSTNAME">الاسم الأول*</string>
+    <string name="LASTNAME">الاسم الأخير *</string>
+    <string name="SSN">SSN*</string>
+    <string name="bankAccounts">حساب البنك</string>
+    <string name="addStripeAccount">Add Stripe Account</string>
+    <string name="noStripeAccountDetails">No Stripe Account Details!</string>
+    <string name="enterLastName">"ادخل الاسم الأخير "</string>
+    <string name="enterValidDob">Enter Valid DOB</string>
+    <string name="enterValidPersonalid">ادخل رقم صحيح</string>
+    <string name="enterValidMonth">ادخل الشهر بشكل صحيح</string>
+    <string name="enterValidDay">ادخل اليوم بشكل صحيح</string>
+    <string name="enterValidYear">ادخل السنه بشكل صحيح</string>
+    <string name="removephoto">"حذف الصورة "</string>
+    <string name="addPhotoHeader">إضافة صورة</string>
+    <string name="takePhoto">"اخذ صورة "</string>
+    <string name="enteCountry">ادخل الدولة</string>
+    <string name="stripeStatus">"شروط الحالة "</string>
+    <string name="stripeAccountNo">Stripe Account No :</string>
+    <string name="countyM">الدولة:</string>
+    <string name="nameM">الاسم*</string>
+    <string name="addBank">إضافة بنك</string>
+    <string name="addStripeAcount">Add Stripe Account</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="enterTheName">"ادخل الاسم  "</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="accountAdditionError">غير متاح لاضافة البنك</string>
+    <string name="nameMiss">"ادخل الاسم  "</string>
+    <string name="pls_select_vehicle">من فضلك اخترالسيارة</string>
+    <string name="pls_select_model">من فضلك اختر النوع</string>
+    <string name="pls_select_make">من فضلك اختر الصنع</string>
+    <string name="pls_select_speciality">Please select speciality</string>
+    <string name="loading_time">تحميل الوقت</string>
+    <string name="unloading_time">Unloading Time</string>
+    <string name="select_photo_from">اختر الصورة من</string>
+    <string name="NO_IMAGES">الرقم الوظيفي</string>
+    <string name="no_notes">"لاتوجد ملاحظات علي الكابتن من قيل العميل "</string>
+    <string name="additional_charges">ADDITIONAL CHARGES</string>
+    <string name="plsAddStripeFirst">Please Add Stripe First</string>
+    <string name="conform_password_miss">ادخل كلمة المرور للتأكيد</string>
+    <string name="enter_amt_collected">ادخل اجمالي المبلغ</string>
+    <string name="DISTANCE">المسافة</string>
+    <string name="PAYMENT">الدفع</string>
+    <string name="collect_cash">مجموع النقد</string>
+    <string name="not_now">ليس الآن</string>
+    <string name="update_msg">اصدار تطبيقك قديم الرجاء تحديثه من المتجر</string>
+    <string name="update_available">التحديث متاح</string>
+    <string name="Update">تحديث</string>
+    <string name="recharge">الرصيد</string>
+    <string name="update_non_mandatory">يتوفر تحديث على متجر Play. هل ترغب في تحديث الآن؟</string>
+    <string name="paid_by_rcvr">"نقدا بواسطة العستقبل "</string>
+    <string name="collect_cash_from_rcvr">Collect cash from Receiver.</string>
+    <string name="SOFT_LIMIT">SOFT LIMIT</string>
+    <string name="HARD_LIMIT">HARD LIMIT</string>
+    <string name="version">النسخة</string>
+    <string name="live_chat">دردشة مباشره</string>
+    <string name="OK">تأكيد</string>
+    <string name="payUsingCard">دفع باستخدام بطاقة</string>
+    <string name="confirmAndPay">"تأكيد الدفع "</string>
+    <string name="current_credit">"رصيدك الحالي "</string>
+    <string name="softLimit">Soft Limit &#58;</string>
+    <string name="hardLimit">Hard Limit &#58;</string>
+    <string name="payAmount">دفع المبلغ</string>
+    <string name="_0_00">0.00</string>
+    <string name="signing_up">Signing Up...</string>
+    <string name="share_your_code">مشاركة الكود</string>
+    <string name="step_1_connect_your_stripe_account">الخطوة 1: الاتصال بالحساب  الخاص بك.</string>
+    <string name="connect_stripe_account">Connect stripe account</string>
+    <string name="stripe_account_no_xxxx">Stripe Account No : xxxxx</string>
+    <string name="step_2_link_bank_account">الخطوة الثانية : رابط حساب البنك</string>
+    <string name="link_bank_account">رابط حساب البنك</string>
+    <!--wallet-->
+    <!--Alert Box Text-->
+    <string name="network_alert_title">"ضبط الشبكة "</string>
+    <string name="network_alert_message">الشبكة بطيئة أو لم يتم تمكين خدمة الشبكة. هل تريد الذهاب إلى قائمة الإعدادات؟</string>
+    <string name="location_alert_title">ضبط الموقع</string>
+    <string name="location_alert_message">خدمة الموقع غيرمتاحة. هل تريد الذهاب إلى قائمة الإعدادات؟</string>
+    <string name="title_activity_confirm_number">تأكيد الرقم</string>
+    <string name="credit_desc">Credit is the money due to the app for past bookings</string>
+    <string name="choose_card">اختر اضف بطاقة الائتمان</string>
+    <string name="cancel_request">الغاء الرحلة ؟</string>
+    <string name="cancle_bookin">هل أنت متأكد من أنك تريد إلغاء هذا الطلب؟</string>
+    <string name="yes_alert">نعم</string>
+    <string name="no_alert">لا</string>
+    <string name="delete_alert">هل أنت متأكد من أنك تريد حذف هذه البطاقة</string>
+    <string name="bad_gateway">مدخل خاطى</string>
+    <string name="selectPayment">يرجى اختيار نوع الدفع.</string>
+    <!--    network bar-->
+    <string name="nonetwork">لايوجد اتصال بالانترنت</string>
+    <string name="alert">Alert</string>
+    <string name="alert_cap">ALERT</string>
+    <string name="messagealert">"الرسالة "</string>
+    <string name="warning">Warning</string>
+    <string name="something_went_wrong">حدث خطاء في الاتصال حاول مرة اخرى</string>
+    <string name="force_logout_msg">انت عملت تسجيل خروج .من فضلك اعمل تسجيل دخول مره اخرى</string>
+    <string name="addAmountToAdd">من فضلك إضافة المبلغ الي رصيدك</string>
+    <string name="cardDetailsNotFound">من فضلك إضافة  كارت الشحن الي رصيدك</string>
+    <string name="pleaseWait">الرجاء الانتظار</string>
+    <string name="softLimitMsg">"الوصول إلى الحد الأقصى من خط الائتمان
+"</string>
+    <string name="hardLimitMsg">"تم تجاوز الحد الأقصى لخط الائتمان
+"</string>
+    <string name="no_transactions_done">العملية لم تتم</string>
+    <string name="addcard">اضف البطاقة</string>
+    <string name="paymentMethod">طريقة الدفع</string>
+    <string name="scancard">فحص البطاقة</string>
+    <string name="poweredby">مشغل بواسطة</string>
+    <string name="skip">تخطى</string>
+    <string name="note">"ملاحظة "</string>
+    <string name="You_did_not_enter_valid_card">لم تدخل بطاقة صالحة</string>
+    <string name="try_again">المحاولة مرة اخري</string>
+    <string name="card_ending_with">Card Ending With</string>
+    <string name="carddflttxt">اجعل هذه البطاقة الافتراضية</string>
+    <string name="delete_card">حذف البطاقة</string>
+    <string name="wait">الرجاء الانتظار</string>
+    <string name="card_info">معلومات حول البطاقة</string>
+    <string name="Card_Info">تفاصيل البطاقة</string>
+    <string name="card_removed">تم حذف الكارت بنجاح</string>
+    <string name="confirmPayment">تأكيد الدفع</string>
+    <string name="paymentMsg1">Click on CONFIRM to authorize</string>
+    <string name="paymentMsg2">لإعادة شحن محفظتك باستخدام</string>
+    <!-- WALLET TRANSACTIONS ACTIVITY-->
+    <string name="recentTransactions">التحويلات الاخيرة</string>
+    <string name="transactionID">رقم الرحلة</string>
+    <string name="bookingID">رقم الحجز</string>
+    <string name="bid_with_pay">مناقصة</string>
+    <string name="all">ALl</string>
+    <string name="debit">DEBIT</string>
+    <string name="credit">خط ائتمان</string>
+    <string name="handlingFee">معالجة</string>
+    <string name="cardNoHidden">"XXXX XXXX XXXX "</string>
+    <string name="requested_For">Requested for</string>
+    <string name="creditLine">خط ائتمان</string>
+    <string name="Cancellation_fare">رسوم الالغاء</string>
+    <string name="wallet_enabled">تنشيط الحساب</string>
+    <string name="wallet_disabled">تعطيل الحساب</string>
+    <string name="postal_code">POSTAL CODE</string>
+    <string name="editPhoneNumber">تحرير رقم الهاتف</string>
+    <string name="editEmail">تحرير البريد الالكتروني</string>
+    <string name="edit_pass_msg">يرجى ادخال كلمة مرور جديدة</string>
+    <string name="confirm_password">"تأكيد كلمة المرور "</string>
+    <!--MyProfile fragment-->
+    <string name="edit">تعديل</string>
+    <string name="name">الاسم</string>
+    <string name="prof_fname">الاسم الأول</string>
+    <string name="prof_lname">"الاسم الأخير "</string>
+    <string name="prof_number">الرقم</string>
+    <string name="prof_pass">كلمة المرور</string>
+    <string name="prof_veh_type">نوع المركبة</string>
+    <string name="prof_vech_number">رقم المركبة</string>
+    <string name="prof_commission_plan">COMMISSION PLAN</string>
+    <string name="change_pass">"تغيير كلمة المرور "</string>
+    <string name="save">حفظ</string>
+    <string name="get_verification">الحصول علي رمز التحقق</string>
+    <string name="continue_txt">مستمره</string>
+    <string name="updating">تحديث</string>
+    <string name="color_title">"اللون "</string>
+    <string name="extra_facility">"خدمات إضافية
+"</string>
+    <!--Edit Name -->
+    <string name="enter_first_name">يرجى إدخال اسمك الأول للتغيير.</string>
+    <string name="enter_last_name">"يرجى إدخال اسمك الأخير للتغيير.
+"</string>
+    <string name="new_name">الاسم الجديد</string>
+    <string name="err_name">"ادخل الاسم  "</string>
+    <!--Edit Phone Number-->
+    <string name="edit_phone">تحرير رقم الهاتف</string>
+    <string name="edit_phone_msg">أدخل رقم هاتفك وسوف تحصل على رمز التحقق لإعادة تعيين كلمة المرور</string>
+    <string name="edit_email_msg">أدخل البريد الالكتروني وسوف تحصل على رمز التحقق لإعادة تعيين كلمة المرور</string>
+    <!--Edit Password dialog-->
+    <string name="enter_old_pass">يرجى إدخال كلمة المرور الحالية للتأكيد</string>
+    <string name="old_pas">ادخل كلمة المرور</string>
+    <string name="invalid_pass">كلمة المرور صحيحة</string>
+    <!--Change Password-->
+    <string name="old_pass">كلمة المرور القديمة</string>
+    <string name="new_pass">كلمة المرور الجديدة</string>
+    <string name="re_ent_pass">"اعاده ادخال  كلمة المرور "</string>
+    <string name="submit">تأكيد</string>
+    <string name="ent_pres_pass">ادخل  كلمة المرور صحيحة</string>
+    <string name="pass_change_success">تم تغيير كلمة المرور بنجاح</string>
+    <string name="enter_new_pass">يرجى ادخال كلمة مرور جديدة</string>
+    <!--HomeFragment String-->
+    <string name="go_offline">غير متصل</string>
+    <string name="go_online">"متصل "</string>
+    <string name="current">"رصيدك الحالي "</string>
+    <string name="upcoming">الحجز القادم</string>
+    <string name="time_left">الوقت المتبقي للوصول الي نهاية الرحلة</string>
+    <string name="shipment">Shipment</string>
+    <string name="ride">رحلة</string>
+    <string name="cash_balance">"رصيدك الحالي "</string>
+    <string name="softlimit">Soft Limit</string>
+    <string name="hardlimit">Hard Limit</string>
+    <!--Driver Meter-->
+    <string name="start_manual_trip">"بداية الرحلة "</string>
+    <string name="driverMeter">Driver Meter</string>
+    <string name="setDropLocation">ضع نقطة الوصول</string>
+    <string name="pickup_location">نقطة الالتقاط</string>
+    <string name="drop_location">عنوان الوصول</string>
+    <string name="select_drop">من فضلك اخيار نقطة الوصول</string>
+    <string name="completeTrip">"انتهت الرحلة رحلة سعيدة "</string>
+    <string name="bookForSomeOne">حجز لشخص اخر</string>
+    <!--Ride Booking-->
+    <string name="rideBooking">"حجز رحلة "</string>
+    <string name="call">اتصل</string>
+    <string name="arrivedToPick">وصول</string>
+    <string name="startTrip">بداية الرحلة</string>
+    <string name="ontheway">"في الطريق "</string>
+    <string name="youAreNot">انت لاتزال غير موجود في</string>
+    <string name="rangePick">نطاق موقع الألتقاط الخاص بك</string>
+    <!--PopUp-->
+    <string name="bookingType">نوع الحجز</string>
+    <string name="vehicleType">"نوع السيارة "</string>
+    <string name="serviceType">نوع الخدمة</string>
+    <string name="noOfSeat">No. Of Seats</string>
+    <string name="reject">رفض</string>
+    <string name="preferences">"المفضلة"</string>
+    <!--Invoice Activity-->
+    <string name="your_trip_on">"رقم الرحلة"</string>
+    <string name="system_cal_fare">"نظام حساب القيمة "</string>
+    <string name="cash">كاش</string>
+    <string name="receipt">ايصالك</string>
+    <string name="enter_email_id_invoice">ادخل البريد الالكتروني لتصل الي الفاتورة</string>
+    <string name="rateYourTrip">تقييم رحلتك</string>
+    <string name="bill_details">تفاصيل الفاتورة</string>
+    <string name="receipt_details">تفاصيل التوصيل</string>
+    <string name="receipt_small">ايصالك</string>
+    <string name="exit_double_back">اضغط علي زر الرجوع مره اخري للخروج</string>
+    <string name="select_location_map">ابحث عن الموقع من الخريطة</string>
+    <string name="favourites">المفضل</string>
+    <string name="recent">الأخيرة</string>
+    <string name="link1">"مرحبا! استخدم الرمز الخاص بي
+"</string>
+    <string name="link2">مرحبا! استخدام الرمز الخاص بي للاشتراك والحصول على صفقات حصرية على الفالح</string>
+    <string name="mandatory_update">اصدار تطبيقك قديم الرجاء تحديثه من المتجر</string>
+    <string name="lessthanHard">Your wallet balance is less than Hard Limit.</string>
+    <string name="lessthanSoft">الحد الميسر: يتم إغلاق الرصيد إلى الحد الأدنى المسموح به للمحفظة</string>
+    <string name="helpSend">"ارسال "</string>
+    <string name="enterMsgHere">نوع الرسالة</string>
+    <string name="amount">المبلغ</string>
+</resources>

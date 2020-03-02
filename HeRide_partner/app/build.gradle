@@ -1,0 +1,225 @@
+buildscript {
+  repositories {
+    jcenter()
+    maven { url "https://jitpack.io" }
+    maven { url 'https://maven.fabric.io/public' }
+    mavenCentral()
+    google()
+  }
+
+  dependencies {
+    classpath 'com.android.tools.build:gradle:3.5.3'
+    classpath 'io.fabric.tools:gradle:1.31.1'
+  }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+  maven { url 'https://maven.fabric.io/public' }
+  maven { url 'https://zendesk.jfrog.io/zendesk/repo' }
+}
+
+allprojects {
+  repositories {
+    jcenter()
+    maven { url "https://jitpack.io" }
+    maven { url 'https://maven.fabric.io/public' }
+    maven { url 'https://maven.google.com' }
+  }
+}
+
+android {
+  compileSdkVersion 28
+  buildToolsVersion '28.0.3'
+  useLibrary 'org.apache.http.legacy'
+  defaultConfig {
+    applicationId "com.heride.partner"
+    minSdkVersion 16
+    targetSdkVersion 28
+    versionCode 2
+    versionName "1.0.1"
+    multiDexEnabled true
+
+    buildConfigField "int", "LIMIT", "100"
+    buildConfigField "String", "CARAPI", "\"https://www.carqueryapi.com/api/\""
+    buildConfigField "int", "CACHETIME", "432000" // 5days
+    buildConfigField "String", "TWILLIOURL", "\"https://twilio.uberforall.com/\""
+    buildConfigField "String", "TWILIO_DOMAIN", "\"uberforall.com\""
+    //Dev
+    /*buildConfigField "String", "BASEURL", "\"https://apidev.uberforall.com/\""
+    buildConfigField "String", "PORTAL_URL", "\"https://driver-portaldev.uberforall.com/?\""
+    buildConfigField "String", "INAPPCALLURL", "\"https://apicalldev.uberforall.com/\""
+    buildConfigField "String", "SIGNUP_URL", "\"https://admindev.uberforall.com/supportText/driver/\""
+    buildConfigField "String", "PRIVACY_POLICY", "\"https://admindev.uberforall.com/supportText/driver/\""*/
+    /*Live*/
+    buildConfigField "String", "BASEURL", "\"https://api.getheride.com/\""
+    buildConfigField "String", "PORTAL_URL", "\"https://driver-portal.getheride.com/?\""
+    buildConfigField "String", "INAPPCALLURL", "\"https://apicall.uberforall.com/\""
+    buildConfigField "String", "SIGNUP_URL", "\"https://admin.getheride.com/supportText/driver/\""
+    buildConfigField "String", "PRIVACY_POLICY", "\"https://admin.getheride.com/supportText/driver/\""
+
+    resValue "string" ,"AWS_ACCESS_KEY", "AKIA4BYVJXVTXIU6FGM4"
+    resValue "string" ,"AWS_SECRET_KEY", "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"
+    buildConfigField "String", "AMAZON_BASE_URL", "\"https://s3.amazonaws.com/\""
+    buildConfigField "String", "BUCKET_NAME", "\"herideapp\""
+
+    buildConfigField "String", "PLACES_API_BASE", "\"https://maps.googleapis.com/maps/api/place\""
+    buildConfigField "boolean", "IS_DROP_MANDATE_METER_BOOKING", "true"
+    resValue "string", "LIVE_CHAT_LICENCE_NUMBER", "4711811"
+  }
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
+
+  aaptOptions {
+    cruncherEnabled = false
+  }
+
+  buildTypes {
+    release {
+      debuggable false
+      minifyEnabled false
+      shrinkResources false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+
+    debug {
+      debuggable true
+      minifyEnabled false
+      shrinkResources false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+
+  lintOptions {
+    abortOnError false
+    checkReleaseBuilds false
+  }
+
+  packagingOptions
+          {
+            exclude 'META-INF/NOTICE'
+            exclude 'META-INF/LICENSE'
+            exclude 'META-INF/LICENSE.txt'
+            exclude 'AndroidManifest.xml'
+            exclude 'lib/arm64-v8a/libcardioDecider.so'
+            exclude 'lib/arm64-v8a/libcardioRecognizer.so'
+            exclude 'lib/arm64-v8a/libcardioRecognizer_tegra2.so'
+            exclude 'lib/arm64-v8a/libopencv_core.so'
+            exclude 'lib/arm64-v8a/libopencv_imgproc.so'
+            exclude 'lib/armeabi/libcardioDecider.so'
+
+            exclude 'lib/armeabi-v7a/libcardioDecider.so'
+            exclude 'lib/armeabi-v7a/libcardioRecognizer.so'
+            exclude 'lib/armeabi-v7a/libcardioRecognizer_tegra2.so'
+            exclude 'lib/armeabi-v7a/libopencv_core.so'
+            exclude 'lib/armeabi-v7a/libopencv_imgproc.so'
+
+            exclude 'lib/mips/libcardioDecider.so'
+            exclude 'lib/x86/libcardioDecider.so'
+            exclude 'lib/x86/libcardioRecognizer.so'
+            exclude 'lib/x86/libcardioRecognizer_tegra2.so'
+            exclude 'lib/x86/libopencv_core.so'
+            exclude 'lib/x86/libopencv_imgproc.so'
+            exclude 'lib/x86_64/libcardioDecider.so'
+            exclude 'lib/x86_64/libcardioRecognizer.so'
+            exclude 'lib/x86_64/libcardioRecognizer_tegra2.so'
+            exclude 'lib/x86_64/libopencv_core.so'
+            exclude 'lib/x86_64/libopencv_imgproc.so'
+
+            /*exclude 'lib/arm64-v8a/libclient.so'*/
+            exclude 'lib/armeabi/libclient.so'
+            exclude 'lib/x86/libclient.so'
+            exclude 'lib/x86_64/libclient.so'
+          }
+}
+
+// Map for the version code that gives each ABI a value.
+ext.abiCodes = ['armeabi-v7a': 1, x86: 2, x86_64: 3]
+
+// For per-density APKs, create a similar map like this:
+// ext.densityCodes = ['mdpi': 1, 'hdpi': 2, 'xhdpi': 3]
+
+final daggerVersion = '2.24'
+
+dependencies {
+  implementation 'com.github.livechat:chat-window-android:v2.0.3'
+  /*Zendesk*/
+  implementation group: 'com.zopim.android', name: 'sdk', version: '1.4.2'
+  implementation 'com.twilio:client-android:1.2.21'
+  implementation 'androidx.multidex:multidex:2.0.1'
+  implementation('com.crashlytics.sdk.android:crashlytics:2.10.1@aar') {
+    transitive = true;
+  }
+
+  /*Glide*/
+  implementation 'com.github.bumptech.glide:glide:4.10.0'
+  annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
+
+  implementation 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+  implementation('com.stripe:stripe-android:5.1.0') {
+    exclude group: 'com.android.support'
+  }
+  implementation 'androidx.appcompat:appcompat:1.1.0'
+  implementation 'com.google.android.material:material:1.0.0'
+  implementation 'androidx.cardview:cardview:1.0.0'
+  implementation 'pub.devrel:easypermissions:0.4.0'
+  implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+  implementation 'com.google.code.gson:gson:2.8.5'
+  implementation 'com.squareup.picasso:picasso:2.71828'
+  implementation 'com.squareup.okhttp3:okhttp:4.2.0'
+  implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+  implementation 'com.google.android.gms:play-services-gcm:17.0.0'
+  implementation 'com.google.android.gms:play-services-maps:17.0.0'
+  implementation 'com.google.android.gms:play-services-location:17.0.0'
+  implementation 'com.google.firebase:firebase-messaging:20.0.0'
+  implementation 'com.mikhaellopez:circularprogressbar:1.1.1'
+  implementation 'com.github.gcacace:signature-pad:1.2.1'
+  implementation ('com.amazonaws:aws-android-sdk-s3:2.16.0'){
+    exclude module: 'commons-logging:commons-logging:+'
+  }
+  implementation 'com.couchbase.lite:couchbase-lite-android:1.4.1'
+  implementation 'io.card:android-sdk:5.5.1'
+  implementation 'org.greenrobot:eventbus:3.1.1'
+  implementation 'com.facebook.android:facebook-android-sdk:5.5.1'
+  // Dependency Injection
+  implementation "com.google.dagger:dagger-android:${daggerVersion}"
+  implementation "com.google.dagger:dagger-android-support:${daggerVersion}"
+  implementation "com.google.dagger:dagger:${daggerVersion}"
+  annotationProcessor "com.google.dagger:dagger-android-processor:${daggerVersion}"
+  annotationProcessor "com.google.dagger:dagger-compiler:${daggerVersion}"
+  compileOnly 'javax.annotation:jsr250-api:1.0'
+  // Butterknife
+  implementation 'com.jakewharton:butterknife:10.2.0'
+  annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
+  // Retrofit
+  implementation 'com.squareup.retrofit2:retrofit:2.6.2'
+  implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
+  //RXjava 2
+  implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+  implementation 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
+  //mqtt
+  implementation 'org.eclipse.paho:org.eclipse.paho.android.service:1.1.1'
+  implementation 'com.google.android.gms:play-services-places:17.0.0'
+  implementation 'com.googlecode.libphonenumber:libphonenumber:8.10.19'
+  implementation 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.2'
+  implementation project(':simplecroplib')
+  implementation('com.crashlytics.sdk.android:crashlytics-ndk:2.1.1@aar') {
+    transitive = true;
+  }
+
+  //for webrtc calls
+  implementation files('libs/libjingle_peerconnection.jar')
+  implementation files('libs/autobanh.jar')
+}
+apply plugin: 'com.google.gms.google-services'
+crashlytics {
+  enableNdk true
+  androidNdkOut 'src/main/obj'
+  androidNdkLibsOut 'src/main/libs'
+}
+
+
+

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <include
+        android:id="@+id/include_actionbar"
+        layout="@layout/actionbar" />
+
+    <RelativeLayout
+        android:id="@+id/rlCardImage"
+        android:layout_width="700dp"
+        android:layout_height="200dp"
+        android:background="@drawable/card_details_card"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/include_actionbar"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tvDotText"
+            android:layout_width="@dimen/dpTwoHundred"
+            android:layout_height="wrap_content"
+            android:text="@string/stars"
+            android:textColor="#ffffff"
+            android:maxLines="1"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/dpNinety"
+            android:layout_marginLeft="@dimen/dpTwenty"
+            android:layout_marginStart="@dimen/dpTwenty"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <TextView
+            android:id="@+id/tvCardNumberDeleteCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/tvDotText"
+            android:layout_toEndOf="@+id/tvDotText"
+            android:layout_alignBaseline="@+id/tvDotText"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <TextView
+            android:id="@+id/tvCardNameDeleteCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="@dimen/dptwo"
+            android:layout_below="@+id/tvCardNumberDeleteCard"
+            android:layout_marginLeft="@dimen/dpTwenty"
+            android:layout_marginStart="@dimen/dpTwenty"
+            android:textStyle="bold"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/tvExpiryLabelDeleteCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/expiry"
+            android:textColor="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/dpThirty"
+            android:layout_marginLeft="@dimen/dpTwenty"
+            android:layout_marginStart="@dimen/dpTwenty"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <TextView
+            android:id="@+id/tvExpiryDateDeleteCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/tvExpiryLabelDeleteCard"
+            android:layout_toEndOf="@+id/tvExpiryLabelDeleteCard"
+            android:layout_alignBaseline="@+id/tvExpiryLabelDeleteCard"
+            android:layout_marginLeft="@dimen/dpFive"
+            android:layout_marginStart="@dimen/dpFive"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <ImageView
+            android:id="@+id/ivCardDelete"
+            android:layout_width="@dimen/dpFifity"
+            android:layout_height="@dimen/dpForty"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="@dimen/dpTwentyTwo"
+            android:layout_marginRight="@dimen/dpTwenty"
+            android:layout_marginEnd="@dimen/dpTwenty"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvSetAsDefaultCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        app:cardCornerRadius="4dp"
+        app:cardPreventCornerOverlap="true"
+        android:layout_below="@+id/rlCardImage"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/establishmentlayout"
+            android:id="@+id/rlTermsCondsDeleteCard"
+            android:visibility="visible">
+
+            <CheckBox
+                android:id="@+id/cbDeleteCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="4dp"/><!-- android:theme="@style/checkBoxStyle"-->
+
+            <TextView
+                android:id="@+id/tvTermsCondsDeleteCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/carddflttxt"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/cbDeleteCard"
+                android:layout_toEndOf="@+id/cbDeleteCard"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:visibility="visible"
+                android:gravity="center" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnDeleteCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_card"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:background="@drawable/selector_layout"
+        android:padding="@dimen/dpTen"
+        android:textSize="@dimen/spTwenty"
+        android:visibility="visible"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

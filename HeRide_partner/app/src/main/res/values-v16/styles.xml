@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">@dimen/spFifteen</item><!-- text size in menu-->
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:listPreferredItemHeightSmall">40dp</item><!-- item size in menu-->
+    </style>
+</resources>

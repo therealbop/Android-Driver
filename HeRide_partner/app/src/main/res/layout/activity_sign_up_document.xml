@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/include_actionbar"
+        layout="@layout/actionbar" />
+
+    <ScrollView
+        android:id="@+id/sv_signup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_finish"
+        android:layout_below="@+id/include_actionbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dpForty"
+            android:paddingRight="@dimen/dpForty">
+
+            <TextView
+                android:id="@+id/tv_uploadDoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dpTwenty"
+                android:paddingTop="@dimen/dpTwenty"
+                android:text="@string/upload_doc"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/spNineteen"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_driverDocument_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:text="@string/driver_doc"
+                android:textColor="@color/lig_green2"
+                android:textSize="@dimen/spSixteen"
+                android:gravity="start"
+                android:layout_marginBottom="@dimen/dpFive"/>
+
+            <!--driving licence-->
+
+            <TextView
+                android:id="@+id/tv_licence_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:text="@string/driving_lic"
+                android:textColor="@color/lig_green2"
+                android:textSize="@dimen/spTwelve" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dpTen"
+                android:layout_marginTop="@dimen/dpFive">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_licence_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_licence_doc"
+                    android:layout_width="@dimen/dimen_60dp"
+                    android:layout_height="@dimen/dimen_60dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/rv_licence_doc"
+                    android:layout_toRightOf="@+id/rv_licence_doc"
+                    android:paddingBottom="@dimen/dpFive"
+                    android:paddingTop="@dimen/dpFive"
+                    android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/include_licence"
+                        layout="@layout/single_upload_image"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_licenceExpir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginBottom="@dimen/dpTen"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textAlignment="viewStart">
+
+                <EditText
+                    android:id="@+id/et_licenceExpir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/licenceExpiry"
+                    android:text="@string/selectDate"
+                    android:focusableInTouchMode="true"
+                    android:cursorVisible="false"
+                    android:focusable="true"
+                    android:inputType="date"
+                    android:minLines="1"
+                    android:textSize="@dimen/spFourteen"
+                    android:drawableEnd="@drawable/svg_ic_chevron_right"
+                    android:drawableRight="@drawable/svg_ic_chevron_right"
+                    android:textDirection="locale"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Police Clearance-->
+
+            <TextView
+                android:id="@+id/tv_policeClear_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:text="@string/police_clearance"
+                android:textColor="@color/lig_green2"
+                android:textSize="@dimen/spTwelve"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dpTen"
+                android:layout_marginTop="@dimen/dpFive">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_policeClear_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="@dimen/dpFive"
+                    android:orientation="horizontal"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_policeClear_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/rv_policeClear_doc"
+                    android:layout_toRightOf="@+id/rv_policeClear_doc"
+                    android:paddingBottom="@dimen/dpFive"
+                    android:paddingTop="@dimen/dpFive">
+
+                    <include
+                        android:id="@+id/include_policeClear"
+                        layout="@layout/single_upload_image"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_policeClear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginBottom="@dimen/dpTen"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textAlignment="viewStart">
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/et_policeClear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/policeClearenceDate"
+                    android:text="@string/selectDate"
+                    android:focusableInTouchMode="true"
+                    android:cursorVisible="false"
+                    android:focusable="true"
+                    android:inputType="date"
+                    android:minLines="1"
+                    android:textSize="@dimen/spFourteen"
+                    android:drawableEnd="@drawable/svg_ic_chevron_right"
+                    android:drawableRight="@drawable/svg_ic_chevron_right"
+                    android:textDirection="locale"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Working with Children card-->
+
+            <TextView
+                android:id="@+id/tv_childrenCard_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:text="@string/childrenCard"
+                android:textColor="@color/lig_green2"
+                android:visibility="gone"
+                android:textSize="@dimen/spTwelve" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dpTen"
+                android:layout_marginTop="@dimen/dpFive"
+                android:layout_marginRight="-40dp"
+                android:layout_marginEnd="-40dp"
+                android:visibility="gone">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_childrenCard_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="@dimen/dpFive"
+                    android:orientation="horizontal"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_childrenCard_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/rv_childrenCard_doc"
+                    android:layout_toRightOf="@+id/rv_childrenCard_doc"
+                    android:paddingBottom="@dimen/dpFive"
+                    android:paddingTop="@dimen/dpFive">
+
+                    <include
+                        android:id="@+id/include_childrenCard"
+                        layout="@layout/single_upload_image"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_childrenExpr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/dpTen"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textAlignment="viewStart">
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/et_childrenExpr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/childrenCardExpr"
+                    android:text="@string/selectDate"
+                    android:focusableInTouchMode="true"
+                    android:cursorVisible="false"
+                    android:focusable="true"
+                    android:inputType="date"
+                    android:minLines="1"
+                    android:textSize="@dimen/spFourteen"
+                    android:drawableEnd="@drawable/svg_ic_chevron_right"
+                    android:drawableRight="@drawable/svg_ic_chevron_right"
+                    android:textDirection="locale"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_vehicleDocument_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:text="@string/vehicle_doc"
+                android:textColor="@color/lig_green2"
+                android:textSize="@dimen/spSixteen"
+                android:layout_marginBottom="@dimen/dpFive"/>
+
+            <!--vehicle registration-->
+
+            <TextView
+                android:id="@+id/tv_registration_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:text="@string/vehicle_reg"
+                android:textColor="@color/lig_green2"
+                android:textSize="@dimen/spTwelve" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dpTen"
+                android:layout_marginTop="@dimen/dpFive">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_registration_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="@dimen/dpFive"
+                    android:orientation="horizontal"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_registration_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/rv_registration_doc"
+                    android:layout_toRightOf="@+id/rv_registration_doc"
+                    android:paddingBottom="@dimen/dpFive"
+                    android:paddingTop="@dimen/dpFive">
+
+                    <include
+                        android:id="@+id/include_registration"
+                        layout="@layout/single_upload_image"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_vehRegExpr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginBottom="@dimen/dpTen"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textAlignment="viewStart">
+
+                <EditText
+                    android:id="@+id/et_vehRegExpr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/vehRegExpr"
+                    android:text="@string/selectDate"
+                    android:focusableInTouchMode="true"
+                    android:cursorVisible="false"
+                    android:focusable="true"
+                    android:inputType="date"
+                    android:minLines="1"
+                    android:textSize="@dimen/spFourteen"
+                    android:drawableEnd="@drawable/svg_ic_chevron_right"
+                    android:drawableRight="@drawable/svg_ic_chevron_right"
+                    android:textDirection="locale"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Vehicle Insurance-->
+
+            <TextView
+                android:id="@+id/tv_insurance_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:text="@string/vehicle_insurance"
+                android:textColor="@color/lig_green2"
+                android:textSize="@dimen/spTwelve" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dpTen"
+                android:layout_marginTop="@dimen/dpFive">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_insurance_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="@dimen/dpFive"
+                    android:orientation="horizontal"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_insurance_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/rv_insurance_doc"
+                    android:layout_toRightOf="@+id/rv_insurance_doc"
+                    android:paddingBottom="@dimen/dpFive"
+                    android:paddingTop="@dimen/dpFive">
+
+                    <include
+                        android:id="@+id/include_insurance"
+                        layout="@layout/single_upload_image"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_vehInsExpr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginBottom="@dimen/dpTen"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textAlignment="viewStart">
+
+                <EditText
+                    android:id="@+id/et_vehInsExpr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/vehInsuExpr"
+                    android:text="@string/selectDate"
+                    android:focusableInTouchMode="true"
+                    android:cursorVisible="false"
+                    android:focusable="true"
+                    android:inputType="date"
+                    android:minLines="1"
+                    android:textSize="@dimen/spFourteen"
+                    android:drawableEnd="@drawable/svg_ic_chevron_right"
+                    android:drawableRight="@drawable/svg_ic_chevron_right"
+                    android:textDirection="locale"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Inspection Report-->
+
+            <TextView
+                android:id="@+id/tv_Inspection_Report_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:text="@string/inspection_report"
+                android:textColor="@color/lig_green2"
+                android:textSize="@dimen/spTwelve" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dpTen"
+                android:layout_marginTop="@dimen/dpFive">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_Inspection_Report_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="@dimen/dpFive"
+                    android:orientation="horizontal"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_Inspection_Report_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/rv_Inspection_Report_doc"
+                    android:layout_toRightOf="@+id/rv_Inspection_Report_doc"
+                    android:paddingBottom="@dimen/dpFive"
+                    android:paddingTop="@dimen/dpFive">
+
+                    <include
+                        android:id="@+id/include_Inspection_Report"
+                        layout="@layout/single_upload_image"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_inspectionDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginBottom="@dimen/dpTen"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textAlignment="viewStart">
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/et_inspectionDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/inspectionDate"
+                    android:text="@string/selectDate"
+                    android:focusableInTouchMode="true"
+                    android:cursorVisible="false"
+                    android:focusable="true"
+                    android:inputType="date"
+                    android:minLines="1"
+                    android:textSize="@dimen/spFourteen"
+                    android:drawableEnd="@drawable/svg_ic_chevron_right"
+                    android:drawableRight="@drawable/svg_ic_chevron_right"
+                    android:textDirection="locale"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Goods In-Transit Insurance-->
+
+            <TextView
+                android:id="@+id/tv_goodsInsurance_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:text="@string/goodsInsurance"
+                android:textColor="@color/lig_green2"
+                android:textSize="@dimen/spTwelve" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dpTen"
+                android:layout_marginTop="@dimen/dpFive">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_goodsInsurance_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="@dimen/dpFive"
+                    android:orientation="horizontal"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_goodsInsurance_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/rv_goodsInsurance_doc"
+                    android:layout_toRightOf="@+id/rv_goodsInsurance_doc"
+                    android:paddingBottom="@dimen/dpFive"
+                    android:paddingTop="@dimen/dpFive">
+
+                    <include
+                        android:id="@+id/include_goodsInsurance"
+                        layout="@layout/single_upload_image"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_goodsTransitInsu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginBottom="@dimen/dpTen"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textAlignment="viewStart">
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/et_goodsTransitInsu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/goodsTransitInsu"
+                    android:text="@string/selectDate"
+                    android:focusableInTouchMode="true"
+                    android:cursorVisible="false"
+                    android:focusable="true"
+                    android:inputType="date"
+                    android:minLines="1"
+                    android:textSize="@dimen/spFourteen"
+                    android:drawableEnd="@drawable/svg_ic_chevron_right"
+                    android:drawableRight="@drawable/svg_ic_chevron_right"
+                    android:textDirection="locale"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Privacy Policy check-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/dpTen"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/cb_privacyPolicy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_readAndAcept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/spTwelve"
+                    android:text="@string/readAndAccept"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="@dimen/dimen_3dp"
+                    android:layout_marginEnd="@dimen/dimen_3dp"/>
+
+                <TextView
+                    android:id="@+id/tv_privacyPolicy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/spTwelve"
+                    android:text="@string/privacyPolicy"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_finish"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:text="@string/finish"
+        android:textColor="@color/white"
+        android:textSize="@dimen/spEighteen" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

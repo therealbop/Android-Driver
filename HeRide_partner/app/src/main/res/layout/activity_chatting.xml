@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chat_background">
+    <!--E5DED4  EAE8DB  #E5DED4-->
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/layout_custom_action_bar"/>
+
+    <ProgressBar
+        android:id="@+id/chatProgress"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_below="@id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvChatMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cardViewChat"
+            android:paddingEnd="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingStart="5dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewChat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/dimen_10dp"
+            app:cardCornerRadius="28dp"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:id="@+id/edit_text_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!-- <ImageView
+                     android:id="@+id/ivAddFiles"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:contentDescription="@string/app_name"
+                     android:paddingBottom="16dp"
+                     android:paddingLeft="@dimen/dimen_5dp"
+                     android:paddingRight="@dimen/dimen_5dp"
+                     android:paddingTop="16dp"
+                     android:visibility="invisible"
+                     app:srcCompat="@drawable/ic_payment_add_icon" />-->
+
+                <EditText
+                    android:id="@+id/etMsg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/enterMsgHere"
+                    android:paddingEnd="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="@dimen/dpTwenty"
+                    android:textColorHint="@color/wate1rloo"/>
+
+                <TextView
+                    android:id="@+id/tvSend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|end"
+                    android:background="@drawable/selector_layout"
+                    android:contentDescription="@string/app_name"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimen_30dp"
+                    android:paddingRight="@dimen/dimen_30dp"
+                    android:paddingTop="@dimen/dimen_10dp"
+                    android:paddingBottom="@dimen/dimen_10dp"
+                    android:text="@string/helpSend"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

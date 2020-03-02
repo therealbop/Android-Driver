@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:left="3dp"
+        android:right="1dp"
+        android:top="1dp"
+        android:bottom="1dp">
+        <shape
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <solid
+                android:color="@color/colorPrimary"/>
+        </shape>
+    </item>
+
+    <item
+        android:drawable="@drawable/towing_car"
+        android:left="12dp"
+        android:top="12dp"
+        android:right="12dp"
+        android:bottom="12dp">
+
+    </item>
+
+</layer-list>
+

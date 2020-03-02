@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/dpFive"
+    android:layout_marginLeft="@dimen/dpFive"
+    android:layout_marginStart="@dimen/dpFive"
+    android:layout_gravity="center">
+
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dpFive"
+        android:src="@drawable/svg_checkbox"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/tv_Support"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/spFourteen"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"
+        android:text="@string/wheelChairSupport"
+        android:layout_toRightOf="@id/iv_icon"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/sc_Support"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:thumb="@drawable/online_offline_thump"
+        app:track="@drawable/button_track"/>
+
+
+</RelativeLayout>

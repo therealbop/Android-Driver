@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/menu_home_off"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/menu_history_off"
+            android:title="@string/history" />
+
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/menu_wallet_off"
+            android:title="@string/wallet" />
+
+        <item
+            android:id="@+id/nav_bank_details"
+            android:icon="@drawable/menu_bank_off"
+            android:title="@string/bank_details" />
+
+        <item
+            android:id="@+id/nav_portal"
+            android:icon="@drawable/menu_portal_off"
+            android:title="@string/portal" />
+
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@drawable/menu_support_off"
+            android:title="@string/support" />
+
+        <item
+            android:id="@+id/nav_invite"
+            android:icon="@drawable/menu_invite_off"
+            android:title="@string/invite" />
+
+        <item
+            android:id="@+id/nav_live_chat"
+            android:icon="@drawable/menu_live_chat"
+            android:title="@string/live_chat"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/item_menu_nav_helpCenter"
+            android:icon="@drawable/menu_helpcenter_off"
+            android:title="@string/helpcenter"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/menu_logout_off"
+            android:title="@string/logout" />
+
+
+
+    </group>
+
+</menu>

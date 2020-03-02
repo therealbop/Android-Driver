@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <include
+        android:id="@+id/include_actionbar"
+        layout="@layout/actionbar" />
+
+    <LinearLayout
+        android:id="@+id/ll_cancel_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_actionbar"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dpPointZeroFive"
+            android:layout_marginTop="@dimen/dpFifteen"
+            android:background="@color/divider2" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_cancel_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dpFifteen"
+            android:paddingRight="@dimen/dpFifteen">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dpPointZeroFive"
+            android:background="@color/divider"/>-->
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_comment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dpPointZeroFive"
+            android:background="@color/divider" />
+
+        <TextView
+            android:id="@+id/tv_commmts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:paddingLeft="@dimen/dpFifteen"
+            android:paddingRight="@dimen/dpFifteen"
+            android:paddingTop="@dimen/dpFifteen"
+            android:text="@string/comments"
+            android:textColor="@color/coments"
+            android:textSize="@dimen/spTen" />
+
+        <View
+            android:id="@+id/view_comment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dpPointZeroFive"
+            android:layout_below="@id/tv_commmts"
+            android:background="@color/divider2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/view_comment"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dpFive"
+                android:layout_marginLeft="@dimen/dpFifteen"
+                android:layout_marginRight="@dimen/dpFifteen"
+                android:layout_marginTop="@dimen/dpFifteen"
+                android:background="@color/white"
+                android:hint="@string/tv_comment_hint"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/spSixteen" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dpPointZeroFive"
+                android:layout_marginLeft="@dimen/dpFifteen"
+                android:layout_marginRight="@dimen/dpFifteen"
+                android:background="@color/divider2" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_cancel_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/selector_next_back"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/spEighteen" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

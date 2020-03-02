@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_chat_with_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/spSixteen"
+        android:textColor="@color/colorPrimary"
+        android:padding="@dimen/dpTen"
+        android:text="@string/chat_with_agent"/>
+
+    <TextView
+        android:id="@+id/tvOpenCloseStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent_trans"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingLeft="@dimen/dimen_16dp"
+        android:paddingRight="@dimen/dimen_16dp"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:text="@string/helpSend"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/text_size_14sp"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16dp">
+
+        <TextView
+            android:id="@+id/tvHelpText"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/black_circle"
+            android:backgroundTint="@color/colorPrimary"
+            android:gravity="center"
+            android:text="A"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12sp"
+            />
+
+        <TextView
+            android:id="@+id/tvHelpSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:layout_toEndOf="@+id/tvHelpText"
+            android:layout_toRightOf="@+id/tvHelpText"
+            android:layout_toLeftOf="@id/tvHelpTime"
+            android:layout_toStartOf="@id/tvHelpTime"
+            android:text="@string/helpSubject"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_12sp"
+             />
+
+        <TextView
+            android:id="@+id/tvHelpDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHelpSubject"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:layout_toEndOf="@+id/tvHelpText"
+            android:layout_toRightOf="@+id/tvHelpText"
+            android:text="23rd apr 2017"
+            android:textSize="@dimen/text_size_12sp"/>
+
+        <TextView
+            android:id="@+id/tvHelpTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="10:43 pm"
+            android:textSize="@dimen/text_size_12sp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:id="@+id/idView"
+            android:layout_below="@+id/tvHelpDate"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@color/gray"/>
+    </RelativeLayout>
+
+</LinearLayout>

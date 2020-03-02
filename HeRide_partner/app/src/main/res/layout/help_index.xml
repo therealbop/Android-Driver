@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include android:id="@+id/tool_helpIndex"
+        layout="@layout/tool_bar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/tool_helpIndex"
+        android:id="@+id/recyclerHelpIndex"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:id="@+id/rlHelpIndex"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/empty_ticket" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_chat_with_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textSize="@dimen/spSixteen"
+        android:background="@drawable/selector_layout"
+        android:textColor="@color/white"
+        android:padding="@dimen/dpTen"
+        android:layout_marginRight="@dimen/dimen_30dp"
+        android:layout_marginLeft="@dimen/dimen_30dp"
+        android:layout_marginBottom="100dp"
+        android:text="@string/chat_with_us"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/progressbarHelpIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

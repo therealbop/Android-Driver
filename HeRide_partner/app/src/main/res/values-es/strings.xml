@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Insta Conductor</string>
+    <string name="app_name_withoutSpace">Insta Conductor</string>
+    <string name="navigation_drawer_open">Abra el Navegador</string>
+    <string name="navigation_drawer_close">Cierre el Navegador</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="loading">Cargando&#8230;</string>
+    <string name="logging_out">Desconectando&#8230;</string>
+    <string name="network_problem">Sin Internet</string>
+    <string name="support_content">Soporte</string>
+    <string name="reGrantPermissionMsg">Usted ha negado el permiso requerido.
+Por favor, permítanos seguir</string>
+    <string name="appSetting">Ajustes de App</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancelar</string>
+    <string name="logoutDialog">¿Quiere desconectarse?</string>
+    <string name="log">Conectarse</string>
+    <string name="out">Salir</string>
+    <string name="sessionExpired">Disculpe, su sesión ha terminado. Por favor ingrese de nuevo!!!</string>
+    <!--Splash Screen Activity-->
+    <string name="login">Conectarse</string>
+    <string name="signin">Registrarse</string>
+    <string name="signup">Registrate</string>
+    <string name="splash_msg">Entrega en el día</string>
+    <string name="offline">Desconectado</string>
+    <string name="online">Conectado</string>
+    <!--login activity -->
+    <string name="phone_no">Número de Celular</string>
+    <string name="phone_no_email_hint">Número de Celular</string>
+    <string name="vehicle_pin_number">Patente</string>
+    <string name="password">Contraseña</string>
+    <string name="forgot_pass">¿Olvidó la contraseña?</string>
+    <string name="select_country">Seleccione País</string>
+    <string name="fill_fields">Complete los campos</string>
+    <string name="phone_miss">Ingrese el email o número de Celular</string>
+    <string name="phone_mis">Ingrese el número de Celular</string>
+    <string name="password_miss">Ingrese la contraseña</string>
+    <string name="vehNo_miss">"Ingrese la Patente "</string>
+    <string name="login_succes">Conexión exitosa</string>
+    <string name="services_invalid">Servicio no disponible</string>
+    <string name="selectLanguage">Lenguaje</string>
+    <string name="english">Inglés</string>
+    <!--Forgot password Enter  mobile num activity-->
+    <string name="forgotPassword">Olvidó la contraseña</string>
+    <string name="forgotMsgMob">Ingrese su número de Celular, para recibir un código de verificación,y cambiar la contraseña</string>
+    <string name="forgotMsgEmail">Ingrese su email para recibir un enlace y cambiar la contraseña</string>
+    <!--Forgot password verify-->
+    <string name="verify_msg1">Código de verificación ha sido enviado</string>
+    <string name="verify_msg2">Por favor ingrese el código de abajo</string>
+    <string name="resend">¿Código reenviado?</string>
+    <string name="verify">Verificar</string>
+    <string name="enter_otp">Ingrese un código de verificación</string>
+    <!--Forgot Password re-enter pass-->
+    <string name="newpassmsg">Gracias por verificar su número de celular, por favor cree una nueva contraseña</string>
+    <string name="NewPass">Nueva contraseña</string>
+    <string name="ReEnterPass">repita la contraseña</string>
+    <string name="passNotMactch">La contraseña no coincide</string>
+    <string name="Continue">Continue</string>
+    <string name="entNewPass">Ingrese nueva contraseña</string>
+    <string name="EntNewPass">Cambie Contraseña</string>
+    <string name="reentrPass">Reingrese la contraseña</string>
+    <string name="select_city">Seleccione Ciudad</string>
+    <!--select vechicle list-->
+    <string name="logout_vl">Desconectar</string>
+    <string name="selectVeh_vl">Seleccione Vehículo</string>
+    <string name="plateno_vl">Patente</string>
+    <string name="type_vl">Tipo</string>
+    <string name="type_select">Seleccione tipo</string>
+    <string name="confirm">Confirme</string>
+    <string name="logoutmessage">¿Esta seguro que quiere desconectarse?</string>
+    <string name="selectVechicle">Seleccione vehículo</string>
+    <!--Sign up activity web-->
+    <string name="appname_title">Insta</string>
+    <string name="reg_now">Regístrese Ahora</string>
+    <!--sign up activity personal-->
+    <string name="mandatory">Este campo es obligatorio</string>
+    <string name="pass_mismatch">Contraseña no coincide</string>
+    <string name="signup_">Regístrarse</string>
+    <string name="next">Próximo</string>
+    <string name="persoanl">Detalles Personales</string>
+    <string name="fname">Nombre</string>
+    <string name="lname">Apellido</string>
+    <string name="email">Email</string>
+    <string name="password_signup">CONTRASEÑA</string>
+    <string name="password_confirm_signup">Confirme Contraseña</string>
+    <string name="driving_lic">Licencia de Conducir (ambos lados)</string>
+    <string name="upload">(subir ambos lados)</string>
+    <string name="err_fname">Por favor Ingrese Nombre</string>
+    <string name="err_phone_no">Número de Celular Invalido</string>
+    <string name="err_email">Ingrese Email</string>
+    <string name="err_pass">Ingrese contraseña</string>
+    <string name="invalidEmail">E mail invalido</string>
+    <string name="invalid_email_or_phone">Email o Celular invalido</string>
+    <string name="invalidPhone">Ingrese un Número de celular válido</string>
+    <string name="operator">Operador</string>
+    <string name="free_lancer">Independiente</string>
+    <string name="choose_prof_pic">Subir Imagen del Perfil</string>
+    <string name="choose_licence_img">Suba Licencia de Conducir</string>
+    <string name="phone_reg_err">Celular registrado</string>
+    <string name="phone_email_reg_err">Celular e Email registrados</string>
+    <string name="email_reg_err">Email registrado</string>
+    <string name="licence_miss">Suba la imagen de la Licencia</string>
+    <string name="dateOfBirth">Fecha de Nacimiento</string>
+    <string name="dateOfBirthError">Seleccione Fecha de Nacimiento</string>
+    <string name="selectDate">Seleccione Fecha</string>
+    <string name="licenceExpiry">Fecha de término de la Licencia de conducir</string>
+    <string name="policeClearenceDate">Fecha de Inicio de la Póliza de seguro</string>
+    <string name="childrenCardExpr">Fecha de Término de la tarjeta de niños</string>
+    <string name="vehRegExpr">Fecha de término del Registro</string>
+    <string name="vehInsuExpr">Fecha de Término del Seguro</string>
+    <string name="inspectionDate">Fecha de Inspección</string>
+    <!--sign up activity vechicle-->
+    <string name="vehicle_details">Tipo de Auto</string>
+    <string name="plate_no">Patente</string>
+    <string name="color">Color</string>
+    <string name="type">Tipo</string>
+    <string name="services">Servicios</string>
+    <string name="select_service">Seleccione Servicios</string>
+    <string name="specialities">Especialidad</string>
+    <string name="make">Hacer</string>
+    <string name="make_title">Hacer</string>
+    <string name="model">Modelo</string>
+    <string name="model_title">Modelo</string>
+    <string name="year">Año</string>
+    <string name="year_title">Año</string>
+    <string name="err_year">Año Invalido</string>
+    <string name="insurance">Seguro</string>
+    <string name="finish">Termino</string>
+    <string name="err_plate">Patente</string>
+    <string name="err_color">Seleccione Color</string>
+    <string name="err_type">Seleccione Tipo</string>
+    <string name="err_specialities">Seleccione Especialidad</string>
+    <string name="select_year">Seleccione Año</string>
+    <string name="err_model">Seleccione Modelo</string>
+    <string name="err_veh_img">Suba Foto del Auto</string>
+    <string name="err_insurance_img">Agregue foto del Seguro</string>
+    <string name="Insurance_miss">Subir la foto de la póliza de seguros</string>
+    <string name="certificate_miss">Subir la foto del Certificado</string>
+    <string name="wheelChairSupport">Incluye Silla de Ruedas</string>
+    <string name="extraBagsSupport">Espacio para equipaje adicional</string>
+    <string name="quietRide">Servicio Silencioso</string>
+    <string name="bikeCarrier">Porta Bicicleta</string>
+    <string-array name="gender">
+        <item>Hombre</item>
+        <item>Mujer</item>
+    </string-array>
+    <string-array name="colors">
+        <item>Blanco</item>
+        <item>Negro</item>
+        <item>Castaño Oscuro</item>
+        <item>Castaño Claro</item>
+        <item>Castaño</item>
+        <item>Azul Marino</item>
+        <item>Azul</item>
+        <item>Celeste</item>
+        <item>Turquesa</item>
+        <item>Verde Claro</item>
+        <item>Rojo</item>
+        <item>Amarillo</item>
+        <item>Naranja</item>
+        <item>Violeta</item>
+        <item>Cafe</item>
+        <item>Plata</item>
+        <item>Oro</item>
+        <item>Marron</item>
+        <item>Rosa</item>
+        <item>Rosado</item>
+        <item>Violeta</item>
+    </string-array>
+    <!--SignUp UpLoad Documents-->
+    <string name="driver_doc">Documentos del Conductor</string>
+    <string name="vehicle_doc">Documentos del Auto</string>
+    <string name="vehicle_reg">Registro del Auto</string>
+    <string name="vehicle_insurance">Seguro del Auto</string>
+    <string name="inspection_report">Revision Técnica</string>
+    <string name="readAndAccept">He leido y acepto el</string>
+    <string name="privacyPolicy">Política de Privacidad</string>
+    <string-array name="uploadDoc">
+        <item>Licencia</item>
+        <item>Registro</item>
+        <item>Seguro</item>
+        <item>Despejar</item>
+        <item>Inspección</item>
+        <item>Tarjeta de niños</item>
+    </string-array>
+    <string name="signup_success">Gracias por registrarse con nosotros, uno de nuestros representantes se contactará con Usted en las próximas 24 horas para completar el proceso.</string>
+    <string name="privacy_policy_err">Revise la Politica de Privacidad</string>
+    <!--NavigationDrawer-->
+    <string name="home">Inicio</string>
+    <string name="history">Historial</string>
+    <string name="support">Soporte</string>
+    <string name="logout">Salir</string>
+    <string name="card">Tarjeta</string>
+    <string name="walet">Billetera</string>
+    <string name="corporateWalet">Empresa</string>
+    <string name="wallet">Billetera</string>
+    <string name="cancelation_fee">Cargo por Cancelación</string>
+    <string name="open_par">(</string>
+    <string name="view_profile">Ver Perfil</string>
+    <!--Hostory String-->
+    <string name="from">Desde</string>
+    <string name="to">A</string>
+    <string name="no_of_trips">Número de Viajes</string>
+    <string name="amount_earns">Ganancias</string>
+    <!--On the way to pickup-->
+    <string name="googlemaps">Mapas Google</string>
+    <string name="maps">"Mapas"</string>
+    <string name="waze">Wade</string>
+    <string name="distance">Distancia</string>
+    <string name="time">Tiempo</string>
+    <string name="km">Km</string>
+    <string name="min">/Min</string>
+    <string name="miniute">Min</string>
+    <string name="arrivedAtPick">Tu auto ha llegado</string>
+    <string name="start">Comenzar</string>
+    <string name="waitingTime">Tiempo de Espera</string>
+    <string name="waitingTimer">Reloj de Espera</string>
+    <string name="timer">Reloj</string>
+    <string name="hrs">Hrs</string>
+    <string name="onTrip">En Viaje</string>
+    <string name="unload">Descargar</string>
+    <!--Cancel Activity-->
+    <string name="cancelReason">Motivos de la Cancelación</string>
+    <string name="comments">Comentarios</string>
+    <string name="tv_comment_hint">Escriba comentarios aquí</string>
+    <!--DeliveryCompleted Activity-->
+    <string name="deli_completed">Entrega Lista</string>
+    <string name="id_">"ID:"</string>
+    <string name="help">Ayuda</string>
+    <string name="current_fare">Tarifas Actuales</string>
+    <string name="bil_details">Facturación</string>
+    <string name="time_fare">Tarifa por Tiempo</string>
+    <string name="minimum_fare">Tarifa Minima</string>
+    <string name="waiting_fee">Tarifa de Espera</string>
+    <string name="cust_lastDue">Deuda último Cliente</string>
+    <string name="discount">Descuento</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="add_special">"+Agregue Cargos Especiales"</string>
+    <string name="grand_total">Gran Total</string>
+    <string name="deliverd_to">Entregado A</string>
+    <string name="phone_number">Celular</string>
+    <string name="signature">Firma</string>
+    <string name="photos_of_doc">Fotos de Documentos</string>
+    <string name="take_photo">Tomar Foto</string>
+    <string name="rate_the_cus">Califique al Cliente</string>
+    <!--Booking PopUp Activity-->
+    <string name="pickup">Recoger</string>
+    <string name="drop">Dejar</string>
+    <string name="lefttoaccept">Dejar Aceptar</string>
+    <string name="Deliveryfee">Tarifa de Entrega</string>
+    <!--HistoryActivity Invoice-->
+    <string name="senderdetails">Remitente</string>
+    <string name="yourated">Su Calificación</string>
+    <string name="total">Gran Total</string>
+    <string name="special_charge">Cargos especiales</string>
+    <string name="tollCharge">Peaje</string>
+    <string name="payment">Pago</string>
+    <string name="recieversdetails">"Detalles del destinatario"</string>
+    <string name="documents">Documentos</string>
+    <string name="recievedby">Recibido por</string>
+    <string name="total_amount">Monto Total</string>
+    <string name="trip_with">Viajo con</string>
+    <!--Job Details-->
+    <string name="jobdetails">Detalles de carga</string>
+    <string name="bookingid">ID Reserva</string>
+    <string name="pickupanddrop">Origen y Destino</string>
+    <string name="senderrecdet">"Remitente / Receptor"</string>
+    <string name="sender">Remitente</string>
+    <string name="reciever">Remitente</string>
+    <!--Imageupload-->
+    <string name="gallery">Galleria</string>
+    <string name="camera">Camara</string>
+    <string name="remove">Remover</string>
+    <!--activity_select_an_operator-->
+    <string name="title_activity_select_an_operator">Seleccione un Operador</string>
+    <string name="referral">Código de Referido</string>
+    <string name="refErr">Código de Referido Invalido</string>
+    <string name="select_zone">Seleccionar Zona de Preferencia</string>
+    <string name="zones">Zonas Preferidas</string>
+    <string name="read_phone_state_permission_message">Por Favor, denos su permiso para leer en el estado de su celular la identificación de su aparato.</string>
+    <string name="location_permission_message">Denos su permiso para recuperar la ubicación de tu celular.</string>
+    <string name="booking_fare">Tarifa de Reserva</string>
+    <string name="currency">"$"</string>
+    <string name="message">Mensaje</string>
+    <string name="after">Después</string>
+    <string name="sun">Dom</string>
+    <string name="mon">Lun</string>
+    <string name="tue">Mar</string>
+    <string name="wed">Mie</string>
+    <string name="thu">Jue</string>
+    <string name="fri">Vie</string>
+    <string name="sat">Sab</string>
+    <string name="BaseFare">Tarifa Base</string>
+    <string name="charges">Detalle de Tarifa</string>
+    <string name="handling">Manejo</string>
+    <string name="adjustment">Ajuste de Tarifa Minima</string>
+    <string name="waiting_fare">Espera</string>
+    <string name="base_fare">Base</string>
+    <string name="validating">Validando</string>
+    <string name="make_online">Manténgase en Linea</string>
+    <string name="time_left_drop">Tiempo restante para llegar</string>
+    <string name="now">Ahora</string>
+    <string name="no_network">Sin Internet, Revise su Conexión y trate de nuevo.</string>
+    <string name="reg_certficate">Subir la foto del Certificado</string>
+    <string name="emptyReason">Por Favor indique la razón.</string>
+    <string name="your_earnings">Ganancias y Comisión</string>
+    <string name="earned_amount">Monto ganado</string>
+    <string name="AppCommission">Comisión de la Aplicación</string>
+    <string name="reached_at_drop_location">Llegada al destino</string>
+    <string name="pls_select_zone">Seleccione la Zona</string>
+    <string name="carriage_photo">Permiso</string>
+    <string name="registration">Registro</string>
+    <string name="done">Hecho</string>
+    <string name="certificate">Certificado</string>
+    <string name="referral_text">Comparta su código de Referido con otros conductores y obtenga ofertas de</string>
+    <string name="facebook">facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="Email">Email</string>
+    <string name="invite">Invitar</string>\
+    
+    <string name="portal">Portal</string>
+    <!--   Bank  Details  -->
+    <string name="bank_details">Banco</string>
+    <string name="add">Suma</string>
+    <string name="add_account">Agregue Cuenta</string>
+    <string name="image">Imagen</string>
+    <string name="newAccount">Nueva Cuenta</string>
+    <string name="bankDetailsline">Detalles Bancarios</string>
+    <string name="title_activity_new_account">Nueva Cuenta</string>
+    <string name="addCaps">Agregue</string>
+    <string name="accno">Número de Cuenta</string>
+    <string name="name_">Nombre</string>
+    <string name="DOB">Fecha de Nacimiento</string>
+    <string name="state">Estado</string>
+    <string name="city">Ciudad</string>
+    <string name="address">Dirección</string>
+    <string name="enterAccountNo">Numero de Cuenta</string>
+    <string name="enterAccountHoldername">Titular de la Cuenta</string>
+    <string name="enterState">Estado</string>
+    <string name="enterYear">Año</string>
+    <string name="enterColor">Color</string>
+    <string name="enterCity">Ciudad</string>
+    <string name="enterAddress">Dirección</string>
+    <string name="accnolabel">Cuenta</string>
+    <string name="accountHolder">Titular de la Cuenta</string>
+    <string name="accountDetails">Detalle de la Cuenta</string>
+    <string name="bankName">Banco</string>
+    <string name="currency_bank_details">Moneda</string>
+    <string name="county">Pais</string>
+    <string name="deleteAccount">Eliminar Cuenta</string>
+    <string name="customerCancelTheBooking">Cliente Cancela Reserva</string>
+    <string name="fullName">Nombre Completo</string>
+    <string name="link">Hola¡¡ Usa mi código al ingresar, y obtener beneficios en Insta</string>
+    <string name="change_name">Cambie su nombre</string>
+    <string name="change_name_title">Cambia nombre</string>
+    <string name="booking_hoistory">Historial</string>
+    <string name="plan">Plan de Comision</string>
+    <string name="edit_pass">Cambie Contraseña</string>
+    <string name="serverError">Incapaz de recuperar datos</string>
+    <string name="nosubCategory">Sin Categoria SUB</string>
+    <string name="photoID">Foto ID</string>
+    <string name="FIRSTNAME">Nombre</string>
+    <string name="LASTNAME">"Apellido
+"</string>
+    <string name="enterLastName">Apellido</string>
+    <string name="enterValidMonth">Mes</string>
+    <string name="enterValidYear">Año</string>
+    <string name="enteCountry">Pais</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="pls_select_vehicle">Seleccione Auto</string>
+    <string name="pls_select_model">Seleccione Modelo</string>
+    <string name="pls_select_make">Seleccione Marca</string>
+    <string name="conform_password_miss">Confirme Contraseña</string>
+    <string name="collect_cash">Pago en Efectivo</string>
+    <string name="not_now">No ahora</string>
+    <string name="update_msg">Actualize su aplicación desde la Tienda</string>
+    <string name="update_available">Actualización disponible</string>
+    <string name="Update">Actualice</string>
+    <string name="recharge">Recargue</string>
+    <string name="update_non_mandatory">Actualización disponible en la Play Store.
+¿Quiere actualizar ahora?</string>
+    <string name="version">Versión</string>
+    <string name="live_chat">Chat en Vivo</string>
+    <string name="OK">OK</string>
+    <string name="payUsingCard">Pague con Tarjeta</string>
+    <string name="confirmAndPay">Confirm &#38; Pago</string>
+    <string name="payAmount">Monto Pagado</string>
+    <string name="signing_up">Firme</string>
+    <string name="share_your_code">Comparta su código</string>
+    <!--wallet-->
+    <!--Alert Box Text-->
+    <string name="network_alert_title">Ajustes de Red</string>
+    <string name="network_alert_message">Red esta lenta o no hay servicio.
+¿Desea ir a ajustes del menú?</string>
+    <string name="location_alert_title">Ajuste de Localización</string>
+    <string name="location_alert_message">Servicio de localización deshabitado..
+¿Quiere ir a los ajustes del menú?</string>
+    <string name="title_activity_confirm_number">Confirme Número</string>
+    <string name="credit_desc">Crédito es la deuda con la aplicación por el último servicio.</string>
+    <string name="choose_card">Elija/Agregue Tarjeta</string>
+    <string name="cancel_request">¿Cancela la solicitud?</string>
+    <string name="cancle_bookin">¿Esta seguro que desea cancelar la solicitud?</string>
+    <string name="yes_alert">Si</string>
+    <string name="no_alert">No</string>
+    <string name="delete_alert">¿Esta seguro que desea eliminar esta tarjeta?</string>
+    <string name="bad_gateway">Camino Equivocado</string>
+    <string name="selectPayment">Seleccione Modo de pago</string>
+    <!--    network bar-->
+    <string name="nonetwork">Sin conección a Internet</string>
+    <string name="alert">Alerta</string>
+    <string name="alert_cap">Alerta</string>
+    <string name="messagealert">Mensaje</string>
+    <string name="warning">Advertencia</string>
+    <string name="something_went_wrong">Algo salió mal. Por favor trate de nuevo.</string>
+    <string name="force_logout_msg">Usted se ja desconectado de la App, Por favor reconectese.</string>
+    <string name="addAmountToAdd">Por favor agregue este monto a la billetera</string>
+    <string name="cardDetailsNotFound">Por favor agregue tarjeta para recargar la billetera</string>
+    <string name="pleaseWait">Un momento por favor</string>
+    <string name="softLimitMsg">Recargando limite máximo de Linea de crédito</string>
+    <string name="hardLimitMsg">Linea de crédito copada</string>
+    <string name="no_transactions_done">Transacción no realizada</string>
+    <string name="addcard">Agregue Tarjeta</string>
+    <string name="paymentMethod">Modo de Pago</string>
+    <string name="skip">Saltar</string>
+    <string name="note">Nota</string>
+    <string name="You_did_not_enter_valid_card">Tarjeta no valida</string>
+    <string name="try_again">Trate de nuevo</string>
+    <string name="card_ending_with">"Tarjeta termina en "</string>
+    <string name="expiry">EXP</string>
+    <string name="delete_card">Eliminar Tarjeta</string>
+    <string name="wait">Espere por favor</string>
+    <string name="card_info">Información de Tarjeta</string>
+    <string name="Card_Info">Detalles de Tarjeta</string>
+    <string name="card_removed">Tarjeta eliminada Exitosamente</string>
+    <string name="confirmPayment">Confirme Pago</string>
+    <string name="paymentMsg1">Presione en Confirmar para autorizar.</string>
+    <string name="paymentMsg2">Recargue su billetera con</string>
+    <!-- WALLET TRANSACTIONS ACTIVITY-->
+    <string name="recentTransactions">Transacciones recientes</string>
+    <string name="transactionID">Trans. ID</string>
+    <string name="debit">Debito</string>
+    <string name="credit">Crédito</string>
+    <string name="requested_For">Pedido Por</string>
+    <string name="creditLine">Linea de Crédito</string>
+    <string name="Cancellation_fare">Tarifa de Cancelación</string>
+    <string name="wallet_enabled">Billetera habitada</string>
+    <string name="wallet_disabled">Billetera deshabitada</string>
+    <string name="edit_pass_msg">Ingrese nueva contraseña</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <!--MyProfile fragment-->
+    <string name="edit">Editar</string>
+    <string name="name">Nombre</string>
+    <string name="prof_fname">Nombre</string>
+    <string name="prof_lname">Apellido</string>
+    <string name="prof_number">Número</string>
+    <string name="prof_pass">Contraseña</string>
+    <string name="prof_veh_type">Tipo de Auto</string>
+    <string name="prof_vech_number">Número de Auto</string>
+    <string name="prof_commission_plan">Comisión</string>
+    <string name="change_pass">Cambie Contraseña</string>
+    <string name="save">Guardar</string>
+    <string name="get_verification">Obtener código de verificación</string>
+    <string name="continue_txt">Continuar</string>
+    <string name="updating">Actualizar</string>
+    <string name="color_title">Color</string>
+    <!--Edit Name -->
+    <string name="enter_first_name">Ingrese Nombre</string>
+    <string name="enter_last_name">Ingrese Apellido</string>
+    <string name="new_name">Nuevo nombre</string>
+    <string name="err_name">Ingrese Nombre</string>
+    <!--Edit Phone Number-->
+    <string name="edit_phone_msg">Ingrese su teléfono y recibirá un código de verificación para resetear clave</string>
+    <string name="edit_email_msg">Ingrese su correo  y recibirá un código de verificación para cambiar su clave</string>
+    <!--Edit Password dialog-->
+    <string name="enter_old_pass">Ingrese contraseña para verificar</string>
+    <string name="old_pas">Ingrese contraseña</string>
+    <string name="invalid_pass">Contraseña incorrecta</string>
+    <string name="try_diff_pass">Ingrese una contraseña diferente</string>
+    <!--Change Password-->
+    <string name="old_pass">Contraseña vieja</string>
+    <string name="new_pass">Nueva contraseña</string>
+    <string name="re_ent_pass">Reingrese la contraseña</string>
+    <string name="submit">Enviar</string>
+    <string name="ent_pres_pass">Ingrese la contraseña actual</string>
+    <string name="pass_change_success">Clave actualizada exitosamente</string>
+    <string name="enter_new_pass">Ingrese nueva contraseña</string>
+    <!--HomeFragment String-->
+    <string name="go_offline">Desconectarse</string>
+    <string name="go_online">Conectarse</string>
+    <string name="current">Actual</string>
+    <string name="upcoming">Próximo</string>
+    <string name="id">ID</string>
+    <string name="time_left">Tiempo restante para recoger</string>
+    <string name="ride">Viaje</string>
+    <string name="cash_balance">Balance de Efectivo</string>
+    <string name="softlimit">Límite suave</string>
+    <string name="hardlimit">Límite máximo</string>
+    <!--Driver Meter-->
+    <string name="start_manual_trip">Comenzar carrera</string>
+    <string name="setDropLocation">Ingrese Destino</string>
+    <string name="pickup_location">Origen</string>
+    <string name="drop_location">Destino</string>
+    <string name="select_drop">Seleccionar destino</string>
+    <string name="completeTrip">Viaje Terminado</string>
+    <string name="bookForSomeOne">Reservado para alguien</string>
+    <!--Ride Booking-->
+    <string name="rideBooking">Reservar Servicio</string>
+    <string name="call">Llamar</string>
+    <string name="arrivedToPick">Tu auto ha llegado</string>
+    <string name="startTrip">Comenzar Viaje</string>
+    <string name="ontheway">En Camino</string>
+    <string name="youAreNot">Usted no está en el</string>
+    <string name="rangePick">Distancia a su ubicación</string>
+    <!--PopUp-->
+    <string name="bookingType">Tipo de Reserva</string>
+    <string name="vehicleType">Tipo de auto</string>
+    <string name="serviceType">Tipo de servicio</string>
+    <string name="noOfSeat">Número de asientos</string>
+    <string name="reject">Rechazar</string>
+    <string name="preferences">"Preferencias:"</string>
+    <!--Invoice Activity-->
+    <string name="your_trip_on">"En Viaje"</string>
+    <string name="cash">Efectivo</string>
+    <string name="receipt">Recibo</string>
+    <string name="enter_email_id_invoice">Ingrese su email y recibirá allí su factura</string>
+    <string name="rateYourTrip">Califique su viaje con</string>
+    <string name="bill_details">Detalles de la boleta</string>
+    <string name="receipt_details">Detalles del Recibo</string>
+    <string name="receipt_small">Recibo</string>
+    <string name="exit_double_back">Presione Regresar para salir</string>
+    <string name="search">Buscando</string>
+    <string name="select_location_map">Buscar Destino en el Mapa</string>
+    <string name="favourites">Favoritos</string>
+    <string name="link1">Hola!. Usa mi código</string>
+    <string name="link2">Hola¡¡ Usa mi código al ingresar, y obtener beneficios en Insta</string>
+    <string name="mandatory_update">Actualize su aplicación desde la Tienda</string>
+    <string name="lessthanHard">Su saldo de Billetera excede el límite</string>
+    <string name="lessthanSoft">Límite bajo: El balance está cerca del límite inferior permitido en la Billetera</string>
+    <string name="helpSend">Enviar</string>
+    <string name="enterMsgHere">Escriba mensaje aquí..</string>
+    <string name="amount">Monto</string>
+</resources>

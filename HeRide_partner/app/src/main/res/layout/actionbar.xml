@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_main_menu_layout"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:gravity="bottom">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:elevation="3dp">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:paddingTop="@dimen/dpFive"
+            android:text="@string/history"
+            android:textColor="@color/white"
+            android:textSize="@dimen/spEighteen" />
+
+        <TextView
+            android:id="@+id/tv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:paddingRight="@dimen/dpFifteen"
+            android:text="@string/logout_vl"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:paddingEnd="@dimen/dpTen"
+            android:paddingRight="@dimen/dpTen"
+            android:src="@drawable/selector_history_search"
+            android:visibility="gone"
+            android:textDirection="locale"
+            android:gravity="start"
+            android:textAlignment="viewStart"/>
+
+        <ImageView
+            android:id="@+id/iv_jobdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/selector_jobdetails"
+            android:visibility="gone"
+            android:textDirection="locale"
+            android:gravity="start"
+            android:textAlignment="viewStart"/>
+
+        <ImageView
+            android:id="@+id/iv_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dpFive"
+            android:src="@drawable/svg_chat"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:contentDescription="@string/app_name"
+            android:layout_marginRight="@dimen/dpTen"
+            android:layout_marginEnd="@dimen/dpTen"
+            android:visibility="gone"
+            android:layout_gravity="end"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+</com.google.android.material.appbar.AppBarLayout>

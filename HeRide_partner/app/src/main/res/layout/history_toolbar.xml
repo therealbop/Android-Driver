@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppBarOverlay"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/colorPrimary"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp"
+        android:id="@+id/mToolBarCustom">
+
+        <RelativeLayout
+            android:id="@+id/rl_hist_toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+
+            <RelativeLayout
+                android:id="@+id/rl_hist_toolbar_back"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:background="@drawable/selector_actionbar">
+
+                <ImageView
+                    android:id="@+id/iv_hist_toolbar_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/back_white_btn"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/tv_hist_toolbar_bid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:visibility="visible"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+
+            <TextView
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/white"
+                android:id="@+id/tv_hist_toolbar_date"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_hist_toolbar_bid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+</com.google.android.material.appbar.AppBarLayout>

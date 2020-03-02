@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_bookings"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/frame_container_frag"
+            android:layout_width="match_parent"
+            android:layout_height="280dp" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ll_frag_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_bookings">
+
+        <fragment
+            android:id="@+id/frag_map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/ivMyLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/on_the_way_zoom_icon_off"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_no_network"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dpTen"
+        android:layout_marginRight="@dimen/dpTen"
+        android:background="#CCFF0000"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/no_network"
+        android:textColor="@color/white"
+        android:textSize="@dimen/spSixteen"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:weightSum="3"
+        android:visibility="gone"
+        android:background="@drawable/rectangle_with_corner_simple"
+        android:layout_marginTop="70dp"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            >
+            <TextView
+                android:id="@+id/tvHeaderCash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cash"
+                android:textColor="@color/gunsmoke"
+                android:textSize="10sp"
+                />
+            <TextView
+                android:id="@+id/tvCash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 150"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            >
+            <TextView
+                android:id="@+id/tvHeaderSLimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SOFT_LIMIT"
+                android:textColor="@color/gunsmoke"
+                android:textSize="10sp"
+                />
+            <TextView
+                android:id="@+id/tvSoftLim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 150"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            >
+            <TextView
+                android:id="@+id/tvHeaderHLimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/HARD_LIMIT"
+                android:textColor="@color/gunsmoke"
+                android:textSize="10sp"
+                />
+            <TextView
+                android:id="@+id/tvHardLim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 150"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="cp_dialog_width">200dp</dimen>
+    <dimen name="cp_dialog_height">200dp</dimen>
+
+    <dimen name="dpZero">0dp</dimen>
+    <dimen name="dpPointZeroFive">0.05dp</dimen>
+    <dimen name="dpOne">1dp</dimen>
+    <dimen name="dptwo">2dp</dimen>
+    <dimen name="dpthree">3dp</dimen>
+    <dimen name="dpFour">4dp</dimen>
+    <dimen name="dpFive">5dp</dimen>
+    <dimen name="dpEight">8dp</dimen>
+    <dimen name="dpTen">10dp</dimen>
+    <dimen name="dpTwelve">12dp</dimen>
+    <dimen name="dpFifteen">15dp</dimen>
+    <dimen name="dpSixteen">16dp</dimen>
+    <dimen name="dpTwenty">20dp</dimen>
+    <dimen name="dpTwentyTwo">22dp</dimen>
+    <dimen name="dpTwentyFive">25dp</dimen>
+    <dimen name="dpThirty">30dp</dimen>
+    <dimen name="dpThirtyFive">35dp</dimen>
+    <dimen name="dpForty">40dp</dimen>
+    <dimen name="dpFortyFive">45dp</dimen>
+    <dimen name="dpFifity">50dp</dimen>
+    <dimen name="dpEighty">80dp</dimen>
+    <dimen name="dpNinety">90dp</dimen>
+    <dimen name="dpTwoHundred">200dp</dimen>
+
+    <dimen name="spNine">9sp</dimen>
+    <dimen name="spTen">10sp</dimen>
+    <dimen name="spFifteen">15sp</dimen>
+    <dimen name="spSixteen">16sp</dimen>
+    <dimen name="spTwelve">12sp</dimen>
+    <dimen name="spThirteen">13sp</dimen>
+    <dimen name="spFourteen">14sp</dimen>
+    <dimen name="spEighteen">18sp</dimen>
+    <dimen name="spNineteen">19sp</dimen>
+    <dimen name="textsize_19_13sp">19.13sp</dimen>
+    <dimen name="spTwenty">20sp</dimen>
+    <dimen name="spTwentyFour">24sp</dimen>
+    <dimen name="spTwentyFive">25sp</dimen>
+    <dimen name="spTwentySix">26sp</dimen>
+    <dimen name="spThirtyFive">35sp</dimen>
+    <dimen name="spTwentyElght">28sp</dimen>
+    <dimen name="spFourty">40sp</dimen>
+    <dimen name="design_navigation_icon_padding" tools:override="true">16dp</dimen>
+
+</resources>

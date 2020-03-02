@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/ll_fragment_action_bar"
+        layout="@layout/actionbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_payment_cards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_fragment_action_bar"/>
+
+    <TextView
+        android:id="@+id/tv_payment_add_card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp"
+        android:text="@string/addcard"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/textsize_19_13sp"
+        android:background="@drawable/selector_layout"
+        android:layout_below="@+id/rv_payment_cards"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginStart="@dimen/dimen_15dp"
+        android:layout_marginEnd="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_20dp" />
+</RelativeLayout>

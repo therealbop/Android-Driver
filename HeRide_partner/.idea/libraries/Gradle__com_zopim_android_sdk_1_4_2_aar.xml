@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.zopim.android:sdk:1.4.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cb0f24c4942bd195ded6d32a2e74ae32/jetified-sdk-1.4.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cb0f24c4942bd195ded6d32a2e74ae32/jetified-sdk-1.4.2/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zopim.android/sdk/1.4.2/51134c96c3ec5cdad83d1f4e46d03ffb8a3c9e16/sdk-1.4.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zopim.android/sdk/1.4.2/d369ff94bbca02b5f51900d2242565450823b67f/sdk-1.4.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

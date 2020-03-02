@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/transparent"><!--android:background="@drawable/alert_dialog_white_backgroud"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/alert_dialog_white_backgroud">
+
+        <TextView
+            android:id="@+id/tv_main_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lightBlack"
+            android:text="@string/Services_msg"
+            android:gravity="center"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:paddingTop="@dimen/dimen_14dp"
+            android:paddingBottom="@dimen/dimen_19dp"
+            android:background="@color/dialogHeaderBackground"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dpPointZeroFive"
+            android:background="@color/divider"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_services"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dpFifteen"
+            android:paddingRight="@dimen/dpFifteen"/>
+
+        <TextView
+            android:id="@+id/tv_service_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Services_err_msg"
+            android:gravity="center"
+            android:textSize="@dimen/spSixteen"
+            android:padding="@dimen/dimen_20dp"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dpPointZeroFive"
+            android:background="@color/divider"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:background="@color/dialogActionBackground">
+
+            <TextView
+                android:layout_weight="0.99"
+                android:id="@+id/tv_reject"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Reject"
+                android:textColor="@color/lightBlackText"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="15dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+            <View
+                android:layout_weight="0.005"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:background="@color/divider"/>
+
+            <TextView
+                android:layout_weight="1.1"
+                android:id="@+id/tv_accept"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Accept"
+                android:textColor="@color/lightBlackText"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="15dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

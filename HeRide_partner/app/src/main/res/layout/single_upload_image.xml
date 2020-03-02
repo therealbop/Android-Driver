@@ -1,0 +1,25 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="60dp"
+    android:layout_height="50dp"
+    android:background="@drawable/shape_uploader_background"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/iv_camera_uploader"
+        android:layout_width="@dimen/dpThirty"
+        android:layout_height="20dp"
+        android:src="@drawable/svg_camera_white"
+        android:contentDescription="@string/app_name"/>
+
+    <TextView
+        android:id="@+id/tv_camera_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/take_photo"
+        android:textSize="@dimen/spTen"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+</LinearLayout>

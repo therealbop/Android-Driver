@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/actionbar"
+             android:id="@+id/toolBar_addCard"/>
+
+    <com.stripe.android.view.CardInputWidget
+        android:id="@+id/card_input_widget_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rectangle_lgray"
+        android:layout_marginLeft="@dimen/dimen_16dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginRight="@dimen/dimen_16dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingStart="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:paddingEnd="@dimen/dimen_10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvScanCard_addCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            app:cardCornerRadius="@dimen/dimen_5dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            ><!--android:layout_margin="@dimen/activity_vertical_margin"-->
+
+            <RelativeLayout
+                android:id="@+id/rl_addCard_scanCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/tv_addCard_scanCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_layout"
+                    android:text="@string/scancard"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_10dp"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv__addCard_Done"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            app:cardCornerRadius="@dimen/dimen_5dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:layout_margin="@dimen/activity_vertical_margin">
+
+            <RelativeLayout
+                android:id="@+id/rl_addCard_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/tv_addCard_done"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_layout"
+                    android:text="@string/done"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:padding="@dimen/dimen_10dp"
+                    android:imeOptions="actionGo" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar_addCard"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_addCard_poweredBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_addCard_poweredBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/poweredby"
+            android:layout_marginRight="2dp"
+            android:layout_marginEnd="2dp"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_addCard_payPal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_addCard_poweredBy"
+            android:layout_toEndOf="@+id/tv_addCard_poweredBy"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/selectpayment_stripe_icn"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+</LinearLayout>

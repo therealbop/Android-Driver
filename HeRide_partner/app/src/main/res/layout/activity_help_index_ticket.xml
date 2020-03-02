@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include android:id="@+id/tool_helpindex_ticket"
+        layout="@layout/tool_bar"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tool_helpindex_ticket"
+        android:layout_above="@id/rlTextInput">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlCardTicket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               >
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardHelpIndexTicket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_5dp"
+                        android:layout_marginLeft="@dimen/dimen_16dp"
+                        android:layout_marginRight="@dimen/dimen_16dp"
+                        android:layout_marginTop="@dimen/dimen_16dp"
+                        android:orientation="vertical"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:id="@+id/rlHelpIndexTextImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tvHelpIndexImageText"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:background="@drawable/black_circle"
+                                    android:gravity="center"
+                                    android:text="A"
+                                    android:backgroundTint="@color/colorPrimary"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_20sp"
+                                    />
+                                <ImageView
+                                    android:id="@+id/ivHelpIndexImage"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:src="@drawable/black_circle"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="center"
+                                    android:visibility="gone"
+                                    tools:ignore="ContentDescription" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/tvHelpIndexCustName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dimen_16dp"
+                                android:layout_marginRight="@dimen/dimen_16dp"
+                                android:layout_toEndOf="@+id/rlHelpIndexTextImage"
+                                android:layout_toRightOf="@+id/rlHelpIndexTextImage"
+                                android:maxLines="1"
+                                android:text="John Phillips "
+                                android:textColor="@color/light_black"
+                                android:textSize="@dimen/text_size_14sp" />
+
+                            <TextView
+                                android:id="@+id/tvHelpIndexDateNTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvHelpIndexCustName"
+                                android:layout_marginLeft="@dimen/dimen_16dp"
+                                android:layout_marginRight="@dimen/dimen_16dp"
+                                android:layout_toEndOf="@+id/rlHelpIndexTextImage"
+                                android:layout_toRightOf="@+id/rlHelpIndexTextImage"
+                                android:text="22 June 2017 | 10:00 PM"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/text_size_12sp" />
+
+                        </RelativeLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_10dp">
+
+                            <EditText
+                                android:id="@+id/etHelpIndexSubject"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/helpSubject"
+                                android:textColor="@color/light_black"
+                                android:textSize="@dimen/text_size_14sp"
+                                />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Priority"
+                            android:layout_marginLeft="@dimen/dimen_3dp"
+                            android:layout_marginStart="@dimen/dimen_3dp"
+                            android:textSize="@dimen/text_size_12sp"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            >
+                            <ImageView
+                                android:id="@+id/ivHelpCenterPriority"
+                                android:layout_width="@dimen/dimen_7dp"
+                                android:layout_height="@dimen/dimen_7dp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/black_circle"
+                                android:visibility="gone"
+                                />
+
+                            <Spinner
+                                android:id="@+id/spinnerHelpIndex"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dimen_5dp"
+                                android:layout_marginStart="@dimen/dimen_5dp"
+                                android:layout_toEndOf="@+id/ivHelpCenterPriority"
+                                android:layout_toRightOf="@+id/ivHelpCenterPriority"
+                                android:overlapAnchor="false"
+                                >
+                            </Spinner>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="@dimen/dimen_5dp"
+                            android:background="@color/light_black"
+                            />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardHelpIndexTicketPre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_16dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:id="@+id/rlHelpIndexTextImagePre"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tvHelpIndexImageTextPre"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:background="@drawable/black_circle"
+                                    android:backgroundTint="@color/colorPrimary"
+                                    android:gravity="center"
+                                    android:text="A"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_20sp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/ivHelpIndexImagePre"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:src="@drawable/black_circle"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="center"
+                                    android:visibility="gone"
+                                    tools:ignore="ContentDescription"/>
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/tvHelpIndexCustNamePre"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dimen_16dp"
+                                android:layout_marginRight="@dimen/dimen_16dp"
+                                android:layout_toEndOf="@+id/rlHelpIndexTextImagePre"
+                                android:layout_toRightOf="@+id/rlHelpIndexTextImagePre"
+                                android:maxLines="1"
+                                android:text="John Phillips "
+                                android:textColor="@color/light_black"
+                                android:textSize="@dimen/text_size_14sp" />
+
+                            <TextView
+                                android:id="@+id/tvHelpIndexDateNTimePre"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvHelpIndexCustNamePre"
+                                android:layout_marginLeft="@dimen/dimen_16dp"
+                                android:layout_marginRight="@dimen/dimen_16dp"
+                                android:layout_toEndOf="@+id/rlHelpIndexTextImagePre"
+                                android:layout_toRightOf="@+id/rlHelpIndexTextImagePre"
+                                android:text="22 June 2017 | 10:00 PM"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/text_size_12sp" />
+
+                        </RelativeLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_10dp">
+
+                            <EditText
+                                android:id="@+id/etHelpIndexSubjectPre"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/helpSubject"
+                                android:textColor="@color/light_black"
+                                android:textSize="@dimen/text_size_14sp"
+                                />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Priority"
+                            android:textSize="@dimen/text_size_12sp"
+                            android:layout_marginLeft="@dimen/dimen_3dp"
+                            android:layout_marginStart="@dimen/dimen_3dp"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            android:layout_marginLeft="@dimen/dimen_3dp"
+                            android:layout_marginStart="@dimen/dimen_3dp"
+                            >
+                            <ImageView
+                                android:id="@+id/ivHelpCenterPriorityPre"
+                                android:layout_width="@dimen/dimen_7dp"
+                                android:layout_height="@dimen/dimen_7dp"
+                                android:layout_centerVertical="true"
+                                android:contentDescription="@string/app_name" />
+                            <!--                                android:background="@drawable/circle_red"
+-->
+
+                            <TextView
+                                android:id="@+id/spinnerHelpIndexPre"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dimen_5dp"
+                                android:layout_marginStart="@dimen/dimen_5dp"
+                                android:layout_toEndOf="@+id/ivHelpCenterPriorityPre"
+                                android:layout_toRightOf="@+id/ivHelpCenterPriorityPre"
+                                >
+                            </TextView>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="@dimen/dimen_5dp"
+                            android:background="@color/light_black"
+                            android:backgroundTint="@color/colorPrimary"
+                            />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlHelpIndexMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewHelpIndex"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rlTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true">
+
+        <FrameLayout
+            android:id="@+id/frameHelpIndex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:layout_marginLeft="@dimen/dimen_16dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_toLeftOf="@+id/tvHelpIndexSend"
+            android:layout_toStartOf="@+id/tvHelpIndexSend"
+            android:background="@drawable/chatbox"
+            >
+            <EditText
+                android:id="@+id/etWriteMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/enterMsgHere"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:paddingRight="@dimen/dimen_10dp"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/text_size_14sp"
+                android:backgroundTint="@color/colorPrimary"
+
+                />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/tvHelpIndexSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:layout_marginLeft="@dimen/dimen_16dp"
+            android:layout_marginRight="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:background="@drawable/parrot_green_rounded_btn"
+            android:paddingBottom="@dimen/dimen_7dp"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:paddingTop="@dimen/dimen_7dp"
+            android:text="@string/helpSend"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="@dimen/dimen_60dp"
+        android:layout_height="@dimen/dimen_60dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+</RelativeLayout>

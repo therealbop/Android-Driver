@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:elevation="@dimen/dpTen"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/log"
+            android:textSize="@dimen/spTwentySix" />
+
+        <TextView
+            android:id="@+id/tv_main_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvTitle1"
+            android:text="@string/out"
+            android:textColor="@color/gray_heading"
+            android:textSize="@dimen/spTwentySix" />
+
+        <TextView
+            android:id="@+id/tvMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dpForty"
+            android:text="@string/logoutDialog"
+            android:textSize="@dimen/spEighteen" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dpThirty"
+            android:layout_marginRight="@dimen/dpThirty"
+            android:padding="@dimen/dpFifteen"
+            android:text="@string/cancel"
+            android:textColor="@color/mediumspringgreen"
+            android:textSize="@dimen/spEighteen" />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dpTen"
+            android:layout_marginRight="@dimen/dpTen"
+            android:padding="@dimen/dpFifteen"
+            android:text="@string/ok"
+            android:textColor="@color/mediumspringgreen"
+            android:textSize="@dimen/spEighteen" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

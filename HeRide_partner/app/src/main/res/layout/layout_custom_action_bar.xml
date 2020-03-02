@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/toolBarTermsConds"
+    android:background="@color/colorPrimary"
+    android:layout_height="?android:attr/actionBarSize">
+
+    <RelativeLayout
+        android:id="@+id/rlBackArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:background="@drawable/selector_layout"
+        android:paddingRight="@dimen/dpTen"
+        android:paddingLeft="@dimen/dpTen"
+        android:paddingStart="@dimen/dpTen"
+        android:paddingEnd="@dimen/dpTen">
+
+        <ImageView
+            android:id="@+id/ivBackArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/back_white_btn"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_all_tool_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/spSixteen"
+            android:maxLines="1"
+            android:textColor="@color/signUpText_color"/>
+
+        <TextView
+            android:id="@+id/tv_all_tool_bar_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/spSixteen"
+            android:maxLines="1"
+            android:textColor="@color/signUpText_color"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvToolBarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text=""
+        android:textSize="@dimen/textsize_19_13sp"
+        android:maxLines="1"
+        android:textColor="@color/signUpText_color"/>
+
+</RelativeLayout>

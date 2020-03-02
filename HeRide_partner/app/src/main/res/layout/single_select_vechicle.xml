@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="1dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/view_green"
+                android:layout_width="@dimen/dpFive"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="-10dp"
+                android:background="@drawable/single_sel_veh_leftgray" />
+
+            <LinearLayout
+                android:id="@+id/ll_vechicle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.6">
+
+                    <RadioButton
+                        android:id="@+id/rb_selectveh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_plateno_vl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="3dp"
+                        android:text="@string/plateno_vl"
+                        android:textColor="@color/tablayout"
+                        android:textSize="@dimen/spTen" />
+
+                    <TextView
+                        android:id="@+id/tv_type_vl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="3dp"
+                        android:text="@string/type_vl"
+                        android:textColor="@color/tablayout"
+                        android:textSize="@dimen/spTen" />
+
+                    <TextView
+                        android:id="@+id/tv_model_vl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="3dp"
+                        android:text="@string/model_vl"
+                        android:textColor="@color/tablayout"
+                        android:textSize="@dimen/spTen" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_plateno_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:padding="3dp"
+                        android:text="PA-12345"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/spTwelve" />
+
+                    <TextView
+                        android:id="@+id/tv_type_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:padding="3dp"
+                        android:text="Van"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/spTwelve" />
+
+                    <TextView
+                        android:id="@+id/tv_model_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:padding="3dp"
+                        android:text="TATA ACE"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/spTwelve" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

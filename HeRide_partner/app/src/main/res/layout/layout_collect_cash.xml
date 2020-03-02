@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/shape_top_green" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@color/alabaster"
+        >
+
+        <TextView
+            android:id="@+id/tvGrandTotalHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/profile_head"
+            android:text="Grand Total : "
+            android:textSize="@dimen/spFourteen" />
+
+        <TextView
+            android:id="@+id/tvGrandTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="$50.00"
+            android:textSize="@dimen/spSixteen" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/tvEnterAmtHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@color/profile_head"
+            android:text="@string/enter_amt_collected"
+            android:textSize="@dimen/spFourteen"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etAmtCollected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:text="50.00"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/spTwentyElght"
+                android:padding="@dimen/spTen"
+                />
+
+            <TextView
+                android:id="@+id/tvDollar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/etAmtCollected"
+                android:layout_toStartOf="@id/etAmtCollected"
+                android:text="$"
+                android:textSize="@dimen/spTwentyElght" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_bottom_green"
+        android:gravity="center"
+        android:text="@string/ok"
+        android:textColor="@color/white"
+        android:textSize="@dimen/spNineteen" />
+
+</LinearLayout>

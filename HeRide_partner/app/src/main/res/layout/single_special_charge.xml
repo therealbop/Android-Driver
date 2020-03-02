@@ -1,0 +1,26 @@
+<LinearLayout
+    android:id="@+id/ll_specialCharge"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:layout_marginTop="@dimen/dimen_5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_weight="1.3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/spFourteen"
+        android:id="@+id/tv_specialCharge_title"
+        android:textDirection="locale"/>
+
+    <TextView
+        android:layout_weight="0.7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/spFourteen"
+        android:id="@+id/tv_specialCharge_fare"
+        android:gravity="end"/>
+
+</LinearLayout>

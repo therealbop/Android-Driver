@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "405753278777",
+    "firebase_url": "https://heride.firebaseio.com",
+    "project_id": "heride",
+    "storage_bucket": "heride.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405753278777:android:dd60aeced219271f4b38e8",
+        "android_client_info": {
+          "package_name": "com.heride.partner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "405753278777-9ap5d8fuqr9j1tl6iddu1vol9jsrhi4k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.heride.partner",
+            "certificate_hash": "a4f06d483e2b98e5662bbc09a18a9b36f6a4ca79"
+          }
+        },
+        {
+          "client_id": "405753278777-60i4o1u059o5fhk0rsf98njc4iobvlj0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2mqTV5WcCCkQuqVPoRKEzPmxTUsUGsro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "405753278777-60i4o1u059o5fhk0rsf98njc4iobvlj0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

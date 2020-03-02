@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/include_actionbar"
+        layout="@layout/actionbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/sv_signup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include_actionbar"
+        android:isScrollContainer="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/include_actionbar"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_change_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_16dp"
+                android:gravity="center"
+                android:text="d"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_size_17sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_phone_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dpThirty">
+
+                <TextView
+                    android:id="@+id/tv_phone_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dpFive"
+                    android:text="@string/phone_number"
+                    android:textColor="@color/profile_head"
+                    android:textSize="@dimen/spTwelve" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_vechtype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_phone_num">
+
+                    <RelativeLayout
+                        android:id="@+id/countryPicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/flag"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginStart="3dp"
+                            android:background="@drawable/flag_us"
+                            android:contentDescription="@string/app_name" />
+
+                        <TextView
+                            android:id="@+id/tv_country_code"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_toEndOf="@+id/flag"
+                            android:layout_toRightOf="@+id/flag"
+                            android:text="+91"
+                            android:textColor="@color/profile_data"
+                            android:textSize="@dimen/spSixteen" />
+
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_phone_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/dpFive"
+                        android:layout_toEndOf="@+id/countryPicker"
+                        android:layout_toRightOf="@+id/countryPicker"
+                        android:background="@color/white"
+                        android:inputType="phone"
+                        android:textColor="@color/profile_data"
+                        android:textSize="@dimen/spSixteen"
+                        android:textDirection="locale"
+                        android:gravity="start"
+                        android:textAlignment="viewStart"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dpOne"
+                    android:layout_below="@+id/rl_vechtype"
+                    android:background="@color/profile_underline" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_password_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_16dp"
+                android:layout_marginRight="@dimen/dimen_16dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_old_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textDirection="locale"
+                    android:gravity="start"
+                    android:textAlignment="viewStart">
+
+                    <EditText
+                        android:id="@+id/et_old_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/old_pass"
+                        android:inputType="textPassword"
+                        android:textColor="@color/text_color"
+                        android:textDirection="locale"
+                        android:gravity="start"
+                        android:textAlignment="viewStart"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_new_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textDirection="locale"
+                    android:gravity="start"
+                    android:textAlignment="viewStart">
+
+                    <EditText
+                        android:id="@+id/et_new_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/new_pass"
+                        android:inputType="textPassword"
+                        android:textColor="@color/text_color"
+                        android:textDirection="locale"
+                        android:gravity="start"
+                        android:textAlignment="viewStart"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_confirm_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textDirection="locale"
+                    android:gravity="start"
+                    android:textAlignment="viewStart">
+
+                    <EditText
+                        android:id="@+id/et_confirm_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/confirm_password"
+                        android:inputType="textPassword"
+                        android:textColor="@color/text_color"
+                        android:textDirection="locale"
+                        android:gravity="start"
+                        android:textAlignment="viewStart"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/rlAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <SeekBar
+            android:id="@+id/seek_bar_button"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:minHeight="53dp"
+            android:maxHeight="53dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:clickable="false"
+            android:max="100"
+            android:progress="0"
+            android:thumb="@color/transparent"
+            android:progressDrawable="@drawable/seek_bar_button_rectangle"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/selector_button_transparent_with_stroke"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:focusable="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/spEighteen" />
+
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

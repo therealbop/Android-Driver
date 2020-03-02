@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_main_menu_layout"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:id="@+id/tv_meter_tBar_title"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/text_size_15sp"
+        android:textColor="@color/white"
+        android:text="@string/driverMeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_meter_tBar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_meter_tBar_bid"
+            android:textSize="@dimen/text_size_12sp"
+            android:textColor="@color/white"
+            android:text="@string/bid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_meter_tBar_bid_val"
+            android:layout_alignBaseline="@+id/tv_meter_tBar_bid"
+            android:layout_toRightOf="@+id/tv_meter_tBar_bid"
+            android:textSize="@dimen/text_size_12sp"
+            android:textColor="@color/white"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_cancel_booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        tools:ignore="RelativeOverlap"
+        android:padding="@dimen/dpFifteen"/>
+
+</RelativeLayout>

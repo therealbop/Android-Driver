@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.livechat:chat-window-android:v2.0.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2a90749753b6eb64ed572e0502b62cff/jetified-chat-window-android-v2.0.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2a90749753b6eb64ed572e0502b62cff/jetified-chat-window-android-v2.0.3/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

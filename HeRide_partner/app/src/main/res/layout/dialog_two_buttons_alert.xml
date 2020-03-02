@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/white_circle_corner">
+
+    <TextView
+        android:id="@+id/tv_alert_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/driver_details"
+        android:gravity="center"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginEnd="2dp"
+        android:padding="@dimen/dimen_18dp"
+        android:text="@string/cancel_request"
+        android:textColor="@color/denim"
+        android:textSize="@dimen/text_size_15sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_alert_body"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/tv_alert_divider1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/divider_invoice3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_alert_title" />
+
+    <TextView
+        android:id="@+id/tv_alert_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen_20dp"
+        android:paddingEnd="@dimen/dimen_30dp"
+        android:paddingLeft="@dimen/dimen_30dp"
+        android:paddingRight="@dimen/dimen_30dp"
+        android:paddingStart="@dimen/dimen_30dp"
+        android:paddingTop="@dimen/dimen_20dp"
+        android:text="@string/cancle_bookin"
+        android:textColor="@color/denim"
+        android:textSize="@dimen/text_size_12sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_alert_divider1" />
+
+    <View
+        android:id="@+id/tv_alert_divider2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_weight="0.01"
+        app:layout_constraintTop_toBottomOf="@+id/tv_alert_body"
+        android:background="@color/divider_invoice3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="@dimen/dimen_2dp"
+        app:layout_constraintBottom_toBottomOf="parent" >
+
+        <TextView
+            android:id="@+id/tv_alert_yes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.99"
+            android:textSize="@dimen/text_size_15sp"
+            android:text="@string/yes_alert"
+            android:textColor="@color/dust_gray"
+            android:gravity="center"
+            android:background="@drawable/selector_white_layout"
+            android:padding="@dimen/dimen_18dp" />
+
+        <View
+            android:layout_width="@dimen/dimen_1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.005"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:background="@color/divider_invoice3"/>
+
+        <TextView
+            android:id="@+id/tv_alert_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.99"
+            android:textSize="@dimen/text_size_15sp"
+            android:text="@string/no_alert"
+            android:textColor="@color/dust_gray"
+            android:gravity="center"
+            android:background="@drawable/selector_white_layout"
+            android:padding="@dimen/dimen_18dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

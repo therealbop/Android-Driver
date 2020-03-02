@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view_delete_card_headerLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_10dp"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:textColor="@color/light_black"
+        android:id="@+id/tv_delete_card_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_delete_card_headerLine"
+        android:layout_centerHorizontal="true"
+        android:text="@string/alert"
+        android:textSize="@dimen/text_size_19sp" />
+
+    <TextView
+        android:id="@+id/tv_delete_card_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_delete_card_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:gravity="center"
+        android:text="@string/delete_alert"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_size_16sp" />
+
+    <Button
+        android:background="@drawable/selector_layout"
+        android:id="@+id/btn_delete_card_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_delete_card_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_40dp"
+        android:text="@string/confirm"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+</RelativeLayout>

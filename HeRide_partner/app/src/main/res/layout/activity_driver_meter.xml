@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <fragment
+        android:id="@+id/frag_meter_map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/include_actionbar"
+        layout="@layout/driver_meter_toolbar" />
+
+    <RelativeLayout
+        android:clickable="true"
+        android:id="@+id/ll_meter_pass_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include_actionbar"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginRight="-10dp"
+        android:layout_marginTop="-10dp"
+        android:background="@drawable/white_box_withshadow"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:paddingLeft="@dimen/dpThirty"
+        android:paddingRight="@dimen/dpThirty">
+
+        <TextView
+            android:id="@+id/tv_pickup_head"
+            android:layout_marginTop="@dimen/dpFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="@dimen/dpthree"
+            android:text="@string/pickup_location"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/spFourteen"
+            android:drawableLeft="@drawable/pickup"
+            android:drawableStart="@drawable/pickup"
+            android:drawablePadding="@dimen/dpTen"
+            android:paddingTop="@dimen/dpFive"/>
+
+        <TextView
+            android:layout_below="@+id/tv_pickup_head"
+            android:layout_marginTop="@dimen/dpFive"
+            android:id="@+id/tv_meter_drop_loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="@dimen/dpthree"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/spFourteen"
+            android:layout_marginLeft="@dimen/dpTwenty"
+            android:layout_marginStart="@dimen/dpTwenty"
+            android:maxLines="2"
+            android:textDirection="locale"/>
+
+        <TextView
+            android:id="@+id/tv_drop_head"
+            android:layout_below="@+id/tv_meter_drop_loc"
+            android:layout_marginTop="@dimen/dpFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="@dimen/dpthree"
+            android:text="@string/drop_location"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/spFourteen"
+            android:drawableLeft="@drawable/drop"
+            android:drawableStart="@drawable/drop"
+            android:drawablePadding="@dimen/dpTen"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_edit_drop"
+            android:layout_below="@+id/tv_drop_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="@dimen/dpFive"
+                android:id="@+id/tv_meter_dest_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="@dimen/dpthree"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/spFourteen"
+                android:layout_marginLeft="@dimen/dpTwenty"
+                android:layout_marginStart="@dimen/dpTwenty"
+                android:maxLines="2"
+                android:hint="@string/select_drop"
+                android:layout_marginBottom="@dimen/dpFive"
+                android:layout_toLeftOf="@+id/iv_edit_address"
+                android:layout_toStartOf="@+id/iv_edit_address"
+                android:layout_marginRight="@dimen/dpTen"
+                android:layout_marginEnd="@dimen/dpTen"
+                android:textDirection="locale"/>
+
+            <ImageView
+                android:id="@+id/iv_edit_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/svg_pencle"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"/>
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_pickup_head"
+            android:layout_above="@+id/tv_drop_head"
+            android:src="@drawable/arrow_rectangle"
+            android:contentDescription="@string/app_name"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_meter_pass_detail"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:id="@+id/ll_googlemap"
+            android:layout_width="@dimen/dpZero"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="-5dp"
+            android:layout_marginRight="-5dp"
+            android:layout_marginTop="-9dp"
+            android:layout_weight="1"
+            android:background="@drawable/googlemap_backgound"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dpFifteen"
+            android:paddingTop="@dimen/dpFifteen">
+
+            <TextView
+                android:id="@+id/tv_booking_googlemap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/on_the_way_google_icon"
+                android:drawablePadding="@dimen/dpTen"
+                android:drawableStart="@drawable/on_the_way_google_icon"
+                android:gravity="center_vertical"
+                android:text="@string/googlemaps"
+                android:textColor="@color/maps"
+                android:textSize="@dimen/spFourteen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_booking_waze"
+            android:layout_width="@dimen/dpZero"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginStart="-5dp"
+            android:layout_marginTop="-9dp"
+            android:layout_weight="1"
+            android:background="@drawable/waze_background"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dpFifteen"
+            android:paddingTop="@dimen/dpFifteen">
+
+            <TextView
+                android:id="@+id/tv_booking_waze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/on_the_way_waze_icon"
+                android:drawablePadding="@dimen/dpTen"
+                android:drawableStart="@drawable/on_the_way_waze_icon"
+                android:gravity="center"
+                android:text="@string/waze"
+                android:textColor="@color/white"
+                android:textSize="@dimen/spFourteen" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_locationupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_navigation"
+        android:gravity="end">
+
+        <ImageView
+            android:id="@+id/iv_location_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:background="@drawable/location"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:contentDescription="@string/app_name"/>
+
+    </RelativeLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/bgLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_booking_bottomlayout">
+        <!--android:layout_below="@id/rl_locationupdate"-->
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/bottom_sheet1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_calculation_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dpOne"
+                        android:background="@color/divider"/>
+
+                    <TextView
+                        android:id="@+id/tv_meter_sheet_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/current_fare"
+                        android:textSize="@dimen/spSixteen"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dpFive"
+                        android:gravity="start"
+                        android:textDirection="locale"/>
+
+                    <RelativeLayout
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginRight="@dimen/dimen_20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_meter_current_val"
+                            android:textSize="@dimen/spThirtyFive"
+                            android:text=""
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:ignore="RelativeOverlap"/>
+
+                        <ImageView
+                            android:id="@+id/iv_blArrow"
+                            android:src="@drawable/svg_arrow_up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"
+                            android:paddingRight="@dimen/dpTen"
+                            android:paddingLeft="@dimen/dpTen"/>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_marginBottom="@dimen/dimen_10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginRight="@dimen/dimen_20dp"
+                        android:background="@color/divider" />
+
+                    <LinearLayout
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginRight="@dimen/dimen_20dp"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_weight="0.99"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:baselineAligned="false">
+
+                            <TextView
+                                android:textSize="@dimen/text_size_16sp"
+                                android:id="@+id/tv_driver_time"
+                                android:text="@string/time"
+                                android:paddingTop="@dimen/dimen_5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                tools:ignore="NestedWeights,RtlSymmetry"
+                                android:paddingRight="@dimen/dpFive"
+                                android:paddingEnd="@dimen/dpFive"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true">
+
+                                <TextView
+                                    android:textSize="@dimen/text_size_16sp"
+                                    android:paddingTop="@dimen/dimen_5dp"
+                                    android:id="@+id/tv_meter_cost_val"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    tools:ignore="RelativeOverlap"
+                                    android:layout_gravity="end"/>
+
+                                <TextView
+                                    android:id="@+id/tv_meter_min_label"
+                                    android:textSize="@dimen/text_size_16sp"                                    android:paddingTop="@dimen/dimen_5dp"
+                                    android:text="@string/min"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_after_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_driver_time"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:paddingRight="@dimen/dpFive"
+                                android:paddingLeft="@dimen/dpFive"
+                                android:textSize="@dimen/spTen"/>
+
+
+                            <TextView
+                                android:id="@+id/tv_meter_time_val"
+                                android:textSize="@dimen/spEighteen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/dimen_5dp"
+                                android:layout_below="@id/tv_after_time"/>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_weight="0.01"
+                            android:background="@color/divider"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"/>
+
+                        <RelativeLayout
+                            android:layout_weight="0.99"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal"
+                            android:baselineAligned="false"
+                            android:paddingLeft="@dimen/dpFive"
+                            android:paddingStart="@dimen/dpFive">
+
+                            <TextView
+                                android:textSize="@dimen/text_size_14sp"
+                                android:id="@+id/tv_meter_distance"
+                                android:text="@string/distance"
+                                android:paddingTop="@dimen/dpFive"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                tools:ignore="NestedWeights"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true">
+
+                                <TextView
+                                    android:textSize="@dimen/text_size_16sp"
+                                    android:id="@+id/tv_meter_distance_cost"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    tools:ignore="RelativeOverlap"
+                                    android:layout_gravity="end"
+                                    android:paddingTop="@dimen/dpFive"/>
+
+                                <TextView
+                                    android:id="@+id/tv_meter_unit"
+                                    android:textSize="@dimen/text_size_15sp"
+                                    android:text="@string/km"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:paddingTop="@dimen/dpFive"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_after_dis"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_meter_distance"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:paddingRight="@dimen/dpFive"
+                                android:paddingLeft="@dimen/dpFive"
+                                android:textSize="@dimen/spTen"/>
+
+                            <TextView
+                                android:layout_below="@+id/tv_after_dis"
+                                android:id="@+id/tv_meter_dist_val"
+                                android:textSize="@dimen/spEighteen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/dpFive"/>
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_calculation_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginRight="@dimen/dimen_20dp"
+                        android:background="@color/divider" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginRight="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dpTen"
+                        android:layout_marginBottom="@dimen/dpFive">
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_minimumfare"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_15sp"
+                                android:id="@+id/tv_meter_minimumfare"
+                                android:text="@string/minimum_fare"
+                                />
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_15sp"
+                                android:id="@+id/tv_meter_minimumfare_value"
+                                android:gravity="end"/>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_below="@+id/ll_minimumfare"
+                            android:id="@+id/rl_calculated_fare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_basefare"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2"
+                                android:layout_marginTop="@dimen/dimen_5dp">
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/text_size_15sp"
+                                    android:id="@+id/tv_meter_base_fare"
+                                    android:text="@string/BaseFare"
+                                    />
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/text_size_15sp"
+                                    android:id="@+id/tv_meter_base_val"
+                                    android:gravity="end"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_distancefare"
+                                android:layout_below="@+id/ll_basefare"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2"
+                                android:layout_marginTop="@dimen/dimen_5dp">
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/text_size_15sp"
+                                    android:id="@+id/tv_meter_distance_fare"
+                                    android:text="@string/distance_fare"/>
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/text_size_15sp"
+                                    android:id="@+id/tv_meter_dist_fare_val"
+                                    android:gravity="end"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_timefare"
+                                android:layout_below="@+id/ll_distancefare"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2"
+                                android:layout_marginTop="@dimen/dimen_5dp">
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/text_size_15sp"
+                                    android:id="@+id/tv_meter_time_fare"
+                                    android:text="@string/time_fare"/>
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tv_meter_time_fare_val"
+                                    android:textSize="@dimen/text_size_15sp"
+                                    android:gravity="end"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/view_subTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginEnd="@dimen/dimen_20dp"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginRight="@dimen/dimen_20dp"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:background="@drawable/dashed_line"
+                        android:layerType="software" />
+
+                   <!-- <TextView
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_size_20sp"
+                        android:text="-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />-->
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginRight="@dimen/dimen_20dp"
+                        android:layout_marginBottom="@dimen/dpTwenty"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_meter_total"
+                            android:textSize="@dimen/text_size_15sp"
+                            android:layout_weight="1"
+                            android:text="@string/total"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tv_meter_total_val"
+                            android:textSize="@dimen/text_size_15sp"
+                            android:gravity="end"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <RelativeLayout
+        android:clickable="true"
+        android:id="@+id/rl_booking_bottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grayback"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:focusable="true">
+
+        <com.karry.utility.Slider
+            android:id="@+id/slider_booking_myseek"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="false"
+            android:max="100"
+            android:maxHeight="50dp"
+            android:minHeight="25dp"
+            android:progressDrawable="@drawable/seekbar_background"
+            android:splitTrack="false"
+            android:thumb="@drawable/svg_arrow_right_back"
+            android:thumbOffset="-10dp" />
+        <!--android:thumb="@drawable/selector_seekbar_btn"-->
+
+        <TextView
+            android:id="@+id/tv_meter_btnStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/completeTrip"
+            android:textColor="@color/white"
+            android:textSize="14.94sp" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/ll_network"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:focusable="false"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_network"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/no_network"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="@dimen/spEighteen"
+            android:padding="@dimen/dpTwenty"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

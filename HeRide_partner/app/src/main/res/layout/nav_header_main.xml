@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_profile_view"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="@color/white"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dpForty">
+
+    <RelativeLayout
+        android:id="@+id/rl_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dpFive">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/image_background_white" />
+
+        <com.karry.utility.CircleImageView
+            android:id="@+id/iv_cir_profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/signup_profile_default_image"
+            app:civ_border_color="@color/colorAccent"
+            app:civ_border_overlay="false"
+            app:civ_border_width="2dp"
+            app:civ_fill_color="@color/colorPrimaryDark"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--<ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/signup_profile_default_image"/>-->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dpFive"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_prof_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dptwo"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/spFifteen" />
+
+        <TextView
+            android:id="@+id/tv_viewpof"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_profile"
+            android:textColor="@color/menu_selected"
+            android:textSize="@dimen/spTen" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dpPointZeroFive"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dpTen"
+        android:background="@color/menu_default" />
+
+</RelativeLayout>

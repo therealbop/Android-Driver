@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_singlerow_job"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="2dp"
+        card_view:cardUseCompatPadding="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:id="@+id/iv_hist_appointment_cancel"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:contentDescription="@string/app_name" />
+
+            <LinearLayout
+                android:id="@+id/ll_hist_appoint_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dpTen"
+                android:layout_marginRight="@dimen/dpTen"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dpFive"
+                    android:layout_marginTop="@dimen/dpTen"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/tv_job_id"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/id"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/spTwelve"
+                        android:gravity="start"/>
+
+                    <TextView
+                        android:id="@+id/tv_deliveryfee"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="$110.00"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/spFourteen" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_date_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:paddingBottom="10dp"
+                    android:text="Mar 7. 11.30 Am"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/spTen" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.05dp"
+                    android:background="@color/gray_heading" />
+
+                <LinearLayout
+                    android:id="@+id/ll_timeleft"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dpTen"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/tv_time_left_txt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/time_left"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/spTwelve" />
+
+                    <TextView
+                        android:id="@+id/tv_deliverytime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="00.20 Hrs"
+                        android:textColor="@color/sky_blue"
+                        android:textSize="@dimen/spFourteen" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:id="@+id/tv_pickup_loc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dpTen"
+                    android:drawableLeft="@drawable/home_pickup_icon"
+                    android:drawablePadding="10dp"
+                    android:paddingBottom="@dimen/dpTen"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/spTwelve"
+                    android:singleLine="true"
+                    android:drawableStart="@drawable/home_pickup_icon" />
+
+                <TextView
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:id="@+id/tv_drop_loc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/home_dropoff_icon"
+                    android:drawablePadding="10dp"
+                    android:paddingBottom="@dimen/dpTen"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/spTwelve"
+                    android:singleLine="true"
+                    android:drawableStart="@drawable/home_dropoff_icon" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_date_time"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="right"-->
+                <!--android:paddingBottom="10dp"-->
+                <!--android:text="Mar 7. 11.30 Am"-->
+                <!--android:textColor="@color/gray"-->
+                <!--android:textSize="@dimen/spTen" />-->
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

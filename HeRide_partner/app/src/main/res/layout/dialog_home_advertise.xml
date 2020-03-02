@@ -1,0 +1,83 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_white_background"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_home_adv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_250dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_home_adv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_250dp" />
+
+                <ProgressBar
+                    android:id="@+id/pb_home_adv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_home_adv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_home_adv"
+                android:text="Username"
+                android:textColor="@color/black"
+                android:padding="@dimen/dimen_8dp"
+                android:textSize="@dimen/text_size_16sp"
+                android:singleLine="true"
+                android:gravity="center"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_home_adv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_home_adv_title"
+                android:gravity="center"
+                android:padding="@dimen/dimen_10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_home_adv_know_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_25dp"
+                android:layout_marginStart="@dimen/dimen_25dp"
+                android:layout_marginRight="@dimen/dimen_25dp"
+                android:layout_marginEnd="@dimen/dimen_25dp"
+                android:layout_marginBottom="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:text="@string/know_more"
+                android:gravity="center"
+                android:padding="@dimen/dimen_10dp"
+                android:layout_below="@+id/tv_home_adv_desc"
+                android:textColor="@color/white"
+                android:background="@drawable/selector_color_primary"/>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_home_adv_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end|top"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/com_facebook_close" />
+</FrameLayout>
